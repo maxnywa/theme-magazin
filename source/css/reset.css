@@ -1,3 +1,4 @@
+/*====== RESET START ======*/
 *{
     box-sizing: border-box;
 }
@@ -51,3 +52,4 @@ input[type='submit']{
 blockquote{
     margin: 0;
 }
+/*====== RESET END ======*/

@@ -11,7 +11,7 @@ gulp.task('autoprefixer',function () {
         .pipe(gulp.dest('app/css'))
 });
 gulp.task('concat-css',function () {
-   gulp.src(['reset.css',
+   gulp.src(['app/css/reset.css',
        'app/css/fonts.css',
        'app/css/components/*.css',
        'app/css/pages/*.css',
