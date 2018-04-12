@@ -7,7 +7,10 @@
     <title>Foxtar!</title>
 
     <!-- Google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Raleway:700|Roboto:400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
 
     <!-- Font awesome -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -21,26 +24,49 @@
 <body>
     <header>
         <div class="header-top">
-            <div class="container d-flex">
+            <div class="container d-flex align-items-center">
                 <div class="logo mr-auto">
                     <a href="#">
-                        <img src="../source/img/logo.png" alt=""> <!--картинки надо брать из app/img-->
+                        <img src="../app/img/logo.png" alt="">
                     </a>
                 </div>
                 <div class="need-help">
-                    <span><span>Need help?</span>talk to an expert: +61 3 8376 6284</span>
+                    <span><span>Need help? </span>Talk to an expert: +61 3 8376 6284</span>
                 </div>
                 <ul class="header-dropdown-list">
-                    <li class="dropdown show">
-                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle text-center" href="#" role="button" id="dropdownBasket" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="fa fa-shopping-basket"></i>
+                            <span class="counter">8</span>
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-menu dropdown-notifaction dropdown-basket" aria-labelledby="dropdownBasket">
+                            <div class="dropdown-item d-flex align-items-center">
+                                <img src="img/dropdown-basket.jpg" alt="">
+                                <div class="item-content">
+                                    <span class="item-title">Grand Ballet</span>
+                                    <span class="item-category">WordPress</span>
+                                    <span class="item-price">$59</span>
+                                </div>
+                                <!--/ item-content -->
+                            </div>
+                            <!--/ dropdown-item -->
+                            <div class="dropdown-item d-flex align-items-center">
+                                <img src="img/dropdown-basket.jpg" alt="">
+                                <div class="item-content">
+                                    <span class="item-title">Apple Device</span>
+                                    <span class="item-category">WordPress</span>
+                                    <span class="item-price">$59</span>
+                                </div>
+                                <!--/ item-content -->
+                            </div>
+                            <!--/ dropdown-item -->
+                            <div class="total-price">
+
+                            </div>
                         </div>
+                        <!--/ dropdown-menu -->
                     </li>
+                    <!--/ dropdown  -->
                 </ul>
                 <!-- /header-dropdown-list -->
                 <div class="button"><span>L o g i n </span></div>

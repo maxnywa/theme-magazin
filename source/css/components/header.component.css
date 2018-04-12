@@ -1,16 +1,94 @@
 /*====== DEFAULT COMPONENTS START ======*/
 
-/*------ header start------*/
+/*------ header start ------*/
 /*--- header-top ---*/
-.header-top{
-
+header .header-top{
+    padding: 25px 0;
 }
-.header-top .logo{
-
+header .header-top .need-help{
+    margin-right: 50px;
+}
+header .header-top .need-help>span>span{
+    color: #e74c3c;
+}
+header .header-top .dropdown .dropdown-toggle{
+    margin-right: 25px;
 }
 /*--- header-bottom ---*/
 .header-bottom{
 
 }
-/*------ header end------*/
-/*====== DEFAULT COMPONENTS END======*/
+/*------ header end ------*/
+
+/*------ dropdown start ------*/
+.dropdown *{
+    padding: 0;
+    margin: 0;
+}
+.dropdown .dropdown-toggle{
+    position: relative;
+    display: block;
+    width: 35px;
+    line-height: 35px;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    color: #a0a0a0;
+}
+.dropdown .dropdown-toggle:hover, .dropdown .dropdown-toggle:focus {
+    color: #263238;
+}
+.dropdown .dropdown-toggle::after{
+    display: none;
+}
+.dropdown .dropdown-toggle .counter{
+    position: absolute;
+    top: -7px;
+    right: -5px;
+    width: 18px;
+    line-height: 18px;
+    color: #fff;
+    font-family:'Open Sans', sans-serif;
+    font-size: 11px;
+    background-color: #e74c3c;
+    border-radius: 50%;
+}
+
+.dropdown .dropdown-notifaction{
+    width: 270px;
+    background-color: #fff ;
+}
+.dropdown .dropdown-menu .dropdown-item{
+    padding: 20px;
+    border: 1px solid #d5d5d5;
+    border-radius: 0;
+}
+
+.dropdown .dropdown-menu .dropdown-item .item-content{
+    margin-left: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+.dropdown .dropdown-menu .dropdown-item .item-content span{
+    display: block;
+}
+.dropdown .dropdown-menu .dropdown-item .item-content span + span{
+    margin-top: 10px;
+}
+.dropdown .dropdown-menu .dropdown-item .item-content .item-title{
+    font-size: 15px;
+    color: #263238;
+}
+.dropdown .dropdown-menu .dropdown-item .item-content .item-category{
+    font-weight: 400;
+    font-size: 12px;
+    color: #84b743;
+}
+.dropdown .dropdown-menu .dropdown-item .item-content .item-price{
+    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+}
+
+/*------ dropdown end ------*/
+
+/*====== DEFAULT COMPONENTS END ======*/
