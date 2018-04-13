@@ -1,3 +1,6 @@
+.cards-example  {
+   padding-top: 30px; /* удалить - это чтобы не прилипало*/
+}
 /*-----cards start------*/
 .cards-example  {
     margin: 0 15px;

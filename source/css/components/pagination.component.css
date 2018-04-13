@@ -1,5 +1,5 @@
 .pagination {
-    margin: 30px;
+   padding-top: 30px; /* удалить - это чтобы не прилипало*/
 }
 /*-----pagination start------*/
 .pagination-lg .page-link {
