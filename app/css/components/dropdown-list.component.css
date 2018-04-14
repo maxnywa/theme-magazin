@@ -26,9 +26,6 @@
     line-height: 3em;
     text-transform: capitalize;
 }
-/*.dropdown .dropdown-menu{*/
-    /*padding: 20px;*/
- /*}*/
 .dropdown .dropdown-menu .dropdown-item.dropdown-list{
     border-bottom: 0;
 }
