@@ -107,10 +107,6 @@ blockquote{
     padding: 0;
     margin: 0;
 }
-
-.dropdown a:hover,a:active{
-   color: inherit;
-}
 .dropdown .dropdown-toggle.toggle-circle{
     position: relative;
     display: block;
@@ -136,15 +132,12 @@ blockquote{
     color: #fff;
     font-family:'Open Sans', sans-serif;
     font-size: 11px;
+    background-color: #e74c3c;
     border-radius: 50%;
 }
-
 .dropdown .dropdown-menu{
-    margin-top: 26px;
-    /*position: absolute;*/
-    /*top: 100%!important;*/
+   margin-top: 26px;
 }
-
 .dropdown .dropdown-notifaction{
     min-width: 270px;
     background-color: #fff;
@@ -155,9 +148,6 @@ blockquote{
     padding: 25px;
     border-bottom: 1px solid #d5d5d5;
     border-radius: 0;
-}
-.dropdown-item:focus, .dropdown-item:hover{
-    background-color: #fff;
 }
 .dropdown .dropdown-menu .dropdown-item .item-content{
     margin-left: 20px;
@@ -174,11 +164,6 @@ blockquote{
     font-size: 15px;
     color: #263238;
 }
-.dropdown .dropdown-menu .dropdown-item .item-content .item-title-small{
-    font-size: 12px;
-    color: #263238;
-    font-weight: 600;
-}
 .dropdown .dropdown-menu .dropdown-item .item-content .item-category{
     font-weight: 400;
     font-size: 12px;
@@ -189,22 +174,13 @@ blockquote{
     font-size: 16px;
     color: #000;
 }
-.dropdown .dropdown-menu .dropdown-item .item-content .item-data{
-    font-size: 10px;
-    color: #707070;
-}
-.dropdown .dropdown-menu .dropdown-item .item-follow:hover .fa{
-    color: #ef6c00;
-}
-
-.dropdown .dropdown-menu .total,.go-chekout{
-    padding: 20px;
+.dropdown .dropdown-menu .total{
+    padding: 20px 20px 0;
 }
 .dropdown .dropdown-menu .total{
     font-size: 16px;
     color: #263238;
     line-height: 1.5em;
-    padding-bottom: 0px;
 }
 
 /*------ dropdown end ------*/
@@ -212,7 +188,6 @@ blockquote{
 /*--- header-top-main ---*/
 header .header-top{
     padding: 25px 0;
-    position: relative;
 }
 header .header-top .need-help{
     margin-right: 50px;
@@ -223,10 +198,6 @@ header .header-top .need-help>span>span{
 header .header-top .dropdown .dropdown-toggle.dropdown-basket{
     margin-right: 25px;
 }
-.dropdown .dropdown-basket.dropdown-toggle.toggle-circle .counter{
-    background-color:#e74c3c;
-}
-
 /*--- header-top-all-pages ---*/
 header .header-top .header-top-dropdowns li{
     display: inline-block;
@@ -236,20 +207,8 @@ header .header-top .header-top-dropdowns li:last-child{
     margin-right: 0;
 }
 
-.header-top-dropdowns .dropdown .dropdown-basket.dropdown-toggle.toggle-circle .counter{
-    background-color:  #95c85a;
-}
-.dropdown .dropdown-bell.dropdown-toggle.toggle-circle .counter{
-    background-color: #fcb322;
-}
-.dropdown .dropdown-mail.dropdown-toggle.toggle-circle .counter{
-    background-color: #ef6c00;
-}
 
 /*--- header-bottom ---*/
-header .header-bottom{
-    background-color: #263238;
-}
 header .header-bottom .header-bottom-nav ul{
     font-weight: 500;
     font-size: 14px;
@@ -270,6 +229,59 @@ header .header-bottom .header-bottom-nav ul li:last-child{
 
 /*====== DEFAULT COMPONENTS END ======*/
 
+
+.default-section{
+    padding-top: 125px;
+    padding-bottom: 110px;
+}
+/*------ title start ------*/
+.title{
+    font-family: 'Roboto', sans-serif;
+    color: #263238;
+    text-transform: capitalize;
+}
+.title.title-white{
+    color: #fff;
+}
+.title.section-title{
+    font-size: 36px;
+    line-height: 1.667em;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.title.title-green{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 5em;
+    color: #8bc34a;
+}
+.title.title-green-md{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 4.286em;
+    color: #8bc34a;
+}
+.title.aside-title{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 3em;
+}
+.footer-title{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.09em;
+    color: #fff;
+    margin-bottom: 25px;
+}
+/*------ title end ------*/
+/*====== DEFAULT CLASSES END ======*/
+.bg-dark-blue{
+    background-color: #263238;
+}
+.bg-light-grey{
+    background-color: #f4f6f5;
+}
 .btn{
     background: aliceblue;
 }

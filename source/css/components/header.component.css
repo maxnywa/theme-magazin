@@ -106,9 +106,6 @@ header .header-top .header-top-dropdowns li:last-child{
 
 
 /*--- header-bottom ---*/
-header .header-bottom{
-    background-color: #263238;
-}
 header .header-bottom .header-bottom-nav ul{
     font-weight: 500;
     font-size: 14px;
