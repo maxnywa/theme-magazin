@@ -33,6 +33,11 @@
 }
 /*------ title end ------*/
 /*------ text start ------*/
+.default-text{
+    font-size: 15px;
+    color: #b7c3c8;
+    line-height: 1.6em;
+}
 .item-category{
     font-weight: 400;
     font-size: 12px;

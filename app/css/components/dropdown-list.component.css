@@ -19,25 +19,31 @@
     font-size: 12px;
     color: #8bc34a;
 }
+.dropdown .dropdown-menu.list{
+    padding: 15px;
+    border-radius: 0;
+}
+.dropdown .dropdown-menu.list .dropdown-item{
+    padding: 0;
+    border-bottom: 0;
+}
+.dropdown-item.list:first-child{
+    padding-top: 15px;
+}
+/*.dropdown-item{*/
+    /*padding: 0 30px;*/
+/*}*/
 /*------ dropdown-list(green chevron-right)------*/
-
-.dropdown-list{
+.list{
     font-size: 12px;
     line-height: 3em;
     text-transform: capitalize;
 }
-.dropdown .dropdown-menu .dropdown-item.dropdown-list{
-    border-bottom: 0;
-}
-.dropdown-item.dropdown-list:first-child{
-    padding-top: 15px;
-}
-.dropdown-list .fa{
+
+.list li .fa{
     color: #8bc34a;
     font-size: 14px;
     margin: 10px;
 }
-.dropdown-item{
-    padding: 0 30px;
-}
+
 /*------ dropdown profile end------*/

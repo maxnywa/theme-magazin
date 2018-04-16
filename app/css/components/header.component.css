@@ -4,6 +4,9 @@
     padding: 0;
     margin: 0;
 }
+.dropdown a:focus, a:hover{
+    color: inherit;
+}
 .dropdown .dropdown-toggle.toggle-circle{
     position: relative;
     display: block;
@@ -46,6 +49,9 @@
     border-bottom: 1px solid #d5d5d5;
     border-radius: 0;
 }
+.dropdown .dropdown-item:focus, .dropdown-item:hover{
+    background-color: inherit;
+}
 .dropdown .dropdown-menu .dropdown-item .item-content{
     margin-left: 20px;
     font-family: 'Roboto', sans-serif;
@@ -73,6 +79,10 @@
     font-size: 16px;
     color: #000;
 }
+.dropdown .dropdown-menu .dropdown-item .item-follow:hover{
+    color: #ef6c00;
+}
+
 .dropdown .dropdown-menu .total{
     padding: 20px 20px 0;
 }

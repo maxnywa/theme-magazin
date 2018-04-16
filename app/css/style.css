@@ -76,34 +76,89 @@ blockquote{
     font-size: 12px;
     color: #8bc34a;
 }
+.dropdown .dropdown-menu.list{
+    padding: 15px;
+    border-radius: 0;
+}
+.dropdown .dropdown-menu.list .dropdown-item{
+    padding: 0;
+    border-bottom: 0;
+}
+.dropdown-item.list:first-child{
+    padding-top: 15px;
+}
+/*.dropdown-item{*/
+    /*padding: 0 30px;*/
+/*}*/
 /*------ dropdown-list(green chevron-right)------*/
-
-.dropdown-list{
+.list{
     font-size: 12px;
     line-height: 3em;
     text-transform: capitalize;
 }
-.dropdown .dropdown-menu .dropdown-item.dropdown-list{
-    border-bottom: 0;
-}
-.dropdown-item.dropdown-list:first-child{
-    padding-top: 15px;
-}
-.dropdown-list .fa{
+
+.list li .fa{
     color: #8bc34a;
     font-size: 14px;
     margin: 10px;
 }
-.dropdown-item{
-    padding: 0 30px;
-}
+
 /*------ dropdown profile end------*/
+/*------ footer start ------*/
+footer .footer-title::after{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 50px;
+    background-color: #8bc34a;
+}
+footer .footer-title span{
+    display: block;
+    margin-bottom: 25px;
+}
+footer .default-text{
+    margin-bottom: 30px;
+}
+footer .footer-item .item-icon{
+    font-size: 18px;
+    line-height: 1.33em;
+    color: #8bc34a;
+    margin-right: 25px;
+}
+footer .footer-item .item-content{
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    line-height: 1.714em;
+    color: #fff;
+}
+footer .footer-item + .footer-item{
+    margin-top: 20px;
+}
+footer .list{
+    color: #b7c3c8;
+    font-size: 15px;
+    line-height: 2em;
+    padding: 0;
+}
+footer .copy-right{
+    padding: 15px 0 25px;
+    border-top: 1px solid #424d53;
+}
+
+footer .copy-right.default-text{
+    line-height: 2.4em;
+}
+
+/*------ footer end ------*/
 
 /*====== DEFAULT COMPONENTS START ======*/
 /*------ dropdown start ------*/
 .dropdown *{
     padding: 0;
     margin: 0;
+}
+.dropdown a:focus, a:hover{
+    color: inherit;
 }
 .dropdown .dropdown-toggle.toggle-circle{
     position: relative;
@@ -147,6 +202,9 @@ blockquote{
     border-bottom: 1px solid #d5d5d5;
     border-radius: 0;
 }
+.dropdown .dropdown-item:focus, .dropdown-item:hover{
+    background-color: inherit;
+}
 .dropdown .dropdown-menu .dropdown-item .item-content{
     margin-left: 20px;
     font-family: 'Roboto', sans-serif;
@@ -174,6 +232,10 @@ blockquote{
     font-size: 16px;
     color: #000;
 }
+.dropdown .dropdown-menu .dropdown-item .item-follow:hover{
+    color: #ef6c00;
+}
+
 .dropdown .dropdown-menu .total{
     padding: 20px 20px 0;
 }
@@ -264,6 +326,11 @@ header .header-bottom .header-bottom-nav ul li:last-child{
 }
 /*------ title end ------*/
 /*------ text start ------*/
+.default-text{
+    font-size: 15px;
+    color: #b7c3c8;
+    line-height: 1.6em;
+}
 .item-category{
     font-weight: 400;
     font-size: 12px;
