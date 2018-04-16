@@ -1,0 +1,11 @@
+/*====== RESET START ======*/
+button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 0;
+}
+/*====== RESET END ======*/
+/*====== DEFAULT COMPONENTS START ======*/
+/*====== DEFAULT COMPONENTS END ======*/
