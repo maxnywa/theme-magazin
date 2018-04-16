@@ -97,8 +97,6 @@ blockquote{
 .dropdown-item{
     padding: 0 30px;
 }
-
-
 /*------ dropdown profile end------*/
 
 /*====== DEFAULT COMPONENTS START ======*/
@@ -157,18 +155,20 @@ blockquote{
 .dropdown .dropdown-menu .dropdown-item .item-content span{
     display: block;
 }
-.dropdown .dropdown-menu .dropdown-item .item-content span + span{
-    margin-top: 10px;
-}
-.dropdown .dropdown-menu .dropdown-item .item-content .item-title{
+.dropdown .dropdown-menu .dropdown-item .item-content .item-title-product{
     font-size: 15px;
     color: #263238;
 }
-.dropdown .dropdown-menu .dropdown-item .item-content .item-category{
-    font-weight: 400;
+.dropdown .dropdown-menu .dropdown-item .item-content .item-title-company{
     font-size: 12px;
-    color: #84b743;
+    color: #263238;
+    font-weight: 600;
 }
+.dropdown .dropdown-menu .dropdown-item .item-content .item-data{
+    font-size: 10px;
+    color: #90a4ae;
+}
+
 .dropdown .dropdown-menu .dropdown-item .item-content .item-price{
     font-weight: 500;
     font-size: 16px;
@@ -249,18 +249,6 @@ header .header-bottom .header-bottom-nav ul li:last-child{
     font-weight: 400;
     margin-bottom: 40px;
 }
-.title.title-green{
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 5em;
-    color: #8bc34a;
-}
-.title.title-green-md{
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 4.286em;
-    color: #8bc34a;
-}
 .title.aside-title{
     font-weight: 600;
     font-size: 20px;
@@ -275,6 +263,22 @@ header .header-bottom .header-bottom-nav ul li:last-child{
     margin-bottom: 25px;
 }
 /*------ title end ------*/
+/*------ text start ------*/
+.item-category{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2.5em;
+    color: #8bc34a;
+    text-transform: capitalize;
+}
+.item-category-md{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 4.286em;
+    color: #8bc34a;
+    text-transform: capitalize;
+}
+/*------ text end ------*/
 /*====== DEFAULT CLASSES END ======*/
 .bg-dark-blue{
     background-color: #263238;

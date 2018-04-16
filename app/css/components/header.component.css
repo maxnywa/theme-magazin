@@ -54,18 +54,20 @@
 .dropdown .dropdown-menu .dropdown-item .item-content span{
     display: block;
 }
-.dropdown .dropdown-menu .dropdown-item .item-content span + span{
-    margin-top: 10px;
-}
-.dropdown .dropdown-menu .dropdown-item .item-content .item-title{
+.dropdown .dropdown-menu .dropdown-item .item-content .item-title-product{
     font-size: 15px;
     color: #263238;
 }
-.dropdown .dropdown-menu .dropdown-item .item-content .item-category{
-    font-weight: 400;
+.dropdown .dropdown-menu .dropdown-item .item-content .item-title-company{
     font-size: 12px;
-    color: #84b743;
+    color: #263238;
+    font-weight: 600;
 }
+.dropdown .dropdown-menu .dropdown-item .item-content .item-data{
+    font-size: 10px;
+    color: #90a4ae;
+}
+
 .dropdown .dropdown-menu .dropdown-item .item-content .item-price{
     font-weight: 500;
     font-size: 16px;
