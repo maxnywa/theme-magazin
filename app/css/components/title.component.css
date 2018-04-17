@@ -1,4 +1,7 @@
-
+.container{
+    max-width: 1200px;
+    padding: 15px;
+}
 .default-section{
     padding-top: 125px;
     padding-bottom: 110px;
@@ -15,7 +18,7 @@
 .title.section-title{
     font-size: 36px;
     line-height: 1.667em;
-    font-weight: 400;
+    font-weight: 600;
     margin-bottom: 40px;
 }
 .title.aside-title{
@@ -41,14 +44,12 @@
 .item-category{
     font-weight: 400;
     font-size: 12px;
-    line-height: 2.5em;
     color: #8bc34a;
     text-transform: capitalize;
 }
 .item-category-md{
-    font-weight: 400;
+    font-weight: 500;
     font-size: 14px;
-    line-height: 4.286em;
     color: #8bc34a;
     text-transform: capitalize;
 }

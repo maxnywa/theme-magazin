@@ -55,7 +55,10 @@
     font-weight: 500;
 }
 .dropdown .dropdown-menu .dropdown-item .item-content span{
-    display: block;
+     display: block;
+ }
+.dropdown .dropdown-menu .dropdown-item .item-content span+span{
+    margin-top: 10px;
 }
 .dropdown .dropdown-menu .dropdown-item .item-content .item-title-product{
     font-size: 15px;

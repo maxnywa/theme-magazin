@@ -460,7 +460,10 @@ footer .copy-right.default-text{
     font-weight: 500;
 }
 .dropdown .dropdown-menu .dropdown-item .item-content span{
-    display: block;
+     display: block;
+ }
+.dropdown .dropdown-menu .dropdown-item .item-content span+span{
+    margin-top: 10px;
 }
 .dropdown .dropdown-menu .dropdown-item .item-content .item-title-product{
     font-size: 15px;
@@ -578,7 +581,10 @@ header .header-bottom .header-bottom-nav ul li:last-child{
 
 
 
-
+.container{
+    max-width: 1200px;
+    padding: 15px;
+}
 .default-section{
     padding-top: 125px;
     padding-bottom: 110px;
@@ -595,7 +601,7 @@ header .header-bottom .header-bottom-nav ul li:last-child{
 .title.section-title{
     font-size: 36px;
     line-height: 1.667em;
-    font-weight: 400;
+    font-weight: 600;
     margin-bottom: 40px;
 }
 .title.aside-title{
@@ -621,14 +627,12 @@ header .header-bottom .header-bottom-nav ul li:last-child{
 .item-category{
     font-weight: 400;
     font-size: 12px;
-    line-height: 2.5em;
     color: #8bc34a;
     text-transform: capitalize;
 }
 .item-category-md{
-    font-weight: 400;
+    font-weight: 500;
     font-size: 14px;
-    line-height: 4.286em;
     color: #8bc34a;
     text-transform: capitalize;
 }
@@ -640,3 +644,33 @@ header .header-bottom .header-bottom-nav ul li:last-child{
 .bg-light-grey{
     background-color: #f4f6f5;
 }
+/*------ carousel start ------*/
+.carousel .trending-carousel .slick-slide{
+    padding: 0 15px;
+}
+.carousel .trending-carousel .slick-dots{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: -70px;
+}
+.carousel .trending-carousel .slick-dots li{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-color: #e8e8e8;
+    border: 1px solid #bcbcbc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.carousel .trending-carousel .slick-dots li button{
+    display: none;
+}
+.carousel .trending-carousel .slick-dots li+li{
+    margin-left: 7px;
+}
+.carousel .trending-carousel .slick-dots li.slick-active{
+    background-color: #8bc34a;
+    border-color: #8bc34a;
+}
+/*------ carousel end ------*/
