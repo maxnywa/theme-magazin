@@ -12,7 +12,8 @@
     color: #263238;
     padding: 20px 33px;
     font:  400 16px/1 'Roboto', sans-serif;
-    box-shadow: 0 2px 2px rgb(232,236,238), 0 0 2px rgb(232,236,238);
+    -webkit-box-shadow: 0 2px 2px rgb(232,236,238), 0 0 2px rgb(232,236,238);
+            box-shadow: 0 2px 2px rgb(232,236,238), 0 0 2px rgb(232,236,238);
 }
 .btn-custom:hover {
     background-color: #f1f1f1;
