@@ -78,14 +78,6 @@ blockquote{
 }
 /*-----aside start-----*/
 
-/*====== RESET START ======*/
-button {
-    outline: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-}
-/*====== RESET END ======*/
 /*====== DEFAULT COMPONENTS START ======*/
 .btn-title {
     text-transform: uppercase;
@@ -94,31 +86,24 @@ button {
 .btn-section {
     padding: 40px 0;
 }
-.title-section {
-    max-width: 1200px;
-    padding: 5px 15px;
-    margin: auto;
-}
-.btn-row {
-    max-width: 1200px;
-    padding: 20px 15px;
-    margin: auto;
-}
 .btn-custom {
     display: inline-block;
+    background-color: #fff;
+    color: #263238;
     padding: 20px 33px;
-    font-size: 16px;
-    font-weight: 400;
+    font:  400 16px/1 'Roboto', sans-serif;
     -webkit-box-shadow: 0 2px 2px rgb(232,236,238), 0 0 2px rgb(232,236,238);
             box-shadow: 0 2px 2px rgb(232,236,238), 0 0 2px rgb(232,236,238);
 }
-.btn-custom.btn-default {
-    background-color: #fff;
-    color: #263238;
-}
-
-.btn-custom.btn-default:hover {
+.btn-custom:hover {
     background-color: #f1f1f1;
+}
+.btn-custom.btn-rounded {
+    border-radius: 4px;
+}
+.btn-custom.btn-small {
+    padding: 10px 21px;
+    font-size: 12px;
 }
 .btn-custom.btn-large {
     padding: 26px 43px;
