@@ -131,9 +131,6 @@ blockquote{
     background-color: #6c973a;
 }
 /*====== DEFAULT COMPONENTS END ======*/
-.cards-example  {
-   padding-top: 30px; /* удалить - это чтобы не прилипало*/
-}
 /*-----cards start------*/
 .cards-example  {
     margin: 0 15px;
@@ -144,16 +141,16 @@ blockquote{
 .card {
     border-radius:0;
     border-color: #d9e0e3;
+    -webkit-box-shadow: 0px 2px 3px rgba(216, 216, 216,0.75);
+            box-shadow: 0px 2px 3px rgba(216, 216, 216,0.75);
 }
-.card.large-card:hover, .card.medium-card:hover {
+.card.large-card:hover, .card.medium-card:hover, .card.row-card:hover {
     -webkit-box-shadow: 0px 16px 20px rgba(216, 216, 216,0.75);
             box-shadow: 0px 16px 20px rgba(216, 216, 216,0.75);
 }
-
 /*---large card start---*/
-
 .card .card-img img {
-    max-height: 100%;
+    height: auto;
     max-width: 100%;
 }
 .card.large-card .card-img {
@@ -180,7 +177,7 @@ blockquote{
             transform:rotate(-45deg);
     font-size: 18px;
 }
-.card .card-info {
+.card .card-info, .card .aside-card {
     border-bottom: 1px solid #d9e0e3;
 }
 .card .card-item-title, .card .card-price {
@@ -193,7 +190,7 @@ blockquote{
     font-weight: 500;
 }
 .card .item-category {
-    font:  400 14px 'Roboto', sans-serif;
+    font:  500 14px 'Roboto', sans-serif;
     color: #8bc34a;
 }
 .card .card-price {
@@ -218,7 +215,7 @@ blockquote{
     color: #ffa726;
     font-size: 12px;
 }
-.card .card-author .rating-count {
+.card .rating-count,.card.medium-card .rating-count   {
     padding-left: 10px;
     font: 500 12px 'Roboto', sans-serif;
     color: #263238;
@@ -226,7 +223,7 @@ blockquote{
     display: inline-block;
 }
 .card span.rating-count::before {
-    content:"(";
+    content:"  (";
     color: #b0bec5;
 }
 .card span.rating-count::after {
@@ -234,7 +231,6 @@ blockquote{
     color: #b0bec5;
 
 /*---large card end---*/
-
 }
 /*---medium-card start*/
 .card.medium-card .card-item-title {
@@ -254,13 +250,21 @@ blockquote{
     position: relative;
     display: inline-block;
 }
-
 /*---medium-card end*/
 
 /*---aside-card start*/
+.aside-section .card.aside-card {
+    border:none;
+}
+.card.aside-card {
+    margin-bottom: 27px;
+    position: relative;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
 .card.aside-card .card-item-title {
     font-size: 16px;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
     font-weight: 700;
 }
 .card.aside-card .card-info {
@@ -268,7 +272,12 @@ blockquote{
 }
 .card.aside-card .card-author {
     padding: 0 0 30px 0;
+    border-bottom: 1px solid #d9e0e3;
 }
+.card.aside-card:last-child .card-author {
+    border-bottom: none;
+}
+
 .card .aside-card.card-author .rating-count {
     padding-left: 10px;
     font: 500 12px 'Roboto', sans-serif;
@@ -279,16 +288,75 @@ blockquote{
 .card.aside-card .card-info {
     border-bottom: none;
 }
-.card.aside-card {
-    border:none;
-}
 .card.aside-card .card-price {
     font-size: 16px;
 }
 /*---aside-card end*/
 
 /*---row-card start---*/
+.card.row-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 30px;
+    border: none;
+}
+.card.row-card .card-img {
+    -webkit-box-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
+    position: relative;
+}
+.card.row-card .card-img img{
+    display: block;
+}
+.card.row-card .card-info {
+    padding: 22px 30px 15px;
+}
+.card.row-card .card-description {
+    -webkit-box-flex: 8;
+        -ms-flex: 8;
+            flex: 8;
+    background: #ffffff;
+}
+.card.row-card .card-item-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.card.row-card .price-sale {
+    display: inline-block;
+    font:  400 13px 'Roboto', sans-serif;
+    color:#aeb4bb;
+}
+.card .card-info .card-text {
+    font:  400 14px 'Roboto', sans-serif;
+    color: #70838d;
+}
+.card.row-card .price-sale span {
+    display: block;
+}
+.card.row-card .card-price {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.card.row-card .item-category {
+    padding-bottom: 20px;
+}
+.card.row-card .card-author {
+    padding: 15px 30px;
+}
+.card.row-card .card-author span i{
+    border-left: 1px solid #000;
+    padding-left:18px;
+    font-size: 16px;
+    color: #8bc34a;
+    margin-left: 30px;
+}
+span.icon-rating{
+    padding-right: 10px;
 
+}
 /*---row-card end---*/
 /*-----cards end------*/
 
@@ -527,7 +595,6 @@ header .header-bottom .header-bottom-nav ul li:last-child{
 /*------ header end ------*/
 
 /*====== DEFAULT COMPONENTS END ======*/
-
 
 /*-----pagination start------*/
 .pagination-lg .page-link {
