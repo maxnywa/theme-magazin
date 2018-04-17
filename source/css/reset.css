@@ -35,7 +35,8 @@ ul, ol{
 img {
     max-width: 100%;
 }
-button, input,
+button,button:hover,
+button:focus, input,
 textarea {
     outline: none;
     border: none;
@@ -43,6 +44,7 @@ textarea {
 button{
     padding: 0;
 }
+
 textarea{
     resize: vertical;
 }

@@ -4,9 +4,6 @@
     padding: 0;
     margin: 0;
 }
-.dropdown a:focus, a:hover{
-    color: inherit;
-}
 .dropdown .dropdown-toggle.toggle-circle{
     position: relative;
     display: block;

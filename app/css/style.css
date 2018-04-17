@@ -36,7 +36,8 @@ ul, ol{
 img {
     max-width: 100%;
 }
-button, input,
+button,button:hover,
+button:focus, input,
 textarea {
     outline: none;
     border: none;
@@ -44,6 +45,7 @@ textarea {
 button{
     padding: 0;
 }
+
 textarea{
     resize: vertical;
 }
@@ -418,9 +420,6 @@ footer .copy-right.default-text{
     padding: 0;
     margin: 0;
 }
-.dropdown a:focus, a:hover{
-    color: inherit;
-}
 .dropdown .dropdown-toggle.toggle-circle{
     position: relative;
     display: block;
@@ -552,9 +551,7 @@ header .header-bottom .header-bottom-nav ul li:last-child{
 
 /*====== DEFAULT COMPONENTS END ======*/
 
-.pagination {
-   padding-top: 30px; /* удалить - это чтобы не прилипало*/
-}
+
 /*-----pagination start------*/
 .pagination-lg .page-link {
     padding: 14px 17px;
