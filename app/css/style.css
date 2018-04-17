@@ -58,17 +58,6 @@ blockquote{
 }
 /*====== RESET END ======*/
 
-.container {
-    border: 1px solid #dedede;
-    max-width: 1200px;
-}
-.product-page {
-    padding-top: 15px;
-}
-.aside-left {
-    padding-top: 15px;
-}
-/*ВСЕ ЧТО ДОБАВЛЕННО ДО КОММЕНТАРИЯ КОМПОНЕНТА СДЕЛАНО ДЛЯ УДОБСТВА, ЕСЛИ ЕСТЬ НЕОБХОДИМОСТЬ - УДАЛИТЬ*/
 /*-----aside start-----*/
 .aside-section {
     background-color: #ffffff;
