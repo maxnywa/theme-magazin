@@ -14,9 +14,9 @@
 .cards-example .tags ul li+li{
     margin-left: 6px;
 }
-.cards-example .tags ul li:hover{
+.cards-example .tags ul li:hover {
     background-color: #e74c3c;
-    color: #fff;
+    color: #fff
 }
 
 /*----- Main page end -----*/

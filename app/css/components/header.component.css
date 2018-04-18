@@ -29,11 +29,24 @@
     color: #fff;
     font-family:'Open Sans', sans-serif;
     font-size: 11px;
-    background-color: #e74c3c;
     border-radius: 50%;
 }
+.dropdown .dropdown-toggle.toggle-circle.dropdown-bell .counter{
+    background-color: #fcb322;
+}
+.dropdown .dropdown-toggle.toggle-circle.dropdown-mail .counter{
+    background-color: #ef6c00;
+}
+
+.dropdown .dropdown-toggle.toggle-circle.dropdown-basket .counter{
+    background-color: #e74c3c;
+}
+.header-top-dropdowns .dropdown .dropdown-toggle.toggle-circle.dropdown-basket .counter{
+    background-color: #95c85a;
+}
+
 .dropdown .dropdown-menu{
-   margin-top: 26px;
+    margin-top: 26px;
 }
 .dropdown .dropdown-notifaction{
     min-width: 270px;
@@ -99,6 +112,7 @@
 /*--- header-top-main ---*/
 header .header-top{
     padding: 25px 0;
+    position: relative;
 }
 header .header-top .need-help{
     margin-right: 50px;

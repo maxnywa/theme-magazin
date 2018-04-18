@@ -384,20 +384,18 @@ span.icon-rating{
     font-size: 12px;
     color: #8bc34a;
 }
-.dropdown .dropdown-menu.list{
-    padding: 15px;
+.dropdown .dropdown-menu .list{
+    padding: 15px 20px;
     border-radius: 0;
 }
-.dropdown .dropdown-menu.list .dropdown-item{
+.dropdown .dropdown-menu .list .dropdown-item{
     padding: 0;
     border-bottom: 0;
 }
 .dropdown-item.list:first-child{
     padding-top: 15px;
 }
-/*.dropdown-item{*/
-    /*padding: 0 30px;*/
-/*}*/
+
 /*------ dropdown-list(green chevron-right)------*/
 .list{
     font-size: 12px;
@@ -596,11 +594,24 @@ footer .copy-right.default-text{
     color: #fff;
     font-family:'Open Sans', sans-serif;
     font-size: 11px;
-    background-color: #e74c3c;
     border-radius: 50%;
 }
+.dropdown .dropdown-toggle.toggle-circle.dropdown-bell .counter{
+    background-color: #fcb322;
+}
+.dropdown .dropdown-toggle.toggle-circle.dropdown-mail .counter{
+    background-color: #ef6c00;
+}
+
+.dropdown .dropdown-toggle.toggle-circle.dropdown-basket .counter{
+    background-color: #e74c3c;
+}
+.header-top-dropdowns .dropdown .dropdown-toggle.toggle-circle.dropdown-basket .counter{
+    background-color: #95c85a;
+}
+
 .dropdown .dropdown-menu{
-   margin-top: 26px;
+    margin-top: 26px;
 }
 .dropdown .dropdown-notifaction{
     min-width: 270px;
@@ -666,6 +677,7 @@ footer .copy-right.default-text{
 /*--- header-top-main ---*/
 header .header-top{
     padding: 25px 0;
+    position: relative;
 }
 header .header-top .need-help{
     margin-right: 50px;
@@ -838,9 +850,9 @@ header .header-bottom .header-bottom-nav ul li:last-child{
 .cards-example .tags ul li+li{
     margin-left: 6px;
 }
-.cards-example .tags ul li:hover{
+.cards-example .tags ul li:hover {
     background-color: #e74c3c;
-    color: #fff;
+    color: #fff
 }
 
 /*----- Main page end -----*/
@@ -884,7 +896,6 @@ header .header-bottom .header-bottom-nav ul li:last-child{
 
 .container{
     max-width: 1200px;
-    padding: 15px;
 }
 .default-section{
     padding-top: 125px;

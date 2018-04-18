@@ -19,20 +19,18 @@
     font-size: 12px;
     color: #8bc34a;
 }
-.dropdown .dropdown-menu.list{
-    padding: 15px;
+.dropdown .dropdown-menu .list{
+    padding: 15px 20px;
     border-radius: 0;
 }
-.dropdown .dropdown-menu.list .dropdown-item{
+.dropdown .dropdown-menu .list .dropdown-item{
     padding: 0;
     border-bottom: 0;
 }
 .dropdown-item.list:first-child{
     padding-top: 15px;
 }
-/*.dropdown-item{*/
-    /*padding: 0 30px;*/
-/*}*/
+
 /*------ dropdown-list(green chevron-right)------*/
 .list{
     font-size: 12px;
