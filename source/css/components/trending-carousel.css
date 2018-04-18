@@ -1,6 +1,13 @@
 /*------ carousel start ------*/
+
 .carousel .trending-carousel .slick-slide{
     padding: 0 15px;
+}
+.carousel .trending-carousel .slick-slide img{
+    display: inline;
+}
+.carousel .trending-carousel .slick-list{
+    padding-bottom: 5px;
 }
 .carousel .trending-carousel .slick-dots{
     position: absolute;

@@ -1,6 +1,13 @@
 /*------ dropdown profile start------*/
+.dropdown-account {
+    cursor: pointer;
+}
 .dropdown-account .line-toggle{
     margin-left: 15px;
+}
+.dropdown-account .ropdown-toggle img{
+    width: 34px;
+    widows: 34px;
 }
 .dropdown-account span{
     display: block;

@@ -364,8 +364,15 @@ span.icon-rating{
 /*-----cards end------*/
 
 /*------ dropdown profile start------*/
+.dropdown-account {
+    cursor: pointer;
+}
 .dropdown-account .line-toggle{
     margin-left: 15px;
+}
+.dropdown-account .ropdown-toggle img{
+    width: 34px;
+    widows: 34px;
 }
 .dropdown-account span{
     display: block;
@@ -957,8 +964,15 @@ header .header-bottom .header-bottom-nav ul li:last-child{
     background-color: #f4f6f5;
 }
 /*------ carousel start ------*/
+
 .carousel .trending-carousel .slick-slide{
     padding: 0 15px;
+}
+.carousel .trending-carousel .slick-slide img{
+    display: inline;
+}
+.carousel .trending-carousel .slick-list{
+    padding-bottom: 5px;
 }
 .carousel .trending-carousel .slick-dots{
     position: absolute;
