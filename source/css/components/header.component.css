@@ -84,14 +84,16 @@
 }
 
 .dropdown .dropdown-menu .total{
-    padding: 20px 20px 0;
+    padding: 20px;
 }
 .dropdown .dropdown-menu .total{
     font-size: 16px;
     color: #263238;
     line-height: 1.5em;
 }
-
+.dropdown .dropdown-menu .go-chekout{
+    padding: 0 17px 12px;
+}
 /*------ dropdown end ------*/
 /*------ header start ------*/
 /*--- header-top-main ---*/
@@ -104,10 +106,10 @@ header .header-top .need-help{
 header .header-top .need-help>span>span{
     color: #e74c3c;
 }
-header .header-top .dropdown .dropdown-toggle.dropdown-basket{
-    margin-right: 25px;
-}
 /*--- header-top-all-pages ---*/
+header .header-top .dropdown-account{
+    margin-left: 25px;
+}
 header .header-top .header-top-dropdowns li{
     display: inline-block;
     margin-right: 15px;
@@ -115,7 +117,12 @@ header .header-top .header-top-dropdowns li{
 header .header-top .header-top-dropdowns li:last-child{
     margin-right: 0;
 }
-
+header .header-top button{
+    margin-left: 30px;
+}
+header .header-top button+button{
+    margin-left: 7px;
+}
 
 /*--- header-bottom ---*/
 header .header-bottom .header-bottom-nav ul{

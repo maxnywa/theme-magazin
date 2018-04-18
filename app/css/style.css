@@ -105,6 +105,10 @@ blockquote{
     padding: 10px 21px;
     font-size: 12px;
 }
+.btn-custom.btn-medium {
+    padding: 12px;
+    font-size: 14px;
+}
 .btn-custom.btn-large {
     padding: 26px 43px;
     font-size: 18px;
@@ -470,11 +474,13 @@ footer .copy-right.default-text{
     color: #90a4ae;
     border-radius: 4px;
     border: none;
-    box-shadow: 0 0 10px rgba(100, 100, 100, .75);
+    -webkit-box-shadow: 0 0 10px rgba(100, 100, 100, .75);
+            box-shadow: 0 0 10px rgba(100, 100, 100, .75);
 }
 .form-search .form-control:focus,
 .form-search button:active{
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
     outline: none;
 }
 .form-search button {
@@ -544,7 +550,8 @@ footer .copy-right.default-text{
 
 .form-group .form-control:focus{
     border-color: inherit;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
 }
 .form-group select{
     border-radius: 0;
@@ -558,9 +565,6 @@ footer .copy-right.default-text{
 
 
 
-input {
-    width: 100%;
-}
 
 /*====== DEFAULT COMPONENTS START ======*/
 /*------ dropdown start ------*/
@@ -648,14 +652,16 @@ input {
 }
 
 .dropdown .dropdown-menu .total{
-    padding: 20px 20px 0;
+    padding: 20px;
 }
 .dropdown .dropdown-menu .total{
     font-size: 16px;
     color: #263238;
     line-height: 1.5em;
 }
-
+.dropdown .dropdown-menu .go-chekout{
+    padding: 0 17px 12px;
+}
 /*------ dropdown end ------*/
 /*------ header start ------*/
 /*--- header-top-main ---*/
@@ -668,10 +674,10 @@ header .header-top .need-help{
 header .header-top .need-help>span>span{
     color: #e74c3c;
 }
-header .header-top .dropdown .dropdown-toggle.dropdown-basket{
-    margin-right: 25px;
-}
 /*--- header-top-all-pages ---*/
+header .header-top .dropdown-account{
+    margin-left: 25px;
+}
 header .header-top .header-top-dropdowns li{
     display: inline-block;
     margin-right: 15px;
@@ -679,7 +685,12 @@ header .header-top .header-top-dropdowns li{
 header .header-top .header-top-dropdowns li:last-child{
     margin-right: 0;
 }
-
+header .header-top button{
+    margin-left: 30px;
+}
+header .header-top button+button{
+    margin-left: 7px;
+}
 
 /*--- header-bottom ---*/
 header .header-bottom .header-bottom-nav ul{

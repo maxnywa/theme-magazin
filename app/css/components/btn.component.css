@@ -25,6 +25,10 @@
     padding: 10px 21px;
     font-size: 12px;
 }
+.btn-custom.btn-medium {
+    padding: 12px;
+    font-size: 14px;
+}
 .btn-custom.btn-large {
     padding: 26px 43px;
     font-size: 18px;

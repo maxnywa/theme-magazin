@@ -13,13 +13,11 @@
     color: #90a4ae;
     border-radius: 4px;
     border: none;
-    -webkit-box-shadow: 0 0 10px rgba(100, 100, 100, .75);
-            box-shadow: 0 0 10px rgba(100, 100, 100, .75);
+    box-shadow: 0 0 10px rgba(100, 100, 100, .75);
 }
 .form-search .form-control:focus,
 .form-search button:active{
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
     outline: none;
 }
 .form-search button {
@@ -89,8 +87,7 @@
 
 .form-group .form-control:focus{
     border-color: inherit;
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
 }
 .form-group select{
     border-radius: 0;
