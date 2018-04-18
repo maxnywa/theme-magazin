@@ -1,0 +1,23 @@
+/*====== CUSTOM STYLE START ======*/
+/*----- Main page start -----*/
+.cards-example .tags ul{
+    margin-bottom: 60px;
+}
+.cards-example .tags ul li{
+    display: inline-block;
+    background-color: #fff;
+    padding: 14px 21px;
+    color: #263238;
+    font-weight: 500;
+    font-size: 14px;
+}
+.cards-example .tags ul li+li{
+    margin-left: 6px;
+}
+.cards-example .tags ul li:hover{
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+/*----- Main page end -----*/
+/*====== CUSTOM STYLE END ======*/

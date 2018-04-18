@@ -1,4 +1,3 @@
-/*====== DEFAULT COMPONENTS START ======*/
 .btn-title {
     text-transform: uppercase;
     font-weight: 700;
@@ -53,4 +52,3 @@
 .btn-custom.btn-green:hover {
     background-color: #6c973a;
 }
-/*====== DEFAULT COMPONENTS END ======*/

@@ -78,7 +78,6 @@ blockquote{
 }
 /*-----aside start-----*/
 
-/*====== DEFAULT COMPONENTS START ======*/
 .btn-title {
     text-transform: uppercase;
     font-weight: 700;
@@ -134,7 +133,7 @@ blockquote{
 .btn-custom.btn-green:hover {
     background-color: #6c973a;
 }
-/*====== DEFAULT COMPONENTS END ======*/
+
 /*-----cards start------*/
 .cards-example  {
     margin: 0 15px;
@@ -823,6 +822,29 @@ header .header-bottom .header-bottom-nav ul li:last-child{
 {
  text-decoration: none;
 }
+/*====== CUSTOM STYLE START ======*/
+/*----- Main page start -----*/
+.cards-example .tags ul{
+    margin-bottom: 60px;
+}
+.cards-example .tags ul li{
+    display: inline-block;
+    background-color: #fff;
+    padding: 14px 21px;
+    color: #263238;
+    font-weight: 500;
+    font-size: 14px;
+}
+.cards-example .tags ul li+li{
+    margin-left: 6px;
+}
+.cards-example .tags ul li:hover{
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+/*----- Main page end -----*/
+/*====== CUSTOM STYLE END ======*/
 /*-----pagination start------*/
 .pagination-lg .page-link {
     padding: 14px 17px;
