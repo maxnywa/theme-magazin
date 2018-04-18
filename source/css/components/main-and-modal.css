@@ -1,23 +1,28 @@
 /*====== CUSTOM STYLE START ======*/
 /*----- Main page start -----*/
-.cards-example .tags ul{
+ .newest-product .tags {
     margin-bottom: 60px;
 }
-.cards-example .tags ul li{
-    display: inline-block;
+ .newest-product .tags li{
     background-color: #fff;
     padding: 14px 21px;
     color: #263238;
     font-weight: 500;
     font-size: 14px;
 }
-.cards-example .tags ul li+li{
+.newest-product .tags li+li{
     margin-left: 6px;
 }
-.cards-example .tags ul li:hover {
+.newest-product .tags li:hover {
     background-color: #e74c3c;
-    color: #fff
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(202, 215, 228,0.75);
 }
-
+.newest-product .button-items{
+    margin-top: 80px;
+}
+.newest-product .button-items a+a{
+    margin-left: 12px;
+}
 /*----- Main page end -----*/
 /*====== CUSTOM STYLE END ======*/

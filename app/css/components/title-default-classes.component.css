@@ -53,10 +53,23 @@
     text-transform: capitalize;
 }
 /*------ text end ------*/
-/*====== DEFAULT CLASSES END ======*/
+/*------ dropdown-list(green chevron-right)------*/
+.list{
+    font-size: 12px;
+    line-height: 3em;
+    text-transform: capitalize;
+}
+
+.list li .fa{
+    color: #8bc34a;
+    font-size: 14px;
+    margin: 10px;
+}
+/*====== DEFAULT CLASSES START ======*/
 .bg-dark-blue{
     background-color: #263238;
 }
-.bg-light-grey{
-    background-color: #f4f6f5;
+.bg-white{
+    background-color: #fff;
 }
+/*====== DEFAULT CLASSES END ======*/

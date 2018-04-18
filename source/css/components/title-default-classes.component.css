@@ -1,0 +1,75 @@
+.container{
+    max-width: 1200px;
+}
+.default-section{
+    padding-top: 125px;
+    padding-bottom: 110px;
+}
+/*------ title start ------*/
+.title{
+    font-family: 'Roboto', sans-serif;
+    color: #263238;
+    text-transform: capitalize;
+}
+.title.title-white{
+    color: #fff;
+}
+.title.section-title{
+    font-size: 36px;
+    line-height: 1.667em;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+.title.aside-title{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 3em;
+}
+.footer-title{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.09em;
+    color: #fff;
+    margin-bottom: 25px;
+}
+/*------ title end ------*/
+/*------ text start ------*/
+.default-text{
+    font-size: 15px;
+    color: #b7c3c8;
+    line-height: 1.6em;
+}
+.item-category{
+    font-weight: 400;
+    font-size: 12px;
+    color: #8bc34a;
+    text-transform: capitalize;
+}
+.item-category-md{
+    font-weight: 500;
+    font-size: 14px;
+    color: #8bc34a;
+    text-transform: capitalize;
+}
+/*------ text end ------*/
+/*------ dropdown-list(green chevron-right)------*/
+.list{
+    font-size: 12px;
+    line-height: 3em;
+    text-transform: capitalize;
+}
+
+.list li .fa{
+    color: #8bc34a;
+    font-size: 14px;
+    margin: 10px;
+}
+/*====== DEFAULT CLASSES START ======*/
+.bg-dark-blue{
+    background-color: #263238;
+}
+.bg-white{
+    background-color: #fff;
+}
+/*====== DEFAULT CLASSES END ======*/
