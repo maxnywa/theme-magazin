@@ -57,8 +57,7 @@
     width: 100%;
 }
 .become-an-author .img-wrapper-content .img-content{
-    max-width: 650px;
-    max-height: 220px;
+    padding: 80px 65px;
     background-color: #8bc34a;
 }
 .become-an-author .img-wrapper-content .img-content span{
@@ -68,6 +67,9 @@
 }
 .become-an-author .img-wrapper-content .img-content span>span{
     font-weight: 700;
+}
+.become-an-author .img-wrapper-content .img-content a{
+    margin-left: 60px;
 }
 
 
