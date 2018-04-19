@@ -8,7 +8,7 @@
     width: 671px;
     height: 56px;
     line-height: 56px;
-    font:  400 14px/1 'Roboto', sans-serif;
+    /*font:  400 14px/1 'Roboto', sans-serif;*/
     letter-spacing: .05em;
     color: #90a4ae;
     border-radius: 4px;
@@ -39,7 +39,6 @@
 }
 .form-search button:before {
     content: "\f002";
-    font-family: FontAwesome;
     color: #90a4ae;
     font-size: 20px;
 }
