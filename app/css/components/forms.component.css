@@ -1,8 +1,34 @@
+/*------ form-search start ------*/
+.container-fluid {
+    padding: 0;
+}
 .form-search {
-    padding: 69px 0;
+    background-color: #b1b2af;
+    background-image: url('../../img/form-search.jpg');
+    background-repeat: repeat;
+    background-position: 50% 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 150px;
+    padding-bottom: 166px;
 }
 .input-group {
     margin: 0 auto;
+}
+.form-search .title-welcome {
+    line-height: 1em;
+    margin-bottom: 35px;
+    font-size: 48px;
+}
+.form-search .title-premium {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 55px;
+    line-height: 1em;
+}
+.form-search span {
+    display: block;
 }
 .form-search .form-control{
     width: 671px;
@@ -15,6 +41,11 @@
     border: none;
     box-shadow: 0 0 10px rgba(100, 100, 100, .75);
 }
+.form-search::-webkit-input-placeholder {color:#90a4ae;}
+.form-search::-moz-placeholder          {color:#90a4ae;}/* Firefox 19+ */
+.form-search:-moz-placeholder           {color:#90a4ae;}/* Firefox 18- */
+.form-search:-ms-input-placeholder      {color:#90a4ae;}
+
 .form-search .form-control:focus,
 .form-search button:active{
     box-shadow: none;
@@ -43,6 +74,8 @@
     color: #90a4ae;
     font-size: 20px;
 }
+/*------ form-search end ------*/
+/*------ form-personal-information start ------*/
 .jq-selectbox {
     width: 100%;
 }
@@ -98,5 +131,40 @@
     border-radius: 0;
     border-color: inherit;
 }
+/*------ form-personal-information end ------*/
+/*------ input-newsletter start ------*/
+.input-newsletter{
+    width: 255px;
+}
+.input-newsletter .btn.btn-default{
+    background-color: #8bc34a;
+}
+.input-newsletter .fa {
+    color: #fff;
+    font-size: 18px;
+    height: 38px;
+    width: 43px;
+    border-radius: 0;
+}
+.input-newsletter .form-control{
+    background-color: #2f3c43;
+    color: #697378;
+    font:  400 14px/1 'Roboto', sans-serif;
+    height: 38px;
+}
+.input-newsletter::-webkit-input-placeholder {color:#697378;}
+.input-newsletter::-moz-placeholder          {color:#697378;}/* Firefox 19+ */
+.input-newsletter:-moz-placeholder           {color:#697378;}/* Firefox 18- */
+.input-newsletter:-ms-input-placeholder      {color:#697378;}
 
-
+.input-newsletter .btn.btn-default:active,
+.input-newsletter .btn.btn-default:hover,
+.input-newsletter .btn.btn-default:focus,
+.input-newsletter .form-control:active,
+.input-newsletter .form-control:hover,
+.input-newsletter .form-control:focus{
+    border: 0;
+    outline: none;
+    box-shadow: none;
+}
+/*------ input-newsletter end ------*/
