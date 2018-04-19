@@ -1,0 +1,21 @@
+
+.sort-controls {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #dcdcdc;
+    margin-bottom: 30px;
+}
+.sort-controls button {
+    background-color: #fff;
+}
+.sort-controls span {
+    margin-left: 10px;
+}
+.sort-controls .fa {
+    background-color: #fff;
+    margin-left: 10px;
+}
+.sort-controls button:active {
+    color: #8bc34a;
+    font-size: 16px;
+}
