@@ -1,0 +1,14 @@
+/*------ footer start ------*/
+footer .footer-item .item-icon{
+    font-size: 18px;
+    line-height: 1.33em;
+    color: #8bc34a;
+    margin-right: 25px;
+}
+footer .footer-item .item-content{
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    line-height: 1.714em;
+    color: #fff;
+}
+/*------ footer end ------*/

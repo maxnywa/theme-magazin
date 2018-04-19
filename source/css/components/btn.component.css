@@ -1,0 +1,52 @@
+/*====== DEFAULT COMPONENTS START ======*/
+.btn-title {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.btn-section {
+    padding: 40px 0;
+}
+.btn-custom {
+    display: inline-block;
+    background-color: #fff;
+    color: #263238;
+    padding: 20px 33px;
+    font:  400 16px/1 'Roboto', sans-serif;
+    box-shadow: 0 2px 2px rgb(232,236,238), 0 0 2px rgb(232,236,238);
+}
+.btn-custom:hover {
+    background-color: #f1f1f1;
+}
+.btn-custom.btn-rounded {
+    border-radius: 4px;
+}
+.btn-custom.btn-small {
+    padding: 10px 21px;
+    font-size: 12px;
+}
+.btn-custom.btn-large {
+    padding: 26px 43px;
+    font-size: 18px;
+}
+.btn-custom.btn-red {
+    background-color: #e74c3c;
+    color: #f4f6f5;
+}
+.btn-custom.btn-red:hover {
+    background-color: #c84638;
+}
+.btn-custom.btn-blue {
+    background-color: #455a64;
+    color: #f4f6f5;
+}
+.btn-custom.btn-blue:hover {
+    background-color: #324148;
+}
+.btn-custom.btn-green {
+    background-color: #8bc34a;
+    color: #f4f6f5;
+}
+.btn-custom.btn-green:hover {
+    background-color: #6c973a;
+}
+/*====== DEFAULT COMPONENTS END ======*/

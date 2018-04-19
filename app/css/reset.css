@@ -1,3 +1,4 @@
+/*====== RESET START ======*/
 *{
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -35,7 +36,8 @@ ul, ol{
 img {
     max-width: 100%;
 }
-button, input,
+button,button:hover,
+button:focus, input,
 textarea {
     outline: none;
     border: none;
@@ -43,6 +45,7 @@ textarea {
 button{
     padding: 0;
 }
+
 textarea{
     resize: vertical;
 }
@@ -53,3 +56,4 @@ input[type='submit']{
 blockquote{
     margin: 0;
 }
+/*====== RESET END ======*/

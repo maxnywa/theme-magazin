@@ -1,0 +1,49 @@
+/*------ dropdown profile start------*/
+.dropdown-account .line-toggle{
+    margin-left: 15px;
+}
+.dropdown-account span{
+    display: block;
+}
+.dropdown-account .user-name{
+    font-weight: 500;
+    font-size: 14px;
+    color: #222222;
+    line-height: 1.714em;
+}
+.dropdown-account .user-name>i{
+    margin-left: 15px;
+}
+.dropdown .total-basket{
+    font-weight: bold;
+    font-size: 12px;
+    color: #8bc34a;
+}
+.dropdown .dropdown-menu.list{
+    padding: 15px;
+    border-radius: 0;
+}
+.dropdown .dropdown-menu.list .dropdown-item{
+    padding: 0;
+    border-bottom: 0;
+}
+.dropdown-item.list:first-child{
+    padding-top: 15px;
+}
+/*.dropdown-item{*/
+    /*padding: 0 30px;*/
+/*}*/
+/*------ dropdown-list(green chevron-right)------*/
+.list{
+    font-size: 12px;
+    line-height: 3em;
+    text-transform: capitalize;
+}
+
+.list li .fa{
+    color: #8bc34a;
+    font-size: 14px;
+    margin: 10px;
+}
+
+/*------ dropdown profile end------*/
