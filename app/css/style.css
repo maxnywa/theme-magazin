@@ -78,6 +78,32 @@ blockquote{
 }
 /*-----aside start-----*/
 
+/*---breadcrumb start---*/
+ul.breadcrumb {
+    padding: 48px 0 42px;
+    list-style: none;
+    background-color: inherit;
+    margin-bottom: 0;
+}
+ul.breadcrumb li {
+    display: inline;
+    font:  400 15px/1 'Roboto', sans-serif;
+}
+ul.breadcrumb li+li:before {
+    padding: 10px;
+    color: #8bc34a;
+    content: "-";
+}
+ul.breadcrumb li a {
+    color: #b0bec5;
+    text-decoration: none;
+}
+ul.breadcrumb li.active {
+    color: #263238;
+}
+/*---breadcrumb end---*/
+
+
 /*====== DEFAULT COMPONENTS START ======*/
 .btn-title {
     text-transform: uppercase;
@@ -455,11 +481,44 @@ footer .copy-right.default-text{
 }
 
 /*------ footer end ------*/
+/*------ form-search start ------*/
+.container-fluid {
+    padding: 0;
+}
 .form-search {
-    padding: 69px 0;
+    background-color: #b1b2af;
+    background-image: url('../img/form-search.jpg');
+    background-repeat: repeat;
+    background-position: 50% 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 150px;
+    padding-bottom: 166px;
 }
 .input-group {
     margin: 0 auto;
+}
+.form-search .title.title-welcome {
+    line-height: 1em;
+    margin-bottom: 35px;
+    font-size: 48px;
+}
+.form-search .title.title-premium {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 55px;
+    line-height: 1em;
+}
+.form-search span {
+    display: block;
 }
 .form-search .form-control{
     width: 671px;
@@ -470,11 +529,18 @@ footer .copy-right.default-text{
     color: #90a4ae;
     border-radius: 4px;
     border: none;
-    box-shadow: 0 0 10px rgba(100, 100, 100, .75);
+    -webkit-box-shadow: 0 0 10px rgba(100, 100, 100, .75);
+            box-shadow: 0 0 10px rgba(100, 100, 100, .75);
 }
+.form-search::-webkit-input-placeholder {color:#90a4ae;}
+.form-search::-moz-placeholder          {color:#90a4ae;}/* Firefox 19+ */
+.form-search:-moz-placeholder           {color:#90a4ae;}/* Firefox 18- */
+.form-search:-ms-input-placeholder      {color:#90a4ae;}
+
 .form-search .form-control:focus,
 .form-search button:active{
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
     outline: none;
 }
 .form-search button {
@@ -500,11 +566,14 @@ footer .copy-right.default-text{
     color: #90a4ae;
     font-size: 20px;
 }
+/*------ form-search end ------*/
+/*------ form-personal-information start ------*/
 .jq-selectbox {
     width: 100%;
 }
 .jq-selectbox__select {
     height: 40px;
+    width: 540px;
     background: #f9f9f9;
     border-color: #dedede;
     border-radius: 0;
@@ -534,17 +603,26 @@ footer .copy-right.default-text{
     color: #444;
     font:  400 15px/1 'Roboto', sans-serif;
     line-height: 31px;
+    width: 280px;
 }
+@media (min-width: 576px){
+    .col-form-label.col-sm-4 {
+        -webkit-box-flex: 0;
+            -ms-flex: none;
+                flex: none;
+}}
 .form-group .form-control {
     border-radius: 0;
     border-color: #dedede;
     height: 40px;
+    width: 540px;
     background-color: #f9f9f9;
 }
 
 .form-group .form-control:focus{
     border-color: inherit;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
 }
 .form-group select{
     border-radius: 0;
@@ -555,12 +633,45 @@ footer .copy-right.default-text{
     border-radius: 0;
     border-color: inherit;
 }
-
-
-
-input {
-    width: 100%;
+/*------ form-personal-information end ------*/
+/*------ input-newsletter start ------*/
+.input-newsletter{
+    width: 260px;
 }
+.input-newsletter .btn.btn-default{
+    background-color: #8bc34a;
+}
+.input-newsletter .fa {
+    color: #fff;
+    font-size: 18px;
+    height: 38px;
+    width: 43px;
+    border-radius: 0;
+}
+.input-newsletter .form-control{
+    background-color: #2f3c43;
+    color: #697378;
+    font:  400 14px/1 'Roboto', sans-serif;
+    height: 38px;
+}
+.input-newsletter::-webkit-input-placeholder {color:#697378;}
+.input-newsletter::-moz-placeholder          {color:#697378;}/* Firefox 19+ */
+.input-newsletter:-moz-placeholder           {color:#697378;}/* Firefox 18- */
+.input-newsletter:-ms-input-placeholder      {color:#697378;}
+
+.input-newsletter .btn.btn-default:active,
+.input-newsletter .btn.btn-default:hover,
+.input-newsletter .btn.btn-default:focus,
+.input-newsletter .form-control:active,
+.input-newsletter .form-control:hover,
+.input-newsletter .form-control:focus{
+    border: 0;
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+/*------ input-newsletter end ------*/
+
 
 /*====== DEFAULT COMPONENTS START ======*/
 /*------ dropdown start ------*/
@@ -702,6 +813,7 @@ header .header-bottom .header-bottom-nav ul li:last-child{
 
 /*====== DEFAULT COMPONENTS END ======*/
 
+/*---loginModal start---*/
 #loginModal .modal-dialog {
     max-width: 730px;
 }
@@ -783,7 +895,8 @@ header .header-bottom .header-bottom-nav ul li:last-child{
     text-transform: uppercase;
     float: left;
     border-color: #fff;
-    box-shadow: 2px 0 2px rgba(118, 174, 54, .75);
+    -webkit-box-shadow: 2px 0 2px rgba(118, 174, 54, .75);
+            box-shadow: 2px 0 2px rgba(118, 174, 54, .75);
     outline: none;
 }
 #loginModal .custom-btn.btn-green {
@@ -812,6 +925,7 @@ header .header-bottom .header-bottom-nav ul li:last-child{
 {
  text-decoration: none;
 }
+/*---loginModal end---*/
 /*-----pagination start------*/
 .pagination-lg .page-link {
     padding: 14px 17px;
@@ -942,25 +1056,3 @@ header .header-bottom .header-bottom-nav ul li:last-child{
     border-color: #8bc34a;
 }
 /*------ carousel end ------*/
-ul.breadcrumb {
-    padding: 48px 0 42px;
-    list-style: none;
-    background-color: #f4f6f5;
-}
-ul.breadcrumb li {
-    display: inline;
-    font:  400 15px/1 'Roboto', sans-serif;
-}
-ul.breadcrumb li+li:before {
-    padding: 10px;
-    color: #8bc34a;
-    content: "-";
-}
-ul.breadcrumb li a {
-    color: #b0bec5;
-    text-decoration: none;
-}
-ul.breadcrumb li.active {
-    color: #263238;
-}
-

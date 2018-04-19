@@ -1,7 +1,9 @@
+/*---breadcrumb start---*/
 ul.breadcrumb {
     padding: 48px 0 42px;
     list-style: none;
-    background-color: #f4f6f5;
+    background-color: inherit;
+    margin-bottom: 0;
 }
 ul.breadcrumb li {
     display: inline;
@@ -19,4 +21,5 @@ ul.breadcrumb li a {
 ul.breadcrumb li.active {
     color: #263238;
 }
+/*---breadcrumb end---*/
 
