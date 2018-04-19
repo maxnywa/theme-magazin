@@ -25,11 +25,12 @@
     margin-left: 12px;
 }
 /*--- why-choose-foxtar ---*/
-.why-choose-foxtar .img-wrapper{
+.why-choose-foxtar .img-wrapper img{
+    margin-bottom: 35px;
+}
+.why-choose-foxtar .img-wrapper img{
     width: 113px;
     height: 113px;
-    border-radius: 50%;
-    margin-bottom: 35px;
 }
 .why-choose-foxtar a{
     font-weight: 500;

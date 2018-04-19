@@ -386,7 +386,7 @@ span.icon-rating{
 /*---row-card end---*/
 /*-----cards end------*/
 
-/*------ dropdown profile start------*/
+/*------ dropdown account start------*/
 .dropdown-account {
     cursor: pointer;
 }
@@ -425,10 +425,16 @@ span.icon-rating{
 .dropdown-item.list:first-child{
     padding-top: 15px;
 }
+/*------ dropdown account end------*/
+/*------ dropdown sort-by start------*/
+.dropdown.sort-by .dropdown-menu{
+    margin-top: 0;
+}
+.dropdown.sort-by .dropdown-menu .dropdown-item{
+    padding: 10px;
+}
 
-
-
-/*------ dropdown profile end------*/
+/*------ dropdown sort-by start------*/
 /*------ footer start ------*/
 footer .footer-title::after{
     content: "";
@@ -880,11 +886,12 @@ header .header-bottom .header-bottom-nav ul li:last-child{
     margin-left: 12px;
 }
 /*--- why-choose-foxtar ---*/
-.why-choose-foxtar .img-wrapper{
+.why-choose-foxtar .img-wrapper img{
+    margin-bottom: 35px;
+}
+.why-choose-foxtar .img-wrapper img{
     width: 113px;
     height: 113px;
-    border-radius: 50%;
-    margin-bottom: 35px;
 }
 .why-choose-foxtar a{
     font-weight: 500;

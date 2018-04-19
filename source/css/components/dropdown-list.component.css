@@ -1,4 +1,4 @@
-/*------ dropdown profile start------*/
+/*------ dropdown account start------*/
 .dropdown-account {
     cursor: pointer;
 }
@@ -37,7 +37,13 @@
 .dropdown-item.list:first-child{
     padding-top: 15px;
 }
+/*------ dropdown account end------*/
+/*------ dropdown sort-by start------*/
+.dropdown.sort-by .dropdown-menu{
+    margin-top: 0;
+}
+.dropdown.sort-by .dropdown-menu .dropdown-item{
+    padding: 10px;
+}
 
-
-
-/*------ dropdown profile end------*/
+/*------ dropdown sort-by start------*/
