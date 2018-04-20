@@ -1,0 +1,23 @@
+ul.breadcrumb {
+    padding: 48px 0 42px;
+    list-style: none;
+    background-color: #f4f6f5;
+    margin-bottom: 0;
+}
+ul.breadcrumb li {
+    display: inline;
+    font:  400 15px/1 'Roboto', sans-serif;
+}
+ul.breadcrumb li+li:before {
+    padding: 10px;
+    color: #8bc34a;
+    content: "-";
+}
+ul.breadcrumb li a {
+    color: #b0bec5;
+    text-decoration: none;
+}
+ul.breadcrumb li.active {
+    color: #263238;
+}
+
