@@ -3,8 +3,11 @@
 .aside-section {
     background-color: #ffffff;
     border: 1px solid #dedede;
-    padding: 27px 27px 30px 27px;
+    padding: 25px 25px 30px 25px;
     margin-bottom: 30px;
+}
+.aside-section:last-of-type {
+    margin-bottom: 0;
 }
 .aside-section .aside-section-title {
     border-bottom: 1px solid #dde3e8;

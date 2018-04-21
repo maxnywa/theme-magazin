@@ -39,8 +39,14 @@
 }
 /*------ dropdown account end------*/
 /*------ dropdown sort-by start------*/
-.dropdown.sort-by .dropdown-menu{
+.dropdown.sort-by .dropdown-menu {
     margin-top: 0;
+}
+/*------ dropdown-list(green chevron-right)------*/
+.list{
+    font-size: 12px;
+    line-height: 3em;
+    text-transform: capitalize;
 }
 .dropdown.sort-by .dropdown-menu .dropdown-item{
     padding: 10px;
