@@ -1,3 +1,4 @@
+/*---loginModal start---*/
 #loginModal .modal-dialog {
     max-width: 730px;
 }
@@ -108,3 +109,4 @@
 {
  text-decoration: none;
 }
+/*---loginModal end---*/

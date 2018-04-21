@@ -1,0 +1,113 @@
+/*---loginModal start---*/
+#loginModal .modal-dialog {
+    max-width: 730px;
+}
+
+#loginModal .modal-content {
+    background-color: #8bc34a;
+    border-radius: 0;
+    border: none;
+    padding: 90px 30px 110px;
+}
+
+#loginModal .login-title {
+    font-size: 48px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+}
+
+#loginModal form[name="login-form"] {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+.login-form-control::-webkit-input-placeholder {color:#fff;}
+.login-form-control::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
+.login-form-control:-moz-placeholder           {color:#fff;}/* Firefox 18- */
+.login-form-control:-ms-input-placeholder      {color:#fff;}
+
+#loginModal .login-form-control {
+    background-color: #76ae36;
+    height: 43px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 40px;
+    width: 100%;
+}
+
+#loginModal .login-form-group {
+    position: relative;
+}
+
+#loginModal .login-form-group input {
+    border:none;
+}
+
+#loginModal .login-form-group + .login-form-group {
+    margin-top: 8px;
+}
+
+#loginModal .login-form-group i {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: 18px;
+    color: #fff;
+}
+#loginModal .modal-body {
+    position: static;
+}
+#loginModal .modal-content .close span {
+    position: absolute;
+    top: 21px;
+    right: 28px;
+    color: #fff;
+}
+#loginModal .close {
+    opacity: 1;
+}
+#loginModal .login-btn-group .submit-btn {
+    padding-left: 45px;
+    padding-right: 45px;
+    height: 50px;
+    width: 140px;
+    font:  700 14px/50px 'Roboto', sans-serif;
+    text-transform: uppercase;
+    float: left;
+    border-color: #fff;
+    -webkit-box-shadow: 2px 0 2px rgba(118, 174, 54, .75);
+            box-shadow: 2px 0 2px rgba(118, 174, 54, .75);
+    outline: none;
+}
+#loginModal .custom-btn.btn-green {
+    vertical-align: top;
+    display: inline-block;
+    padding-left: 36px;
+    padding-right: 48px;
+    height: 50px;
+    width: 250px;
+    background-color: #76ae36;
+    font:  400 18px/50px 'Roboto', sans-serif;
+    color: #fff;
+    float: right;
+}
+#loginModal .login-btn-group {
+    margin-top: 20px;
+}
+#loginModal .lost-password {
+    font:  400 18px/50px 'Roboto', sans-serif;
+    color: #fff;
+    margin-top: 25px;
+}
+
+#loginModal .lost-password:hover,
+#loginModal .custom-btn.btn-green
+{
+ text-decoration: none;
+}
+/*---loginModal end---*/

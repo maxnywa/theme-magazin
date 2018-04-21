@@ -1,9 +1,45 @@
 .form-search {
+<<<<<<< HEAD
     padding: 69px 0;
+=======
+    background-color: #b1b2af;
+    background-image: url('../img/form-search.jpg');
+    background-repeat: repeat;
+    background-position: 50% 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 150px;
+    padding-bottom: 166px;
+>>>>>>> branch_lera
 }
 .input-group {
     margin: 0 auto;
 }
+<<<<<<< HEAD
+=======
+.form-search .title.title-welcome {
+    line-height: 1em;
+    margin-bottom: 35px;
+    font-size: 48px;
+}
+.form-search .title.title-premium {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 55px;
+    line-height: 1em;
+}
+.form-search span {
+    display: block;
+}
+>>>>>>> branch_lera
 .form-search .form-control{
     width: 671px;
     height: 56px;
@@ -49,6 +85,7 @@
 }
 .jq-selectbox__select {
     height: 40px;
+    width: 540px;
     background: #f9f9f9;
     border-color: #dedede;
     border-radius: 0;
@@ -78,11 +115,19 @@
     color: #444;
     font:  400 15px/1 'Roboto', sans-serif;
     line-height: 31px;
+    width: 280px;
 }
+@media (min-width: 576px){
+    .col-form-label.col-sm-4 {
+        -webkit-box-flex: 0;
+            -ms-flex: none;
+                flex: none;
+}}
 .form-group .form-control {
     border-radius: 0;
     border-color: #dedede;
     height: 40px;
+    width: 540px;
     background-color: #f9f9f9;
 }
 
@@ -100,5 +145,46 @@
     border-radius: 0;
     border-color: inherit;
 }
+<<<<<<< HEAD
 
 
+=======
+/*------ form-personal-information end ------*/
+/*------ input-newsletter start ------*/
+.input-newsletter{
+    width: 260px;
+}
+.input-newsletter .btn.btn-default{
+    background-color: #8bc34a;
+}
+.input-newsletter .fa {
+    color: #fff;
+    font-size: 18px;
+    height: 38px;
+    width: 43px;
+    border-radius: 0;
+}
+.input-newsletter .form-control{
+    background-color: #2f3c43;
+    color: #697378;
+    font:  400 14px/1 'Roboto', sans-serif;
+    height: 38px;
+}
+.input-newsletter::-webkit-input-placeholder {color:#697378;}
+.input-newsletter::-moz-placeholder          {color:#697378;}/* Firefox 19+ */
+.input-newsletter:-moz-placeholder           {color:#697378;}/* Firefox 18- */
+.input-newsletter:-ms-input-placeholder      {color:#697378;}
+
+.input-newsletter .btn.btn-default:active,
+.input-newsletter .btn.btn-default:hover,
+.input-newsletter .btn.btn-default:focus,
+.input-newsletter .form-control:active,
+.input-newsletter .form-control:hover,
+.input-newsletter .form-control:focus{
+    border: 0;
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+/*------ input-newsletter end ------*/
+>>>>>>> branch_lera
