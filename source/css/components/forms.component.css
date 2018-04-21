@@ -17,8 +17,8 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding-top: 150px;
-    padding-bottom: 166px;
+    padding-top: 60px;
+    padding-bottom: 70px;
 }
 .input-group {
     margin: 0 auto;
