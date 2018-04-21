@@ -151,7 +151,7 @@
     border-color: inherit;
 }
 /*------ form-personal-information end ------*/
-/*------ input-newsletter start ------*/
+/*------ input sign-up start ------*/
 .input-newsletter{
     width: 260px;
 }
@@ -171,20 +171,16 @@
     font:  400 14px/1 'Roboto', sans-serif;
     height: 38px;
 }
-.input-newsletter::-webkit-input-placeholder {color:#697378;}
-.input-newsletter::-moz-placeholder          {color:#697378;}/* Firefox 19+ */
-.input-newsletter:-moz-placeholder           {color:#697378;}/* Firefox 18- */
-.input-newsletter:-ms-input-placeholder      {color:#697378;}
+/*.input-newsletter::-webkit-input-placeholder {color:#697378;}*/
+/*.input-newsletter::-moz-placeholder          {color:#697378;}!* Firefox 19+ *!*/
+/*.input-newsletter:-moz-placeholder           {color:#697378;}!* Firefox 18- *!*/
+/*.input-newsletter:-ms-input-placeholder      {color:#697378;}*/
 
-.input-newsletter .btn.btn-default:active,
-.input-newsletter .btn.btn-default:hover,
-.input-newsletter .btn.btn-default:focus,
 .input-newsletter .form-control:active,
 .input-newsletter .form-control:hover,
 .input-newsletter .form-control:focus{
     border: 0;
     outline: none;
-    -webkit-box-shadow: none;
     box-shadow: none;
 }
 /*------ input-newsletter end ------*/

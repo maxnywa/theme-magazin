@@ -1,7 +1,8 @@
+/*------ form-search start ------*/
+.container-fluid {
+    padding: 0;
+}
 .form-search {
-<<<<<<< HEAD
-    padding: 69px 0;
-=======
     background-color: #b1b2af;
     background-image: url('../img/form-search.jpg');
     background-repeat: repeat;
@@ -10,21 +11,18 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     padding-top: 150px;
     padding-bottom: 166px;
->>>>>>> branch_lera
 }
 .input-group {
     margin: 0 auto;
 }
-<<<<<<< HEAD
-=======
 .form-search .title.title-welcome {
     line-height: 1em;
     margin-bottom: 35px;
@@ -39,23 +37,27 @@
 .form-search span {
     display: block;
 }
->>>>>>> branch_lera
 .form-search .form-control{
     width: 671px;
     height: 56px;
     line-height: 56px;
-    /*font:  400 14px/1 'Roboto', sans-serif;*/
+    font:  400 14px/1 'Roboto', sans-serif;
     letter-spacing: .05em;
     color: #90a4ae;
     border-radius: 4px;
     border: none;
     -webkit-box-shadow: 0 0 10px rgba(100, 100, 100, .75);
-            box-shadow: 0 0 10px rgba(100, 100, 100, .75);
+    box-shadow: 0 0 10px rgba(100, 100, 100, .75);
 }
+.form-search::-webkit-input-placeholder {color:#90a4ae;}
+.form-search::-moz-placeholder          {color:#90a4ae;}/* Firefox 19+ */
+.form-search:-moz-placeholder           {color:#90a4ae;}/* Firefox 18- */
+.form-search:-ms-input-placeholder      {color:#90a4ae;}
+
 .form-search .form-control:focus,
 .form-search button:active{
     -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
     outline: none;
 }
 .form-search button {
@@ -77,9 +79,12 @@
 }
 .form-search button:before {
     content: "\f002";
+    font-family: FontAwesome;
     color: #90a4ae;
     font-size: 20px;
 }
+/*------ form-search end ------*/
+/*------ form-personal-information start ------*/
 .jq-selectbox {
     width: 100%;
 }
@@ -90,7 +95,7 @@
     border-color: #dedede;
     border-radius: 0;
     -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
     padding: 0 40px 0 15px;
     line-height: 40px;
 }
@@ -108,7 +113,7 @@
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     border-top-color: #000;
 }
 .form-group .col-form-label {
@@ -120,9 +125,9 @@
 @media (min-width: 576px){
     .col-form-label.col-sm-4 {
         -webkit-box-flex: 0;
-            -ms-flex: none;
-                flex: none;
-}}
+        -ms-flex: none;
+        flex: none;
+    }}
 .form-group .form-control {
     border-radius: 0;
     border-color: #dedede;
@@ -134,7 +139,7 @@
 .form-group .form-control:focus{
     border-color: inherit;
     -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
 }
 .form-group select{
     border-radius: 0;
@@ -145,12 +150,8 @@
     border-radius: 0;
     border-color: inherit;
 }
-<<<<<<< HEAD
-
-
-=======
 /*------ form-personal-information end ------*/
-/*------ input-newsletter start ------*/
+/*------ input sign-up start ------*/
 .input-newsletter{
     width: 260px;
 }
@@ -170,14 +171,11 @@
     font:  400 14px/1 'Roboto', sans-serif;
     height: 38px;
 }
-.input-newsletter::-webkit-input-placeholder {color:#697378;}
-.input-newsletter::-moz-placeholder          {color:#697378;}/* Firefox 19+ */
-.input-newsletter:-moz-placeholder           {color:#697378;}/* Firefox 18- */
-.input-newsletter:-ms-input-placeholder      {color:#697378;}
+/*.input-newsletter::-webkit-input-placeholder {color:#697378;}*/
+/*.input-newsletter::-moz-placeholder          {color:#697378;}!* Firefox 19+ *!*/
+/*.input-newsletter:-moz-placeholder           {color:#697378;}!* Firefox 18- *!*/
+/*.input-newsletter:-ms-input-placeholder      {color:#697378;}*/
 
-.input-newsletter .btn.btn-default:active,
-.input-newsletter .btn.btn-default:hover,
-.input-newsletter .btn.btn-default:focus,
 .input-newsletter .form-control:active,
 .input-newsletter .form-control:hover,
 .input-newsletter .form-control:focus{
@@ -187,4 +185,3 @@
             box-shadow: none;
 }
 /*------ input-newsletter end ------*/
->>>>>>> branch_lera
