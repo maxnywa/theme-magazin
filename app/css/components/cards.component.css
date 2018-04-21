@@ -125,6 +125,9 @@
     position: relative;
     display: inline-block;
 }
+.all-items-container .row + .row {
+    margin-top: 30px;
+}
 /*---medium-card end*/
 
 /*---aside-card start*/
@@ -193,6 +196,9 @@
         -ms-flex-direction: row;
             flex-direction: row;
 }
+.row .col-12:last-child .row-card {
+    margin-bottom: 0;
+}
 .card.row-card .card-img {
     -webkit-box-flex: 3;
         -ms-flex: 3;
@@ -232,6 +238,10 @@
     font:  400 13px 'Roboto', sans-serif;
     color:#aeb4bb;
     padding-right: 30px;
+}
+.all-items-container .row:nth-child(3) .row-card,
+.all-items-container .row:nth-child(4) .row-card {
+    display: none;
 }
 .card .card-text-info p{
     font:  400 14px 'Roboto', sans-serif;
