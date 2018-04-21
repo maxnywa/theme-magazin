@@ -1,6 +1,13 @@
 /*====== CUSTOM STYLE START ======*/
 /*----- Main page start -----*/
- .newest-product .tags {
+.form-search.form-search-main{
+    padding-top: 150px;
+    padding-bottom: 166px;
+}
+.form-search.form-search-main .form-control{
+    box-shadow: 1px 0 10px rgba(124, 178, 64, .75);
+}
+.newest-product .tags {
     margin-bottom: 60px;
 }
  .newest-product .tags li{
