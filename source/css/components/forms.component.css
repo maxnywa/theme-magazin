@@ -79,7 +79,6 @@
 }
 .form-search button:before {
     content: "\f002";
-    font-family: FontAwesome;
     color: #90a4ae;
     font-size: 20px;
 }
@@ -152,29 +151,6 @@
 }
 /*------ form-personal-information end ------*/
 /*------ input sign-up start ------*/
-.input-newsletter{
-    width: 260px;
-}
-.input-newsletter .btn.btn-default{
-    background-color: #8bc34a;
-}
-.input-newsletter .fa {
-    color: #fff;
-    font-size: 18px;
-    height: 38px;
-    width: 43px;
-    border-radius: 0;
-}
-.input-newsletter .form-control{
-    background-color: #2f3c43;
-    color: #697378;
-    font:  400 14px/1 'Roboto', sans-serif;
-    height: 38px;
-}
-/*.input-newsletter::-webkit-input-placeholder {color:#697378;}*/
-/*.input-newsletter::-moz-placeholder          {color:#697378;}!* Firefox 19+ *!*/
-/*.input-newsletter:-moz-placeholder           {color:#697378;}!* Firefox 18- *!*/
-/*.input-newsletter:-ms-input-placeholder      {color:#697378;}*/
 
 .input-newsletter .form-control:active,
 .input-newsletter .form-control:hover,

@@ -34,11 +34,45 @@ footer .list{
     line-height: 2em;
     padding: 0;
 }
+footer .newsletter-sign-up span{
+    color: #fff;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 22px;
+}
+footer .wrapper-input-sign-up{
+    width: 262px;
+    height: 39px;
+    padding: 1px 1px 0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#000), to(#263238)), -webkit-gradient(linear, left top, left bottom, from(#000), to(#263238));
+    background-image: linear-gradient(to bottom, #000 0%, #263238 100%), linear-gradient(to bottom, #000 0%, #263238 100%)
+}
+footer .input-sign-up{
+    width: 260px;
+    position: relative;
+}
+footer .btn-sign-up{
+    background-color: #8bc34a;
+    color: #fff;
+    height: 100%;
+    width: 43px;
+    border-radius: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+footer .input-sign-up .sign-up{
+    background-color: #2f3c43;
+    color: #697378;
+    font:  400 14px/1 'Roboto', sans-serif;
+    height: 38px;
+    width: 100%;
+    padding: 13px 15px;
+}
 footer .copy-right{
     padding: 15px 0 25px;
     border-top: 1px solid #424d53;
 }
-
 footer .copy-right.default-text{
     line-height: 2.4em;
 }
