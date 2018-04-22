@@ -25,10 +25,96 @@
 .gt-builder-btn a+a{
     margin-left: 17px;
 }
+/*--- more-product---*/
+.more-product{
+    padding-bottom: 120px;
+}
 .more-product .title{
     font-size: 18px;
     font-weight: 500;
     display: block;
     border: 1px solid #dedede;
+    padding: 22px 25px;
+}
+.more-product .row{
+    margin-top: 28px;
+}
+/*--- product price---*/
+.product-price .dropdown-menu.show{
+    margin-top: 0;
+    width: 90px;
+}
+.product-price .regular.dropdown-toggle{
+    border: 1px solid #dedede;
+}
+.product-price .regular.dropdown-toggle,
+.product-price .dropdown-menu .dropdown-item{
+    font-size: 13px;
+    padding: 8px 9px;
+    background-color: #fff;
+}
+.product-price .regular.dropdown-toggle span{
+    padding-left: 7px;
+    color: #8bc34a;
+}
+.product-price .price-regular>span{
+    font-weight: 500;
+    font-size: 22px;
+    color: #e74c3c;
+}
+.product-author author-card{
+    padding: 25px 0;
+    text-transform: capitalize;
+}
+.product-author .author-card img{
+    height: 63px;
+    width: 73px;
+}
+.product-author .name-view{
+    margin-left: 14px;
+}
+.product-author .name-view span{
+    font-size: 18px;
+    color: #263238;
+}
+.product-author .name-view a{
+    color: #707070;
+    font-size: 13px;
+    border: 1px solid #dedede;
+    padding: 8px 15px;
+
+}
+.aside-section.sales{
+    padding-top: 22px;
+    padding-bottom: 23px;
+}
+.sales i{
+    color: #a6b5bb;
+    font-size: 20px;
+    margin-right: 20px;
+}
+.sales>span{
+    color: #707070;
+    font-size: 16px;
+}
+.sales>span>span{
+    color: #263238;
+    font-weight: 700;
+    font-size: 20px;
+    margin-right: 15px;
+}
+.product-info .info-table{
+    font-size: 14px;
+    text-transform: capitalize;
+    line-height: 2.57em;
+    font-weight: 700;
+}
+.product-info .info-table td{
+    color: #263238;
+}
+.product-info .info-table td+td{
+    color: #70838d;
+    font-weight: 400;
+    vertical-align: baseline;
 }
 /*----- Product details end -----*/

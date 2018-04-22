@@ -14,12 +14,15 @@
 .newest-product .tags {
     margin-bottom: 60px;
 }
- .newest-product .tags li{
+.newest-product .tags li{
     background-color: #fff;
-    padding: 14px 21px;
     color: #263238;
     font-weight: 500;
     font-size: 14px;
+}
+.newest-product .tags li a{
+    padding: 14px 21px;
+    display: block;
 }
 .newest-product .tags li+li{
     margin-left: 6px;
@@ -84,7 +87,4 @@
 .become-an-author .img-wrapper-content .img-content a{
     margin-left: 60px;
 }
-
-
 /*----- Main page end -----*/
-/*====== CUSTOM STYLE END ======*/
