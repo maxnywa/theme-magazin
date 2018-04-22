@@ -1,0 +1,61 @@
+/*------ tabs start ------*/
+.product-page {
+    background-color: #fff;
+}
+.nav-tabs .nav-item {
+    font-size: 16px;
+    color: #70838d;
+}
+.tab-content .tab-pane.active {
+    padding: 25px 35px 55px 35px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+}
+.nav-tabs {
+    border-bottom: 0;
+}
+.tab-content ul + ul {
+    margin-left: 10px;
+}
+.tab-content ul li {
+    font-size: 16px;
+    line-height: 2.25em;
+    width: 266px;
+    text-transform: none;
+    padding-left: 19px;
+    position: relative;
+}
+.tab-content ul li:before {
+    content: "\f054";
+    font: normal normal normal 14px/1 FontAwesome;
+    color: #8bc34a;
+    position: absolute;
+    left: 0;
+    top: 12px;
+}
+ li.nav-item {
+    line-height: 58px;
+    width: 25%;
+    text-align: center;
+}
+.nav-tabs .nav-link.nav-li-item {
+    padding: 0;
+    border: 1px solid #dfdfdf;
+    border-left: 0;
+    border-radius: 0;
+}
+.nav-tabs li:first-child .nav-li-item{
+    border-left: 1px solid #dfdfdf;
+}
+.nav-link.nav-li-item.active{
+    border-bottom: 3px solid #8bc34a;
+    color: #263238;
+    font-weight: 600;
+    line-height: 56px;
+}
+/*------ tabs end ------*/

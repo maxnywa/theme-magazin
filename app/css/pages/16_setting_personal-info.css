@@ -1,0 +1,15 @@
+/*------ 16_settings_personal-info start------*/
+.form-search.form-search-small {
+    padding-top: 62px;
+    padding-bottom: 69px;
+}
+.form-search.form-search-small .title {
+    margin-bottom: 25px;
+}
+.form-personal-information {
+    margin-bottom: 152px;
+}
+.form-personal-information .col-3 .bg-white{
+    background-color: #fff;
+}
+/*------ 16_settings_personal-info end------*/
