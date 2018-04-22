@@ -1471,11 +1471,19 @@ header .header-bottom .header-bottom-nav ul li:last-child{
     margin-left: 10px;
     font-size: 16px;
 }
-.sort-controls button:active  {
+.sort-controls.active button:active  {
     color: #8bc34a;
 }
 .all-products-wrapper {
     position: relative;
+    padding-bottom: 110px;
+}
+.all-products-wrapper .form-search {
+    padding: 60px 0 70px 0;
+}
+.all-products-wrapper .list-group span {
+    display: block;
+    text-align: right;
 }
 .sort-dropdown ul.dropdown-menu.list {
     margin-top: 20px;
