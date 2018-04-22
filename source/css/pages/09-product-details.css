@@ -1,0 +1,34 @@
+/*----- Product details start -----*/
+.gt-builder-img {
+    padding: 18px;
+    border: 1px solid #dedede;
+    max-width: 830px;
+    margin-bottom: 40px;
+}
+.gt-builder-content{
+    margin-bottom: 50px;
+}
+.gt-builder-content .title{
+    display: block;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 500;
+}
+.gt-builder-content .gt-builder-text{
+    color: #707070;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+.gt-builder-btn-social{
+    margin-bottom: 55px;
+}
+.gt-builder-btn a+a{
+    margin-left: 17px;
+}
+.more-product .title{
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+    border: 1px solid #dedede;
+}
+/*----- Product details end -----*/

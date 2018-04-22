@@ -4,6 +4,9 @@
     padding-top: 150px;
     padding-bottom: 166px;
 }
+.form-search.form-search-main .title.title-premium {
+    margin-bottom: 55px;
+}
 .form-search.form-search-main .form-control{
     -webkit-box-shadow: 1px 0 10px rgba(124, 178, 64, .75);
             box-shadow: 1px 0 10px rgba(124, 178, 64, .75);

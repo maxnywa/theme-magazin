@@ -5,6 +5,8 @@ $('.grid-thumbs').on('click', function (){
     $('.all-items-container .col-4').removeClass('col-12');
 });
 
+// Select init
+$('select').styler();
 
 // Slick carousel init
 $('.trending-carousel').slick({
