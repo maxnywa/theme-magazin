@@ -173,6 +173,9 @@ ul.breadcrumb li.active {
 .btn-custom:hover {
     background-color: #f1f1f1;
 }
+.btn-custom .fa {
+    margin-right: 10px;
+}
 .btn-custom.btn-rounded {
     border-radius: 4px;
 }
@@ -209,7 +212,13 @@ ul.breadcrumb li.active {
 .btn-custom.btn-green:hover {
     background-color: #6c973a;
 }
-
+.btn-custom.btn-light-blue {
+    background-color: #42a5f5;
+    color: #f4f6f5;
+}
+.btn-custom.btn-light-blue:hover {
+    background-color: #307ab5;
+}
 
 /*-----cards start------*/
 .cards-example  {
@@ -1489,3 +1498,7 @@ header .header-bottom .header-bottom-nav ul li:last-child{
 
 
 
+
+.profile-details-page {
+    margin-bottom: 80px;
+}
