@@ -1,7 +1,4 @@
 /*------ form-search start ------*/
-.container-fluid {
-    padding: 0;
-}
 .form-search {
     background-color: #b1b2af;
     background-image: url('../img/form-search.jpg');
@@ -23,6 +20,10 @@
 .input-group {
     margin: 0 auto;
 }
+.form-search-input{
+    max-width: 671px;
+    width: 100%;
+}
 .form-search .title.title-welcome {
     line-height: 1em;
     margin-bottom: 35px;
@@ -38,7 +39,6 @@
     display: block;
 }
 .form-search .form-control{
-    width: 671px;
     height: 56px;
     line-height: 56px;
     font:  400 14px/1 'Roboto', sans-serif;
@@ -81,6 +81,17 @@
     content: "\f002";
     color: #90a4ae;
     font-size: 20px;
+}
+@media (max-width: 768px){
+    .form-search .title.title-welcome{
+        text-align: center;
+        font-size: 35px;
+    }
+    .form-search.form-search-main .title.title-premium{
+        text-align: center;
+        font-size: 18px;
+        line-height: 1.3em;
+    }
 }
 /*------ form-search end ------*/
 /*------ form-personal-information start ------*/

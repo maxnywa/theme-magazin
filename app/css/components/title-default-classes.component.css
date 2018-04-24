@@ -33,6 +33,15 @@
     color: #fff;
     margin-bottom: 25px;
 }
+@media (max-width: 767px) {
+    .default-section{
+        padding-top: 75px;
+        padding-bottom: 90px;
+    }
+    .title.section-title{
+        font-size: 30px;
+    }
+}
 /*------ title end ------*/
 /*------ text start ------*/
 .default-text{

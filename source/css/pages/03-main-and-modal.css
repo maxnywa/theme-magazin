@@ -26,10 +26,25 @@
 .newest-product .tags li+li{
     margin-left: 6px;
 }
-.newest-product .tags li:hover,.tags li:active {
+.newest-product .tags li:hover,.tags li.active {
     background-color: #e74c3c;
     color: #fff;
     box-shadow: 0 2px 5px rgba(202, 215, 228,0.75);
+}
+.mobile-list-wrap{
+    display: none;
+}
+.mobile-list{
+    color: #263238;
+    font-weight: 500;
+    font-size: 14px;
+    width: 100%;
+}
+.mobile-list .current{
+    padding: 15px 30px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
 }
 .newest-product .button-items{
     margin-top: 65px;
@@ -76,6 +91,11 @@
 .become-an-author .img-wrapper-content .img-content{
     padding: 80px 65px;
     background-color: #8bc34a;
+    display: flex;
+    align-items: center;
+}
+.become-an-author .img-wrapper-content .img-content>span{
+    max-width: 270px;
 }
 .become-an-author .img-wrapper-content .img-content span{
     font-size: 30px;
@@ -95,6 +115,57 @@
     }
     .why-choose-foxtar .why-choose-items{
         margin: 20px 0;
+    }
+}
+@media (max-width: 767px){
+    .form-search.form-search-main{
+        padding-top: 70px;
+        padding-bottom: 80px;
+    }
+    .become-an-author .img-wrapper-content .img-content span{
+        font-size: 25px;
+    }
+    .become-an-author .img-wrapper-content .img-content>span{
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .become-an-author .img-wrapper-content .img-content a{
+        margin-left: 0;
+        width: 100%;
+    }
+    .become-an-author .img-wrapper-content .img-content{
+        padding: 40px 35px;
+        flex-direction: column;
+    }
+    .tags{
+        display: none;
+    }
+    .mobile-list-wrap{
+        display: flex;
+        margin-bottom: 50px;
+    }
+    .mobile-list .dropdown-list{
+        display:none;
+        background-color: #fff;
+        padding: 15px 30px;
+    }
+    .mobile-list .dropdown-list li{
+        padding: 10px 0;
+        border: 1px solid transparent;
+    }
+    .mobile-list .dropdown-list li:hover{
+        border-bottom: 1px solid #b5b5b5;
+        color: #000;
+    }
+    
+    .mobile-list .current .fa-close{
+        display: none;
+    }
+    .mobile-list .current.selected .fa-close{
+        display: block;
+    }
+    .mobile-list .current.selected .fa-chevron-down{
+        display: none;
     }
 }
 
