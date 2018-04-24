@@ -57,3 +57,6 @@ blockquote{
     margin: 0;
 }
 /*====== RESET END ======*/
+.icon {
+    display: inline-block;
+}
