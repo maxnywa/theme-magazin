@@ -36,11 +36,14 @@ ul, ol{
 img {
     max-width: 100%;
 }
-button,button:hover,
-button:focus, input,
+button,
+input,
 textarea {
     outline: none;
     border: none;
+}
+button:focus{
+    outline: none;
 }
 button{
     padding: 0;

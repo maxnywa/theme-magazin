@@ -1,9 +1,9 @@
 
 /*-----cards start------*/
-.cards-example  {
+.cards-product  {
     margin: 0 15px;
 }
-.cards-example .row + .row {
+.cards-product .row + .row {
     margin-top: 30px;
 }
 .card {
@@ -19,11 +19,13 @@
 .card .card-img img {
     height: 100%;
     max-width: 100%;
+
 }
 .card.large-card .card-img {
     position: relative;
     overflow: hidden;
     border-radius:0;
+    text-align: center;
 }
 .large-card .card-img .label-trending {
     position: absolute;

@@ -32,82 +32,94 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header id="header">
-    <div class="header-top bg-white">
-        <div class="container d-flex align-items-center">
-            <div class="logo mr-auto">
-                <a href="#">
-                    <img src="../app/img/logo.png" alt="">
-                </a>
-            </div>
-            <div class="need-help">
-                <span><span>Need help? </span>Talk to an expert: +61 3 8376 6284</span>
-            </div>
-            <ul>
-                <li class="dropdown">
-                    <a class="dropdown-toggle toggle-circle text-center dropdown-basket" href="#" role="button" id="dropdownBasket" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fa fa-shopping-basket"></i>
-                        <span class="counter">8</span>
+    <header id="header" class="navbar-expand-lg">
+        <div class="header-top bg-white navbar-light">
+            <div class="container d-flex flex-wrap align-items-center">
+                <div class="logo mr-auto">
+                    <a href="#">
+                        <img src="../app/img/logo.png" alt="">
                     </a>
-                    <div class="dropdown-menu dropdown-menu-right dropdown-notifaction dropdown-basket">
-                        <div class="dropdown-item  d-flex align-items-center">
-                            <img src="img/dropdown-basket.jpg" alt="">
-                            <div class="item-content">
-                                <span class="item-title">Grand Ballet</span>
-                                <span class="item-category">WordPress</span>
-                                <span class="item-price">$59</span>
-                            </div>
-                        </div>
-                        <div class="dropdown-item d-flex align-items-center">
-                            <img src="img/dropdown-basket.jpg" alt="">
-                            <div class="item-content">
-                                <span class="item-title">Apple Device</span>
-                                <span class="item-category">WordPress</span>
-                                <span class="item-price">$59</span>
-                            </div>
-                            <!--/ item-content -->
-                        </div>
-                        <!--/ dropdown-item -->
-                        <div class="total d-flex justify-content-between">
-                            <span>Total</span>
-                            <span>$118</span>
-                        </div>
-                        <!-- / total-->
-                        <div class="go-chekout d-flex justify-content-between">
-                            <a href="#" class="btn-custom btn-medium btn-red">Go to card</a>
-                            <a href="#" class="btn-custom btn-medium btn-green">Go to checkout</a>
-                        </div>
-                        <!--/ go-chekout-->
+                </div>
+                <!--/ logo-->
+                <div class="order-1 header-conrols d-flex align-items-center">
+                    <div class="need-help mr-auto">
+                        <span><span>Need help? </span>Talk to an expert: +61 3 8376 6284</span>
                     </div>
-                    <!--/dropdown-menu -->
-                </li>
-            </ul>
-            <button class="btn-custom btn-small btn-green btn-rounded" data-toggle="modal" data-target="#loginModal">Login</button>
-            <button class="btn-custom btn-small btn-red btn-rounded">Register</button>
+                    <!--/ need-help-->
+                    <ul>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle toggle-circle text-center dropdown-basket" href="#" role="button" id="dropdownBasket" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-shopping-basket"></i>
+                                <span class="counter">8</span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-notifaction dropdown-basket">
+                                <div class="dropdown-item  d-flex align-items-center">
+                                    <img src="img/dropdown-basket.jpg" alt="">
+                                    <div class="item-content">
+                                        <span class="item-title">Grand Ballet</span>
+                                        <span class="item-category">WordPress</span>
+                                        <span class="item-price">$59</span>
+                                    </div>
+                                </div>
+                                <div class="dropdown-item d-flex align-items-center">
+                                    <img src="img/dropdown-basket.jpg" alt="">
+                                    <div class="item-content">
+                                        <span class="item-title">Apple Device</span>
+                                        <span class="item-category">WordPress</span>
+                                        <span class="item-price">$59</span>
+                                    </div>
+                                    <!--/ item-content -->
+                                </div>
+                                <!--/ dropdown-item -->
+                                <div class="total d-flex justify-content-between">
+                                    <span>Total</span>
+                                    <span>$118</span>
+                                </div>
+                                <!-- / total-->
+                                <div class="go-chekout d-flex justify-content-between">
+                                    <a href="#" class="btn-custom btn-medium btn-red">Go to card</a>
+                                    <a href="#" class="btn-custom btn-medium btn-green">Go to checkout</a>
+                                </div>
+                                <!--/ go-chekout-->
+                            </div>
+                            <!--/dropdown-menu -->
+                        </li>
+                        <!--/ dropdown-->
+                    </ul>
+                    <!--/ ul-->
+                    <button class="btn-custom btn-small btn-green btn-rounded" data-toggle="modal" data-target="#loginModal">Login</button>
+                    <button class="btn-custom btn-small btn-red btn-rounded">Register</button>
+                </div>
+                <!--/ order-1-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#header-nav" aria-controls="header-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <!--/container-->
         </div>
-        <!--/container-->
-    </div>
-    <!--/header-top-->
-    <div class="header-bottom bg-dark-blue">
-        <div class="container">
-            <nav class="header-bottom-nav">
-                <ul>
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">wordPress</a></li>
-                    <li><a href="#">joomla</a></li>
-                    <li><a href="#">psd</a></li>
-                    <li><a href="#">plugins</a></li>
-                    <li><a href="#">components</a></li>
-                    <li><a href="#">pages</a></li>
-                    <li><a href="#">contact</a></li>
-                    <li><a href="#">help</a></li>
-                </ul>
-            </nav>
+        <!--/header-top-->
+        <div class="header-bottom bg-dark-blue collapse navbar-collapse" id="header-nav" >
+            <div class="container">
+                <nav class="header-bottom-nav">
+                    <ul>
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">wordPress</a></li>
+                        <li><a href="#">joomla</a></li>
+                        <li><a href="#">psd</a></li>
+                        <li><a href="#">plugins</a></li>
+                        <li><a href="#">components</a></li>
+                        <li><a href="#">pages</a></li>
+                        <li><a href="#">contact</a></li>
+                        <li><a href="#">help</a></li>
+                    </ul>
+                    <!--/ ul-->
+                </nav>
+                <!--/ header-bottom-nav-->
+            </div>
+            <!--/ container-->
         </div>
-
-    </div>
-    <!--/header-bottom-->
+        <!--/header-bottom-->
     </header>
     <!--/ header-->
     <main id="main">
@@ -130,17 +142,17 @@
                     <span>Let’s Check Out Our Newest Release Prodcuts</span>
                 </div>
                 <ul class="tags d-flex justify-content-center">
-                        <li><a href="#">All</a></li>
-                        <li><a href="#">WordPress</a></li>
-                        <li><a href="#">joombla</a></li>
-                        <li><a href="#">Plugins</a></li>
-                        <li><a href="#">Component</a></li>
-                        <li><a href="#">PSD</a></li>
-                    </ul>
+                    <li><a href="#">All</a></li>
+                    <li><a href="#">WordPress</a></li>
+                    <li><a href="#">joombla</a></li>
+                    <li><a href="#">Plugins</a></li>
+                    <li><a href="#">Component</a></li>
+                    <li><a href="#">PSD</a></li>
+                </ul>
                 <!--/ tags-->
-                <section class="cards-example">
+                <section class="cards-product">
                     <div class="row">
-                        <div class="col-3">
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
                             <div class="card large-card">
                                 <div class="card-img">
                                     <a href="">
@@ -178,7 +190,7 @@
                             <!--.large-card-->
                         </div>
                         <!--col-3-->
-                        <div class="col-3">
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
                             <div class="card large-card">
                                 <div class="card-img">
                                     <a href="">
@@ -217,7 +229,7 @@
                             <!--.large-card-->
                         </div>
                         <!--col-3-->
-                        <div class="col-3">
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
                             <div class="card large-card">
                                 <div class="card-img">
                                     <a href="">
@@ -255,7 +267,7 @@
                             <!--.large-card-->
                         </div>
                         <!--col-3-->
-                        <div class="col-3">
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
                             <div class="card large-card">
                                 <div class="card-img">
                                     <a href="">
@@ -293,162 +305,159 @@
                             <!--.large-card-->
                         </div>
                         <!--col-3-->
-                    </div>
-                    <!--/ row-->
-                    <div class="row">
-                            <div class="col-3">
-                                <div class="card large-card">
-                                    <div class="card-img">
-                                        <a href="">
-                                            <img src="img/card-item-big.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <!-- /.card-img -->
-                                    <div class="card-description">
-                                        <div class="card-info d-flex align-items-center">
-                                            <div class="d-flex flex-column">
-                                                <a href="#" class="card-item-title">Gymedge</a>
-                                                <a href="#" class="item-category">Joomla Template</a>
-                                            </div>
-                                            <span class="card-price ml-auto">$45</span>
-                                        </div>
-                                        <!-- /.card-info -->
-                                        <div class="card-author d-flex align-items-center">
-                                            <a href="#" class="card-author-img">
-                                                <img src="img/card-author-ava.png" alt="">
-                                                <span class="author-name">Micrsof</span>
-                                            </a>
-                                            <ul class="card-product-rating list-inline ml-auto">
-                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                            </ul>
-                                            <span class="rating-count">05</span>
-                                        </div>
-                                        <!-- /.card-author -->
-                                    </div>
-                                    <!-- /.card-description -->
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                            <div class="card large-card">
+                                <div class="card-img">
+                                    <a href="">
+                                        <img src="img/card-item-big.jpg" alt="">
+                                    </a>
                                 </div>
-                                <!--.large-card-->
-                            </div>
-                            <!--col-3-->
-                            <div class="col-3">
-                                <div class="card large-card">
-                                    <div class="card-img">
-                                        <a href="">
-                                            <img src="img/card-item-big.jpg" alt="">
+                                <!-- /.card-img -->
+                                <div class="card-description">
+                                    <div class="card-info d-flex align-items-center">
+                                        <div class="d-flex flex-column">
+                                            <a href="#" class="card-item-title">Gymedge</a>
+                                            <a href="#" class="item-category">Joomla Template</a>
+                                        </div>
+                                        <span class="card-price ml-auto">$45</span>
+                                    </div>
+                                    <!-- /.card-info -->
+                                    <div class="card-author d-flex align-items-center">
+                                        <a href="#" class="card-author-img">
+                                            <img src="img/card-author-ava.png" alt="">
+                                            <span class="author-name">Micrsof</span>
                                         </a>
+                                        <ul class="card-product-rating list-inline ml-auto">
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        </ul>
+                                        <span class="rating-count">05</span>
                                     </div>
-                                    <!-- /.card-img -->
-                                    <div class="card-description">
-                                        <div class="card-info d-flex align-items-center">
-                                            <div class="d-flex flex-column">
-                                                <a href="#" class="card-item-title">The Post Grid Pro</a>
-                                                <a href="#" class="item-category">WordPress Plugin</a>
-                                            </div>
-                                            <span class="card-price ml-auto">$19</span>
-                                        </div>
-                                        <!-- /.card-info -->
-                                        <div class="card-author d-flex align-items-center">
-                                            <a href="#" class="card-autor-img">
-                                                <img src="img/card-author-ava.png" alt="">
-                                                <span class="author-name">Raklouse</span>
-                                            </a>
-                                            <ul class="card-product-rating list-inline ml-auto">
-                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                            </ul>
-                                            <span class="rating-count">05</span>
-                                        </div>
-                                        <!-- /.card-author -->
-                                    </div>
-                                    <!-- /.card-description -->
+                                    <!-- /.card-author -->
                                 </div>
-                                <!--.large-card-->
+                                <!-- /.card-description -->
                             </div>
-                            <!--col-3-->
-                            <div class="col-3">
-                                <div class="card large-card">
-                                    <div class="card-img">
-                                        <a href="">
-                                            <img src="img/card-item-big.jpg" alt="">
+                            <!--.large-card-->
+                        </div>
+                        <!--col-3-->
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                            <div class="card large-card">
+                                <div class="card-img">
+                                    <a href="">
+                                        <img src="img/card-item-big.jpg" alt="">
+                                    </a>
+                                </div>
+                                <!-- /.card-img -->
+                                <div class="card-description">
+                                    <div class="card-info d-flex align-items-center">
+                                        <div class="d-flex flex-column">
+                                            <a href="#" class="card-item-title">The Post Grid Pro</a>
+                                            <a href="#" class="item-category">WordPress Plugin</a>
+                                        </div>
+                                        <span class="card-price ml-auto">$19</span>
+                                    </div>
+                                    <!-- /.card-info -->
+                                    <div class="card-author d-flex align-items-center">
+                                        <a href="#" class="card-autor-img">
+                                            <img src="img/card-author-ava.png" alt="">
+                                            <span class="author-name">Raklouse</span>
                                         </a>
-                                        <span class="label-trending"><i class="fa fa-bolt" aria-hidden="true"></i></span>
+                                        <ul class="card-product-rating list-inline ml-auto">
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        </ul>
+                                        <span class="rating-count">05</span>
                                     </div>
-                                    <!-- /.card-img -->
-                                    <div class="card-description">
-                                        <div class="card-info d-flex align-items-center">
-                                            <div class="d-flex flex-column">
-                                                <a href="#" class="card-item-title">Doll Face</a>
-                                                <a href="#" class="item-category">Illustration</a>
-                                            </div>
-                                            <span class="card-price ml-auto">$10</span>
-                                        </div>
-                                        <!-- /.card-info -->
-                                        <div class="card-author d-flex align-items-center">
-                                            <a href="#" class="card-author-img">
-                                                <img src="img/card-author-ava.png" alt="">
-                                                <span class="author-name">Miks Art</span>
-                                            </a>
-                                            <ul class="card-product-rating list-inline ml-auto">
-                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                            </ul>
-                                            <span class="rating-count">05</span>
-                                        </div>
-                                        <!-- /.card-author -->
-                                    </div>
-                                    <!-- /.card-description -->
+                                    <!-- /.card-author -->
                                 </div>
-                                <!--.large-card-->
+                                <!-- /.card-description -->
                             </div>
-                            <!--col-3-->
-                            <div class="col-3">
-                                <div class="card large-card">
-                                    <div class="card-img">
-                                        <a href="">
-                                            <img src="img/card-item-big.jpg" alt="">
+                            <!--.large-card-->
+                        </div>
+                        <!--col-3-->
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                            <div class="card large-card">
+                                <div class="card-img">
+                                    <a href="">
+                                        <img src="img/card-item-big.jpg" alt="">
+                                    </a>
+                                    <span class="label-trending"><i class="fa fa-bolt" aria-hidden="true"></i></span>
+                                </div>
+                                <!-- /.card-img -->
+                                <div class="card-description">
+                                    <div class="card-info d-flex align-items-center">
+                                        <div class="d-flex flex-column">
+                                            <a href="#" class="card-item-title">Doll Face</a>
+                                            <a href="#" class="item-category">Illustration</a>
+                                        </div>
+                                        <span class="card-price ml-auto">$10</span>
+                                    </div>
+                                    <!-- /.card-info -->
+                                    <div class="card-author d-flex align-items-center">
+                                        <a href="#" class="card-author-img">
+                                            <img src="img/card-author-ava.png" alt="">
+                                            <span class="author-name">Miks Art</span>
                                         </a>
+                                        <ul class="card-product-rating list-inline ml-auto">
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        </ul>
+                                        <span class="rating-count">05</span>
                                     </div>
-                                    <!-- /.card-img -->
-                                    <div class="card-description">
-                                        <div class="card-info d-flex align-items-center">
-                                            <div class="d-flex flex-column">
-                                                <a href="#" class="card-item-title">Designer Mockup</a>
-                                                <a href="#" class="item-category">PsdTemplate</a>
-                                            </div>
-                                            <span class="card-price ml-auto">$10</span>
-                                        </div>
-                                        <!-- /.card-info -->
-                                        <div class="card-author d-flex align-items-center">
-                                            <a href="#" class="card-author-img">
-                                                <img src="img/card-author-ava.png" alt="">
-                                                <span class="author-name">ThemeLol</span>
-                                            </a>
-                                            <ul class="card-product-rating list-inline ml-auto">
-                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                            </ul>
-                                            <span class="rating-count">05</span>
-                                        </div>
-                                        <!-- /.card-author -->
-                                    </div>
-                                    <!-- /.card-description -->
+                                    <!-- /.card-author -->
                                 </div>
-                                <!--.large-card-->
+                                <!-- /.card-description -->
                             </div>
-                            <!--col-3-->
+                            <!--.large-card-->
+                        </div>
+                        <!--col-3-->
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                            <div class="card large-card">
+                                <div class="card-img">
+                                    <a href="">
+                                        <img src="img/card-item-big.jpg" alt="">
+                                    </a>
+                                </div>
+                                <!-- /.card-img -->
+                                <div class="card-description">
+                                    <div class="card-info d-flex align-items-center">
+                                        <div class="d-flex flex-column">
+                                            <a href="#" class="card-item-title">Designer Mockup</a>
+                                            <a href="#" class="item-category">PsdTemplate</a>
+                                        </div>
+                                        <span class="card-price ml-auto">$10</span>
+                                    </div>
+                                    <!-- /.card-info -->
+                                    <div class="card-author d-flex align-items-center">
+                                        <a href="#" class="card-author-img">
+                                            <img src="img/card-author-ava.png" alt="">
+                                            <span class="author-name">ThemeLol</span>
+                                        </a>
+                                        <ul class="card-product-rating list-inline ml-auto">
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        </ul>
+                                        <span class="rating-count">05</span>
+                                    </div>
+                                    <!-- /.card-author -->
+                                </div>
+                                <!-- /.card-description -->
+                            </div>
+                            <!--.large-card-->
+                        </div>
+                        <!--col-3-->
                         </div>
                     <!--/ row-->
                 </section>
@@ -460,7 +469,7 @@
             </div>
             <!--/ container-->
         </section>
-        <!--/ default-section -->
+        <!--/ newest-product -->
         <section class="carousel default-section bg-white">
             <div class="container-fluid">
                 <div class="title section-title text-center">
@@ -1081,7 +1090,7 @@
                     <span>Why You Choose Foxtar Market Place?</span>
                 </div>
                 <div class="row">
-                    <div class="col-4 d-flex flex-column align-items-center">
+                    <div class="why-choose-items col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center">
                         <div class="img-wrapper">
                             <img src="img/Why-choose-FMP.png" alt="">
                         </div>
@@ -1090,7 +1099,7 @@
                             Adipisci atque consectetur debitis delectus esse et expedita facere impedit ipsum iste natus nostrum obcaecati odit quis quos, sapiente tenetur voluptate voluptatibus.
                         </p>
                     </div>
-                    <div class="col-4 d-flex flex-column align-items-center">
+                    <div class="why-choose-items col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center">
                         <div class="img-wrapper">
                             <img src="img/Why-choose-FMP.png" alt="">
                         </div>
@@ -1099,7 +1108,7 @@
                             Ab accusamus aliquam amet aspernatur atque cum cumque deserunt est impedit in incidunt inventore iste iure odio, pariatur repudiandae, saepe soluta vero.
                         </p>
                     </div>
-                    <div class="col-4 d-flex flex-column align-items-center">
+                    <div class="why-choose-items col-12 col-lg-4 d-flex flex-column align-items-center">
                         <div class="img-wrapper">
                             <img src="img/Why-choose-FMP.png" alt="">
                         </div>
@@ -1201,11 +1210,11 @@
         <!--/ tutorials-->
     </main>
     <!--/ main -->
-    <footer class=" bg-dark-blue">
+    <footer class="bg-dark-blue">
         <div class="default-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-3">
+                    <div class="footer-col col-12 col-sm-6 col-xl-3">
                         <div class="footer-title">
                             <span>About Company</span>
                         </div>
@@ -1228,8 +1237,8 @@
                             <span class="item-content">+61 3 8376 6284</span>
                         </div>
                     </div>
-                    <!--/ col-3-->
-                    <div class="col-3">
+                    <!--/ footer-col-->
+                    <div class="footer-col col-12 col-sm-6 col-xl-3">
                         <div class="footer-title">
                             <span>Join Our Community </span>
                         </div>
@@ -1251,8 +1260,8 @@
                             </li>
                         </ul>
                     </div>
-                    <!--/ col-3-->
-                    <div class="col-3">
+                    <!--/ footer-col-->
+                    <div class="footer-col col-12 col-sm-6 col-xl-3">
                         <div class="footer-title">
                             <span>Need Help? </span>
                         </div>
@@ -1275,8 +1284,8 @@
                         </ul>
 
                     </div>
-                    <!--/ col-3-->
-                    <div class="col-3">
+                    <!--/ footer-col-->
+                    <div class="footer-col col-12 col-sm-6 col-xl-3">
                         <div class="footer-title">
                             <span>Follow Us On</span>
                         </div>
@@ -1291,7 +1300,7 @@
                             <!--/ wrapper-input-sign-up-->
                         </div>
                     </div>
-                    <!--/ col-3-->
+                    <!--/ footer-col-->
                 </div>
                 <!--/row-->
             </div>

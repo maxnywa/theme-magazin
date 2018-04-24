@@ -76,5 +76,13 @@ footer .copy-right{
 footer .copy-right.default-text{
     line-height: 2.4em;
 }
-
+@media (max-width: 1199px) {
+    footer .footer-col{
+        margin: 20px 0;
+    }
+    footer .default-section{
+        padding-top: 105px;
+        padding-bottom: 90px;
+    }
+}
 /*------ footer end ------*/

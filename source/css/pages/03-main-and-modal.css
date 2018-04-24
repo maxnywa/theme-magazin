@@ -11,7 +11,7 @@
     box-shadow: 1px 0 10px rgba(124, 178, 64, .75);
 }
 .newest-product .tags {
-    margin-bottom: 60px;
+    margin-bottom: 45px;
 }
 .newest-product .tags li{
     background-color: #fff;
@@ -26,16 +26,19 @@
 .newest-product .tags li+li{
     margin-left: 6px;
 }
-.newest-product .tags li:hover {
+.newest-product .tags li:hover,.tags li:active {
     background-color: #e74c3c;
     color: #fff;
     box-shadow: 0 2px 5px rgba(202, 215, 228,0.75);
 }
 .newest-product .button-items{
-    margin-top: 80px;
+    margin-top: 65px;
 }
 .newest-product .button-items a+a{
     margin-left: 12px;
+}
+.newest-product .cards-product .card{
+    margin: 15px 0;
 }
 /*--- why-choose-foxtar ---*/
 .why-choose-foxtar .img-wrapper img{
@@ -85,4 +88,14 @@
 .become-an-author .img-wrapper-content .img-content a{
     margin-left: 60px;
 }
+@media (max-width: 991px){
+    .why-choose-foxtar .default-section{
+        padding-top: 105px;
+        padding-bottom: 90px;
+    }
+    .why-choose-foxtar .why-choose-items{
+        margin: 20px 0;
+    }
+}
+
 /*----- Main page end -----*/
