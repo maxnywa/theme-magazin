@@ -1,7 +1,4 @@
 /*------ form-search start ------*/
-.container-fluid {
-    padding: 0;
-}
 .form-search {
     background-color: #b1b2af;
     background-image: url('../img/form-search.jpg');
@@ -23,6 +20,10 @@
 .input-group {
     margin: 0 auto;
 }
+.form-search-input{
+    max-width: 671px;
+    width: 100%;
+}
 .form-search .title.title-welcome {
     line-height: 1em;
     margin-bottom: 35px;
@@ -38,7 +39,7 @@
     display: block;
 }
 .form-search .form-control{
-    width: 671px;
+    width: 100%;
     height: 56px;
     line-height: 56px;
     font:  400 14px/1 'Roboto', sans-serif;
@@ -116,37 +117,38 @@
     transform: translate(-50%, -50%);
     border-top-color: #000;
 }
-.form-group .col-sm-8 {
+.form-personal-information .form-group .col-sm-8 {
     max-width: 540px;
     height: 40px;
     flex: none;
     padding: 0px;
 }
-.col-sm-4 .col-form-label {
+.form-personal-information .col-sm-4 .col-form-label {
     max-width: 255px;
     height: 40px;
 }
-.content-wrapper-body .form-group.row {
+.form-personal-information .content-wrapper-body .form-group.row {
     margin: 0;
     margin-bottom: 20px ;
 }
-.content-wrapper-title {
+.form-personal-information .content-wrapper-title {
     border-bottom: 1px solid #d7d7d7;
 }
-.content-wrapper-title h6  {
+.form-personal-information .content-wrapper-title h6  {
     line-height: 63px;
     padding-left: 35px;
-
+    font-size: 24px;
+    color: #263238;
 }
-.content-wrapper-bordered {
+.form-personal-information .content-wrapper-bordered {
     background-color: white;
-    /*padding: 0 35px 79px 40px;*/
+    border: 1px solid #dedede;
 }
-.content-wrapper-body {
+.form-personal-information .content-wrapper-body {
     padding: 35px;
     padding-bottom: 79px;
 }
-.form-group .col-form-label {
+.form-personal-information .form-group .col-form-label {
     color: #444;
     font:  400 15px/1 'Roboto', sans-serif;
     line-height: 40px;
@@ -154,10 +156,10 @@
     padding: 0;
 }
 @media (min-width: 576px){
-    .col-form-label.col-sm-4 {
+    .form-personal-information .col-form-label.col-sm-4 {
         flex: none;
     }}
-.form-group .form-control {
+.form-personal-information .form-group .form-control {
     border-radius: 0;
     border-color: #dedede;
     height: 40px;
@@ -165,11 +167,11 @@
     background-color: #f9f9f9;
 }
 
-.form-group .form-control:focus{
+.form-personal-information .form-group .form-control:focus{
     border-color: inherit;
     box-shadow: none;
 }
-.form-group select{
+.form-personal-information .form-group select{
     border-radius: 0;
     -webkit-appearance: none;
     -webkit-border-radius: 0;
