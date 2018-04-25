@@ -1,3 +1,6 @@
+// Select init
+$('select').styler();
+
 //Switch product items view
 $('.grid-thumbs').on('click', function (){
     //Find cards and remove class row-card
