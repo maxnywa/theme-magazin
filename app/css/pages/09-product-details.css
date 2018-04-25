@@ -1,8 +1,13 @@
 /*----- Product details start -----*/
 .mobile-aside-toggle.product{
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    border: 1px solid #919191;
+    border-radius: 3px;
+    height: 30px;
+    width: 30px;
+    color: #919191;
+    background-color: inherit;
+    font-size: 20px;
+    margin-right: 15px;
 }
 .gt-builder-img {
     padding: 18px;
