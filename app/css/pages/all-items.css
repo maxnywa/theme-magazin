@@ -63,6 +63,9 @@
     text-align: right;
     color: #90a4ae;
 }
+.all-items-container {
+    margin-bottom: 65px;
+}
 .all-products-wrapper .list-group a:hover {
     color:#90a4ae;
 }

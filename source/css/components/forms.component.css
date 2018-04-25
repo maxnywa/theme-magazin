@@ -51,9 +51,15 @@
      -webkit-box-shadow: 0 0 10px rgba(100, 100, 100, .75);
      box-shadow: 0 0 10px rgba(100, 100, 100, .75);
  }
-.form-search-input{
-    max-width: 671px;
-    width: 100%;
+@media (max-width: 767px){
+    .form-search-input{
+        max-width: 500px;
+    }
+}
+@media (max-width: 576px){
+    .form-search-input{
+        max-width: 310px;
+    }
 }
 .form-search input.form-control {
     font:  400 14px/1 'Roboto', sans-serif;

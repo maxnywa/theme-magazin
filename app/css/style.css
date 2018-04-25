@@ -360,6 +360,7 @@ ul.breadcrumb li.active {
     color: #ffa726;
     font-size: 12px;
 }
+
 .card .rating-count, .card .count   {
     padding-left: 10px;
     font: 500 12px 'Roboto', sans-serif;
@@ -374,9 +375,17 @@ ul.breadcrumb li.active {
 .card span.rating-count::after, .card span.count::after{
     content:")";
     color: #b0bec5;
-
-/*---large card end---*/
 }
+@media (max-width:1200px){
+    .card .card-author .author-name {
+        padding-left: 7px;
+    }
+    .card .rating-count, .card .count {
+        padding-left: 7px;
+    }
+}
+/*---large card end---*/
+
 /*---medium-card start*/
 .card.medium-card .card-item-title {
     font-size: 16px;
@@ -387,6 +396,35 @@ ul.breadcrumb li.active {
 }
 .card.medium-card .card-author {
     padding: 15px 20px;
+}
+@media (max-width:1200px) {
+    .card.medium-card .card-author {
+        padding: 15px 15px;
+    }
+    .card.medium-card .card-item-title {
+        font-size: 15px;
+    }
+    .row .col-md-4.col-xl-4.col-xl-12.col-md-12.col-12:nth-child(3) .card.medium-card {
+        margin-bottom: 0;
+    }
+}
+@media (max-width: 991px) {
+    .row .col-12.col-md-4.col-xl-4.col-xl-12.col-md-12:nth-child(3) .card.medium-card {
+        margin-bottom: 0;
+    }
+}
+@media (max-width:767px) {
+    .card.medium-card {
+        margin-bottom: 30px;
+    }
+    .row .col-12.col-md-4.col-xl-4.col-xl-12.col-md-12:nth-child(3) .card.medium-card {
+        margin-bottom: 0;
+    }
+}
+@media (max-width:576px) {
+    .row .col-12.col-md-4.col-xl-4.col-xl-12.col-md-12:nth-child(3) .card.medium-card {
+        margin-bottom: 0;
+    }
 }
 .card .medium-card.card-author .rating-count {
     padding-left: 10px;
@@ -466,8 +504,32 @@ ul.breadcrumb li.active {
         -ms-flex-direction: row;
             flex-direction: row;
 }
-.row .col-12:last-child .row-card {
+.row .col-4.col-12:last-child .card.row-card {
     margin-bottom: 0;
+}
+@media (max-width:991px) {
+    .row .col-4.col-12:last-child .card.row-card {
+        margin-bottom: 0;
+    }
+}
+@media (max-width:767px) {
+    .card.row-card {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .row .col-12.col-md-4.col-xl-4:last-child .card.medium-card {
+         margin-bottom: 0;
+     }
+}
+@media (max-width:576px) {
+    .card.row-card {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
 }
 .card.row-card .card-img {
     -webkit-box-flex: 3;
@@ -540,6 +602,28 @@ ul.breadcrumb li.active {
 }
 span.icon-rating{
     padding-right: 10px;
+}
+@media (max-width:576px) {
+    .card.row-card .icon-rating:nth-last-of-type(2) {
+    display: none;
+    }
+    .card.row-card .count:last-of-type {
+    display: none;
+    }
+}
+@media (max-width:480px) {
+    .card.row-card .count {
+        display: none;
+    }
+    .card.row-card .icon-rating, .card .sale {
+        display: none;
+    }
+    .card.row-card .card-text-info {
+        display:none;
+    }
+    .card.row-card .card-info {
+        padding-bottom:15px;
+    }
 }
 /*---row-card end---*/
 /*---main-card start---*/
@@ -793,9 +877,15 @@ footer .copy-right.default-text{
      -webkit-box-shadow: 0 0 10px rgba(100, 100, 100, .75);
      box-shadow: 0 0 10px rgba(100, 100, 100, .75);
  }
-.form-search-input{
-    max-width: 671px;
-    width: 100%;
+@media (max-width: 767px){
+    .form-search-input{
+        max-width: 500px;
+    }
+}
+@media (max-width: 576px){
+    .form-search-input{
+        max-width: 310px;
+    }
 }
 .form-search input.form-control {
     font:  400 14px/1 'Roboto', sans-serif;
@@ -1537,6 +1627,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
     font-weight: 500;
     margin-bottom: 44px;
 }
+
 .footer-title{
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
@@ -1553,6 +1644,9 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 
     .title.section-title {
         font-size: 30px;
+    }
+    .title.form-title {
+        margin-bottom: 10px;
     }
 }
 
@@ -2121,12 +2215,6 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
     color: #707070;
     line-height: 40px;
 }
-/*.upload-form input#file {*/
-    /*border: 1px solid #dcdcdc;*/
-    /*background: #f9f9f9;*/
-    /*color: #707070;*/
-    /*padding-left: 9px;*/
-/*}*/
 .upload-form .form-col .form-control:focus, .upload-form-bottom .form-col .form-control:focus {
     border: 1px solid #2d2d2d;
 }
@@ -2140,8 +2228,43 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
     color: #f4f6f5;
     padding: 17px 35px;
     margin-top: 22px;
-
 }
+@media (max-width:991px) {
+    .form-group-row .label-col {
+        -webkit-box-flex: 4;
+            -ms-flex: 4;
+                flex: 4;
+    }
+    .form-group-row .form-col {
+        -webkit-box-flex: 8;
+            -ms-flex: 8;
+                flex: 8;
+    }
+    .upload-products-wrapper {
+        padding-bottom: 90px;
+    }
+}
+@media (max-width:767px) {
+    .form-group-row  {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    .form-wrapper .upload-form, .upload-form-bottom{
+        padding:10px;
+    }
+    .btn-custom.btn-green.form {
+        width: 100%;
+    }
+    .upload-products-wrapper {
+        padding-bottom: 70px;
+    }
+}
+
 /*---UPLOAD-PRODUCTS END---*/
 
 
@@ -2208,6 +2331,9 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
     top: 0;
     text-align: right;
     color: #90a4ae;
+}
+.all-items-container {
+    margin-bottom: 65px;
 }
 .all-products-wrapper .list-group a:hover {
     color:#90a4ae;
