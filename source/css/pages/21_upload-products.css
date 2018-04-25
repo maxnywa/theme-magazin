@@ -1,0 +1,130 @@
+/*---UPLOAD-PRODUCTS START---*/
+.upload-products-wrapper {
+    padding-bottom: 110px;
+}
+.upload-products-wrapper .form-search {
+    padding: 60px 0 70px 0;
+}
+.form-wrapper {
+    background-color: #fff;
+    border: 1px solid #d7d7d7;
+    position: relative;
+}
+.form-wrapper .upload-form, .upload-form-bottom{
+    padding:0px 50px 50px 45px;
+}
+.form-group-row .label-col {
+    flex: 3;
+    color: #444;
+    font: 400 15px/1 'Roboto', sans-serif;
+    line-height: 40px;
+ }
+.upload-products-wrapper .form-search .input-group .form-control {
+    font:  500 14px/1 'Roboto', sans-serif;
+    color: #90a4ae;
+}
+.upload-form .jq-selectbox__select {
+    width: 100%;
+    padding-left: 20px;
+    font:  400 15px/1 'Roboto', sans-serif;
+    color:#707070;
+    line-height: 40px;
+}
+.upload-form .jq-selectbox.focused .jq-selectbox__select {
+    border: 1px solid #2d2d2d;
+}
+.form-group-row {
+    display: flex;
+    margin-bottom: 20px;
+}
+.upload-form .form-group-row:last-child, .upload-form-bottom .form-group-row:last-child {
+    margin-bottom: 0;
+}
+.upload-form label, .upload-form-bottom label {
+    margin-bottom: 0;
+    position: relative;
+}
+.upload-form label span, .upload-form-bottom label span {
+    margin-bottom: 0;
+    color: #8bc34a;
+    position: absolute;
+    font-size: 20px;
+    top: -10px;
+}
+.form-group-row .form-col {
+    flex: 14;
+}
+.upload-form .form-col .form-control, .upload-form-bottom .form-col .form-control  {
+    box-shadow: none;
+    border-radius: 0;
+    font:  400 15px/1 'Roboto', sans-serif;
+    height: 40px;
+    color:#707070;
+    background-color:#f9f9f9;
+    padding-left: 20px;
+    border: 1px solid #dfdfdf;
+}
+.jq-file:hover .jq-file__browse {
+    background: none;
+}
+.jq-file:active .jq-file__browse {
+    background: none;
+    border: 1px solid #dfdfdf;
+}
+.jq-file.focused .jq-file__name {
+    border: 1px solid #dfdfdf;
+}
+.jq-file__browse {
+    position: absolute;
+    top: 7px;
+    left:10px;
+    font: 500 12px/1 'Roboto', sans-serif;
+    color: #707070;;
+    text-shadow: none;
+    width: 90px;
+    line-height: 24px;
+    background-color: #fff;
+    box-shadow: none;
+    border: 1px solid #dedede;
+}
+.jq-file {
+    width: 100%;
+    border-radius:0;
+    box-shadow: none;
+    background-color:#f9f9f9;
+}
+.jq-file__name {
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    padding: 0 80px 0 120px;
+    border: 1px solid #dcdcdc;
+    border-radius: 0;
+    background-color: #f9f9f9;
+    box-shadow: none;
+    font: 500 12px/1 'Roboto', sans-serif;
+    color: #707070;
+    line-height: 40px;
+}
+/*.upload-form input#file {*/
+    /*border: 1px solid #dcdcdc;*/
+    /*background: #f9f9f9;*/
+    /*color: #707070;*/
+    /*padding-left: 9px;*/
+/*}*/
+.upload-form .form-col .form-control:focus, .upload-form-bottom .form-col .form-control:focus {
+    border: 1px solid #2d2d2d;
+}
+.upload-form textarea {
+    min-height: 150px;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+.btn-custom.btn-green.form {
+    background-color: #8bc34a;
+    color: #f4f6f5;
+    padding: 17px 35px;
+    margin-top: 22px;
+
+}
+/*---UPLOAD-PRODUCTS END---*/

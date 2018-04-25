@@ -17,8 +17,7 @@
 }
 /*---large card start---*/
 .card .card-img img {
-    height: 100%;
-    max-width: 100%;
+    width: 100%;
 }
 .card.large-card .card-img {
     position: relative;
@@ -131,7 +130,7 @@
     border:none;
 }
 .card.aside-card {
-    margin-bottom: 27px;
+    margin-bottom: 25px;
     position: relative;
     box-shadow: none;
 }
@@ -149,7 +148,7 @@
     border: none;
 }
 .card.aside-card .card-author {
-    padding: 0 0 30px 0;
+    padding: 0 0 25px 0;
     border-bottom: 1px solid #d9e0e3;
 }
 .card.aside-card:last-of-type .card-author {
@@ -223,8 +222,11 @@
     color:#aeb4bb;
     padding-right: 30px;
 }
-.all-items-container .row:nth-child(3) .row-card,
 .all-items-container .row:nth-child(4) .row-card {
+    display: none;
+}
+.all-items-container .row:nth-child(3) .col-12:nth-child(3) .row-card,
+.all-items-container .row:nth-child(3) .col-12:nth-child(2) .row-card {
     display: none;
 }
 .card .card-text-info p{
