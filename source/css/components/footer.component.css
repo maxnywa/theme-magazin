@@ -84,4 +84,17 @@ footer .copy-right.default-text{
         padding-bottom: 90px;
     }
 }
+@media (max-width: 576px){
+    footer .input-sign-up{
+        width: 100%;
+        position: relative;
+    }footer .input-sign-up{
+        width: 100%;
+        position: relative;
+    }
+    footer .wrapper-input-sign-up{
+        width: 100%;
+    }
+}
+
 /*------ footer end ------*/

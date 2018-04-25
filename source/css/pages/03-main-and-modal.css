@@ -18,6 +18,7 @@
     color: #263238;
     font-weight: 500;
     font-size: 14px;
+    text-transform: capitalize;
 }
 .newest-product .tags li a{
     padding: 14px 21px;
@@ -70,7 +71,6 @@
 }
 .why-choose-foxtar a:hover{
     color: #8bc34a;
-    text-transform: capitalize;
 }
 .why-choose-foxtar p{
     margin-top: 30px;
@@ -152,12 +152,12 @@
     .mobile-list .dropdown-list li{
         padding: 10px 0;
         border: 1px solid transparent;
+        text-transform: capitalize;
     }
     .mobile-list .dropdown-list li:hover{
         border-bottom: 1px solid #b5b5b5;
         color: #000;
     }
-    
     .mobile-list .current .fa-close{
         display: none;
     }
