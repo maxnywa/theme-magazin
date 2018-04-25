@@ -20,6 +20,7 @@
 /*---large card start---*/
 .card .card-img img {
     width: 100%;
+    height: 100%;
 }
 .card.large-card .card-img {
     position: relative;
@@ -293,6 +294,7 @@ span.icon-rating{
 /*---row-small-card start---*/
 .card.row-small-card {
     border:none;
+    margin: 15px 0;
 }
 .card.row-small-card .card-item-title {
     font-size: 14px;

@@ -214,7 +214,7 @@ ul.breadcrumb li.active {
     display: inline-block;
     background-color: #fff;
     color: #263238;
-    padding: 20px 28px;
+    padding: 17px 28px;
     font:  400 16px/1 'Roboto', sans-serif;
     /*box-shadow: 0 2px 2px rgb(232,236,238), 0 0 2px rgb(232,236,238);*/
     text-align:center;
@@ -290,6 +290,7 @@ ul.breadcrumb li.active {
 /*---large card start---*/
 .card .card-img img {
     width: 100%;
+    height: 100%;
 }
 .card.large-card .card-img {
     position: relative;
@@ -563,6 +564,7 @@ span.icon-rating{
 /*---row-small-card start---*/
 .card.row-small-card {
     border:none;
+    margin: 15px 0;
 }
 .card.row-small-card .card-item-title {
     font-size: 14px;
@@ -674,6 +676,9 @@ footer .list{
     font-size: 15px;
     line-height: 2em;
     padding: 0;
+}
+footer .social-networks{
+    margin-bottom: 40px;
 }
 footer .newsletter-sign-up span{
     color: #fff;
@@ -1382,61 +1387,85 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 */
 .icon-badge-blue {
   background-image: url(../img/sprite.png);
-  background-position: 0px 0px;
+  background-position: -108px -37px;
   width: 34px;
   height: 37px;
 }
 .icon-badge-green {
   background-image: url(../img/sprite.png);
-  background-position: -34px 0px;
+  background-position: -34px -100px;
   width: 34px;
   height: 37px;
 }
 .icon-badge-grey {
   background-image: url(../img/sprite.png);
-  background-position: -68px 0px;
+  background-position: 0px -100px;
   width: 34px;
   height: 37px;
 }
 .icon-badge-red {
   background-image: url(../img/sprite.png);
-  background-position: 0px -37px;
+  background-position: -68px -100px;
   width: 34px;
   height: 37px;
 }
 .icon-badge-yellow {
   background-image: url(../img/sprite.png);
-  background-position: -34px -37px;
+  background-position: -108px 0px;
   width: 34px;
   height: 37px;
 }
+.icon-fb-b {
+  background-image: url(../img/sprite.png);
+  background-position: -54px 0px;
+  width: 54px;
+  height: 50px;
+}
 .icon-fb {
   background-image: url(../img/sprite.png);
-  background-position: -68px -37px;
+  background-position: -142px -28px;
   width: 28px;
   height: 28px;
+}
+.icon-linkedin-b {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 54px;
+  height: 50px;
 }
 .icon-linkedin {
   background-image: url(../img/sprite.png);
-  background-position: 0px -74px;
+  background-position: -102px -100px;
   width: 28px;
   height: 28px;
+}
+.icon-pinterest-b {
+  background-image: url(../img/sprite.png);
+  background-position: -54px -50px;
+  width: 54px;
+  height: 50px;
 }
 .icon-pinterest {
   background-image: url(../img/sprite.png);
-  background-position: -28px -74px;
+  background-position: -142px 0px;
   width: 28px;
   height: 28px;
 }
+.icon-tw-b {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -50px;
+  width: 54px;
+  height: 50px;
+}
 .icon-tw {
   background-image: url(../img/sprite.png);
-  background-position: -56px -74px;
+  background-position: -142px -56px;
   width: 28px;
   height: 28px;
 }
 .icon-youtube {
   background-image: url(../img/sprite.png);
-  background-position: -102px 0px;
+  background-position: -142px -84px;
   width: 28px;
   height: 28px;
 }
@@ -1822,11 +1851,18 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 /*----- Main page end -----*/
 
 /*----- Product details start -----*/
+.mobile-aside-toggle.product{
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
 .gt-builder-img {
     padding: 18px;
     border: 1px solid #dedede;
-    max-width: 830px;
     margin-bottom: 40px;
+}
+.gt-builder-img img{
+    width: 100%;
 }
 .gt-builder-content{
     margin-bottom: 50px;
@@ -1848,9 +1884,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 .gt-builder-btn a+a{
     margin-left: 17px;
 }
+.gt-builder-social .social-networks li+li{
+    margin-left: 3px;
+}
+
 /*--- more-product---*/
 .more-product{
-    padding-bottom: 120px;
+    padding-bottom: 100px;
 }
 .more-product .title{
     font-size: 18px;
@@ -1860,7 +1900,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
     padding: 22px 25px;
 }
 .more-product .row{
-    margin-top: 28px;
+    margin-top: 13px;
 }
 /*--- product price---*/
 .product-price .dropdown-menu.show{
@@ -1885,7 +1925,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
     font-size: 22px;
     color: #e74c3c;
 }
-.product-author author-card{
+.product-author .author-card{
     padding: 25px 0;
     text-transform: capitalize;
 }
@@ -1930,15 +1970,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
     font-size: 14px;
     text-transform: capitalize;
     line-height: 2.57em;
-    font-weight: 700;
-}
-.product-info .info-table td{
-    color: #263238;
-}
-.product-info .info-table td+td{
     color: #70838d;
     font-weight: 400;
-    vertical-align: baseline;
+
+}
+.product-info .info-table span{
+    color: #263238;
+    font-weight: 700;
 }
 /*----- Product details end -----*/
 /*------ 16_settings_personal-info start------*/
