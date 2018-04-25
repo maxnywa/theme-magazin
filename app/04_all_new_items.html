@@ -263,6 +263,9 @@
             </form>
             <!--form-search-input-->
         </div>
+            </form>
+            <!--form-search-input-->
+        </div>
         <!--/ form-search-->
         <div class="container">
             <div class="breadcrumbs">
@@ -272,34 +275,20 @@
                 </ul>
             </div>
             <!--.breadcrumbs-->
+            <div class="overlay"></div>
             <div class="row">
-                <div class="col-3">
+                <div class="col-10 col-sm-8 col-md-8 col-lg-3 mobile-aside left">
                     <aside class="aside aside-left">
                         <div class="aside-section categories-list">
                             <div class="aside-section-title">
                                 <span>Categories</span>
                             </div>
                             <ul class="list-group">
-                                <li class="list-group-item d-flex justify-content-between align-items-center">
-                                    WordPress
-                                    <span>(150)</span>
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between align-items-center">
-                                    Joomla
-                                     <span>(100)</span>
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between align-items-center">
-                                    PSD
-                                    <span>(50)</span>
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between align-items-center">
-                                    Plugins
-                                    <span>(60)</span>
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between align-items-center">
-                                    Components
-                                    <span>(40)</span>
-                                </li>
+                                <li class="list-group-item"><a href="">WordPress <span>(150)</span></a></li>
+                                <li class="list-group-item"><a href=""> Joomla<span>(100)</span></a></li>
+                                <li class="list-group-item"><a href="">PSD<span>(50)</span></a></li>
+                                <li class="list-group-item"><a href=""> Plugins<span>(60)</span></a></li>
+                                <li class="list-group-item"><a href="">Components<span>(40)</span></a></li>
                             </ul>
                             <!--aside-section-title-->
                         </div>
@@ -310,7 +299,7 @@
                             </div>
                             <!--aside-section-title-->
                             <div id="slider-range" class="price-range"></div>
-                            <a href="#" class="btn-custom btn-green btn-block"><i class="fa fa-search" aria-hidden="true"></i><span>Search</span></a>
+                            <a href="#" class="btn-custom btn-green btn-green-aside btn-block"><i class="fa fa-search" aria-hidden="true"></i><span>Search</span></a>
                         </div>
                         <!--aside-section-->
                         <div class="aside-section">
@@ -419,15 +408,18 @@
                                 <!-- /.card-description -->
                             </div>
                             <!--.aside-card-->
-                            <a href="#" class="btn-custom btn-green btn-block">View all</a>
+                            <a href="#" class="btn-custom btn-green btn-green-aside btn-block">View all</a>
                         </div>
                         <!--aside-section-->
                     </aside>
                     <!--aside aside-left-->
                 </div>
                 <!--.col-3-->
-                <div class="col-9">
+                <div class="col-12 col-lg-9">
                     <div class="sort-controls d-flex align-items-center">
+                        <button class="mobile-aside-toggle">
+                            <i class="fa fa-bars"></i>
+                        </button>
                         <button>
                             <i class="fa fa-sort-amount-desc"></i>
                         </button>
@@ -459,7 +451,7 @@
                         <button class="change-view-items grid-thumbs ml-auto">
                             <i class="fa fa-th-large"></i>
                         </button>
-                        <button class="change-view-items grid-list active">
+                        <button class="change-view-items grid-list">
                             <i class="fa fa-th-list"></i>
                         </button>
                     </div>
@@ -1078,7 +1070,7 @@
     <div class="default-section">
         <div class="container">
             <div class="row">
-                <div class="col-3">
+                <div class="col-12 col-sm-6 col-xl-3 ">
                     <div class="footer-title">
                         <span>About Company</span>
                     </div>
@@ -1102,7 +1094,7 @@
                     </div>
                 </div>
                 <!--/ col-3-->
-                <div class="col-3">
+                <div class="col-12 col-sm-6 col-xl-3">
                     <div class="footer-title">
                         <span>Join Our Community </span>
                     </div>
@@ -1125,7 +1117,7 @@
                     </ul>
                 </div>
                 <!--/ col-3-->
-                <div class="col-3">
+                <div class="col-12 col-sm-6 col-xl-3">
                     <div class="footer-title">
                         <span>Need Help? </span>
                     </div>
@@ -1149,7 +1141,7 @@
 
                 </div>
                 <!--/ col-3-->
-                <div class="col-3">
+                <div class="col-12 col-sm-6 col-xl-3">
                     <div class="footer-title">
                         <span>Follow Us On</span>
                     </div>
@@ -1196,6 +1188,7 @@
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="js/range.js"></script>
+<script src="js/aside.js"></script>
 
 <!-- Slick-nav -->
 <script src="js/jquery.slicknav.min.js"></script>

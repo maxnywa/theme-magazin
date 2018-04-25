@@ -1,5 +1,6 @@
 /*-----pagination start------*/
 .pagination-lg {
+    padding-top:65px;
     position: absolute;
     bottom: 0;
     left:15px;
