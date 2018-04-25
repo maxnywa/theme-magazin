@@ -46,6 +46,7 @@
     position: absolute;
     top: 100%!important;
     margin-top: -9px;
+    border-radius: 0;
 }
 .dropdown .dropdown-notifaction{
     min-width: 270px;
