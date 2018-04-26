@@ -17,9 +17,9 @@
 .btn-custom:hover {
     background-color: #f1f1f1;
 }
-.btn-custom .fa {
-    margin-right: 10px;
-}
+/*.btn-custom .fa {*/
+    /*margin-right: 10px;*/
+/*}*/
 .btn-custom.btn-rounded {
     border-radius: 4px;
 }
@@ -34,6 +34,12 @@
 .btn-custom.btn-large {
     padding: 26px 43px;
     font-size: 18px;
+}
+.btn-custom.btn-social {
+    margin-right: 0;
+    padding: 16px;
+    font-size: 18px;
+    color: #fff;
 }
 .btn-custom.btn-red {
     background-color: #e74c3c;
@@ -62,4 +68,16 @@
 }
 .btn-custom.btn-light-blue:hover {
     background-color: #307ab5;
+}
+.btn-custom.btn-blue-violet {
+    background-color: #6370b6;
+}
+.btn-custom.btn-malibu {
+    background-color: #64b5f6;
+}
+.btn-custom.btn-indigo {
+    background-color: #4f71ce;
+}
+.btn-custom.btn-persian-red {
+    background-color: #d32f2f;
 }
