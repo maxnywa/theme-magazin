@@ -1,4 +1,4 @@
-/*----- Product details start -----*/
+/*----- Product details page start -----*/
 .mobile-aside-toggle.product{
     border: 1px solid #919191;
     border-radius: 3px;
@@ -77,6 +77,12 @@
     font-weight: 500;
     font-size: 22px;
     color: #e74c3c;
+}
+.product-price .price-regular{
+    margin-bottom: 25px;
+}
+.product-price .product-price-btn-group a+a{
+    margin-top: 10px;
 }
 .product-author .author-card{
     padding: 25px 0;

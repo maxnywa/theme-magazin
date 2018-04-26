@@ -216,7 +216,8 @@ ul.breadcrumb li.active {
     color: #263238;
     padding: 17px 28px;
     font:  400 16px/1 'Roboto', sans-serif;
-    /*box-shadow: 0 2px 2px rgb(232,236,238), 0 0 2px rgb(232,236,238);*/
+    -webkit-box-shadow: 0 2px 2px rgb(232,236,238), 0 0 2px rgb(232,236,238);
+            box-shadow: 0 2px 2px rgb(232,236,238), 0 0 2px rgb(232,236,238);
     text-align:center;
 }
 .btn-custom:hover {
@@ -1104,7 +1105,7 @@ footer .copy-right.default-text{
     display: block;
 }
 .dropdown .dropdown-menu .list{
-    padding: 15px 20px;
+    padding: 15px 30px 15px 15px;
     border-radius: 0;
 }
 .dropdown .dropdown-menu .list .dropdown-item{
@@ -1133,6 +1134,9 @@ header .header-top .header-top-dropdowns{
 }
 header .header-top .header-top-dropdowns li{
     margin-right: 15px;
+}
+header .header-top .header-top-dropdowns .list li{
+    margin-right: 0;
 }
 header .header-top .header-top-dropdowns li:last-child{
     margin-right: 0;
@@ -1165,9 +1169,19 @@ header .header-bottom .header-bottom-nav ul li:last-child{
     header .header-top .need-help{
         margin-right: auto;
     }
+    header .header-conrols{
+        width: 100%;
+        margin-top: 20px;
+    }
     header .header-top .header-top-dropdowns{
+        -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
         margin-left: 0;
     }
+
     header .header-bottom .header-bottom-nav ul li{
         display: block;
         text-align: center;
@@ -1176,34 +1190,33 @@ header .header-bottom .header-bottom-nav ul li:last-child{
     header .header-bottom .header-bottom-nav ul li+li{
         margin-top: 10px;
     }
-    header .header-conrols{
-        width: 100%;
-        margin-top: 20px;
-    }
 }
 @media (max-width: 576px){
-    .dropdown-account .line-toggle span{
+    header .dropdown-account .line-toggle span{
         display: none;
-    }
-    header .header-top button{
-        margin-left: 10px;
     }
     header .header-top .header-top-dropdowns li {
         margin-right: 10px;
     }
-    header .header-conrols{
-       -ms-flex-pack: distribute;
-           justify-content: space-around;
+    header .dropdown .dropdown-menu .dropdown-item {
+        padding: 15px;
     }
-    header .header-top-dropdowns{
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
+    header .dropdown .dropdown-menu .total{
+        padding: 8px 20px;
+    }
+    header .header-top button{
+        margin-left: 10px;
     }
     .dropdown-account .line-toggle{
         margin-left: 0;
     }
     .dropdown-account .line-toggle i{
         margin-left: 7px;
+    }
+    .dropdown .dropdown-menu .list{
+        padding: 15px 10px;
+        border-radius: 0;
+        line-height: 1em;
     }
 }
 /*---loginModal start---*/
@@ -1868,7 +1881,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 
 /*----- Main page end -----*/
 
-/*----- Product details start -----*/
+/*----- Product details page start -----*/
 .mobile-aside-toggle.product{
     border: 1px solid #919191;
     border-radius: 3px;
@@ -1947,6 +1960,12 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
     font-weight: 500;
     font-size: 22px;
     color: #e74c3c;
+}
+.product-price .price-regular{
+    margin-bottom: 25px;
+}
+.product-price .product-price-btn-group a+a{
+    margin-top: 10px;
 }
 .product-author .author-card{
     padding: 25px 0;
