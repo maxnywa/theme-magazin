@@ -214,7 +214,7 @@ ul.breadcrumb li.active {
     display: inline-block;
     background-color: #fff;
     color: #263238;
-    padding: 17px 28px;
+    padding: 17px 25px;
     font:  400 16px/1 'Roboto', sans-serif;
     -webkit-box-shadow: 0 2px 2px rgb(232,236,238), 0 0 2px rgb(232,236,238);
             box-shadow: 0 2px 2px rgb(232,236,238), 0 0 2px rgb(232,236,238);
@@ -584,6 +584,7 @@ span.icon-rating{
 .card.row-small-card {
     border:none;
     margin: 15px 0;
+    max-height: 92px;
 }
 .card.row-small-card .card-item-title {
     font-size: 14px;
@@ -594,6 +595,7 @@ span.icon-rating{
     -webkit-box-flex: 5;
         -ms-flex: 5;
             flex: 5;
+    max-width: 103px;
 }
 .card.row-small-card .card-description {
     -webkit-box-orient: vertical;
@@ -1179,7 +1181,6 @@ header .header-bottom .header-bottom-nav ul li:last-child{
                 flex-grow: 1;
         -ms-flex-pack: distribute;
             justify-content: space-around;
-        margin-left: 0;
     }
 
     header .header-bottom .header-bottom-nav ul li{
@@ -1194,6 +1195,9 @@ header .header-bottom .header-bottom-nav ul li:last-child{
 @media (max-width: 576px){
     header .dropdown-account .line-toggle span{
         display: none;
+    }
+    header .header-top .header-top-dropdowns{
+        margin-left:0;
     }
     header .header-top .header-top-dropdowns li {
         margin-right: 10px;
@@ -1398,24 +1402,6 @@ ul.badge-product-author li + li {
 
 
 
-/*
-Icon classes can be used entirely standalone. They are named after their original file names.
-
-Example usage in HTML:
-
-`display: block` sprite:
-<div class="icon-home"></div>
-
-To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
-
-// CSS
-.icon {
-  display: inline-block;
-}
-
-// HTML
-<i class="icon icon-home"></i>
-*/
 .icon-badge-blue {
   background-image: url(../img/sprite.png);
   background-position: -108px -37px;
@@ -1518,6 +1504,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+
 }
 .nav-tabs {
     border-bottom: 0;
@@ -1541,9 +1528,11 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
     left: 0;
     top: 12px;
 }
- li.nav-item {
+li.nav-item {
     line-height: 58px;
-    width: 25%;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
     text-align: center;
 }
 .nav-tabs .nav-link.nav-li-item {
@@ -1917,15 +1906,16 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 .gt-builder-btn-social{
     margin-bottom: 55px;
 }
-.gt-builder-btn a+a{
-    margin-left: 17px;
+.gt-builder-btn-social .gt-builder-btn a+a{
+    margin-left: 15px;
 }
-.gt-builder-social .social-networks li+li{
+.gt-builder-btn-social .gt-builder-social li+li{
     margin-left: 3px;
 }
 
 /*--- more-product---*/
 .more-product{
+    margin-top: 50px;
     padding-bottom: 100px;
 }
 .more-product .title{
@@ -1987,7 +1977,6 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
     font-size: 13px;
     border: 1px solid #dedede;
     padding: 8px 15px;
-
 }
 .aside-section.sales{
     padding-top: 22px;
@@ -2021,9 +2010,60 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
     font-weight: 700;
 }
 /*----- Product details end -----*/
-/*@media (max-width: 576px){*/
-    /*.gt-builder-btn*/
-/*}*/
+@media (max-width: 767px){
+    .mobile-aside-toggle{
+        margin: 15px 0;
+    }
+    .gt-builder-btn-social{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .gt-builder-btn-social .gt-builder-btn a+a{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .gt-builder-btn-social .gt-builder-btn a{
+        width: 100%;
+    }
+    .gt-builder-btn-social .gt-builder-social{
+         margin-top: 20px;
+         -ms-flex-item-align: center;
+             align-self: center;
+    }
+    .gt-builder-btn-social .gt-builder-social li+li{
+        margin-left: 15px;
+    }
+    .nav.nav-tabs{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: stretch;
+            -ms-flex-align: stretch;
+                align-items: stretch;
+    }
+    .product-page .tab-pane ul{
+        width: 100%;
+    }
+    .tab-content .tab-pane.active {
+        padding: 25px 35px 55px 35px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .tab-content ul + ul {
+        margin-left: 0;
+    }
+}
 /*------ 16_settings_personal-info start------*/
 .form-search.form-search-small {
     padding-top: 60px;

@@ -10,6 +10,7 @@
     padding: 25px 35px 55px 35px;
     display: flex;
     flex-direction: row;
+
 }
 .nav-tabs {
     border-bottom: 0;
@@ -33,9 +34,9 @@
     left: 0;
     top: 12px;
 }
- li.nav-item {
+li.nav-item {
     line-height: 58px;
-    width: 25%;
+    flex-grow: 1;
     text-align: center;
 }
 .nav-tabs .nav-link.nav-li-item {

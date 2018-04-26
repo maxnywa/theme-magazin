@@ -278,6 +278,7 @@ span.icon-rating{
 .card.row-small-card {
     border:none;
     margin: 15px 0;
+    max-height: 92px;
 }
 .card.row-small-card .card-item-title {
     font-size: 14px;
@@ -286,6 +287,7 @@ span.icon-rating{
 }
 .card.row-small-card .card-img {
     flex: 5;
+    max-width: 103px;
 }
 .card.row-small-card .card-description {
     flex-direction: column;

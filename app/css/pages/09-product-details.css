@@ -34,15 +34,16 @@
 .gt-builder-btn-social{
     margin-bottom: 55px;
 }
-.gt-builder-btn a+a{
-    margin-left: 17px;
+.gt-builder-btn-social .gt-builder-btn a+a{
+    margin-left: 15px;
 }
-.gt-builder-social .social-networks li+li{
+.gt-builder-btn-social .gt-builder-social li+li{
     margin-left: 3px;
 }
 
 /*--- more-product---*/
 .more-product{
+    margin-top: 50px;
     padding-bottom: 100px;
 }
 .more-product .title{
@@ -104,7 +105,6 @@
     font-size: 13px;
     border: 1px solid #dedede;
     padding: 8px 15px;
-
 }
 .aside-section.sales{
     padding-top: 22px;
@@ -138,6 +138,57 @@
     font-weight: 700;
 }
 /*----- Product details end -----*/
-/*@media (max-width: 576px){*/
-    /*.gt-builder-btn*/
-/*}*/
+@media (max-width: 767px){
+    .mobile-aside-toggle{
+        margin: 15px 0;
+    }
+    .gt-builder-btn-social{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .gt-builder-btn-social .gt-builder-btn a+a{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .gt-builder-btn-social .gt-builder-btn a{
+        width: 100%;
+    }
+    .gt-builder-btn-social .gt-builder-social{
+         margin-top: 20px;
+         -ms-flex-item-align: center;
+             align-self: center;
+    }
+    .gt-builder-btn-social .gt-builder-social li+li{
+        margin-left: 15px;
+    }
+    .nav.nav-tabs{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: stretch;
+            -ms-flex-align: stretch;
+                align-items: stretch;
+    }
+    .product-page .tab-pane ul{
+        width: 100%;
+    }
+    .tab-content .tab-pane.active {
+        padding: 25px 35px 55px 35px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .tab-content ul + ul {
+        margin-left: 0;
+    }
+}

@@ -205,7 +205,6 @@ header .header-bottom .header-bottom-nav ul li:last-child{
                 flex-grow: 1;
         -ms-flex-pack: distribute;
             justify-content: space-around;
-        margin-left: 0;
     }
 
     header .header-bottom .header-bottom-nav ul li{
@@ -220,6 +219,9 @@ header .header-bottom .header-bottom-nav ul li:last-child{
 @media (max-width: 576px){
     header .dropdown-account .line-toggle span{
         display: none;
+    }
+    header .header-top .header-top-dropdowns{
+        margin-left:0;
     }
     header .header-top .header-top-dropdowns li {
         margin-right: 10px;
