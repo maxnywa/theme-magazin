@@ -747,10 +747,6 @@ footer .copy-right.default-text{
     footer .footer-col{
         margin: 20px 0;
     }
-    footer .default-section{
-        padding-top: 105px;
-        padding-bottom: 90px;
-    }
 }
 @media (max-width: 576px){
     footer .input-sign-up{
@@ -859,6 +855,13 @@ footer .copy-right.default-text{
     content: "\f002";
     color: #90a4ae;
     font-size: 20px;
+}
+@media (max-width: 767px){
+    .form-search .title.title-premium{
+        text-align: center;
+        font-size: 18px;
+        line-height: 1.3em;
+    }
 }
 @media (max-width: 576px){
     .form-search .title.title-welcome{
@@ -1331,9 +1334,20 @@ header .header-bottom .header-bottom-nav ul li:last-child{
 }
 
 #loginModal .lost-password:hover,
-#loginModal .custom-btn.btn-green
-{
+#loginModal .custom-btn.btn-green {
  text-decoration: none;
+}
+@media (max-width: 576px) {
+    #loginModal .modal-content {
+        padding: 30px 20px 40px;
+    }
+    #loginModal .custom-btn.btn-green,
+    #loginModal .login-btn-group .submit-btn {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+
 }
 /*---loginModal end---*/
 /*-----pagination start------*/
@@ -1925,6 +1939,11 @@ li.nav-item {
     border: 1px solid #dedede;
     padding: 22px 25px;
 }
+.more-product .card-item-title{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
 .more-product .row{
     margin-top: 13px;
 }
@@ -2011,6 +2030,11 @@ li.nav-item {
 }
 /*----- Product details end -----*/
 @media (max-width: 767px){
+    .gt-builder-content .title{
+        font-size: 25px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
     .mobile-aside-toggle{
         margin: 15px 0;
     }
@@ -2062,6 +2086,9 @@ li.nav-item {
     }
     .tab-content ul + ul {
         margin-left: 0;
+    }
+    .more-product{
+        padding-bottom: 50px;
     }
 }
 /*------ 16_settings_personal-info start------*/

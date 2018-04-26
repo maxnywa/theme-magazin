@@ -82,10 +82,6 @@ footer .copy-right.default-text{
     footer .footer-col{
         margin: 20px 0;
     }
-    footer .default-section{
-        padding-top: 105px;
-        padding-bottom: 90px;
-    }
 }
 @media (max-width: 576px){
     footer .input-sign-up{

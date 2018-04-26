@@ -53,6 +53,11 @@
     border: 1px solid #dedede;
     padding: 22px 25px;
 }
+.more-product .card-item-title{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
 .more-product .row{
     margin-top: 13px;
 }
@@ -139,6 +144,11 @@
 }
 /*----- Product details end -----*/
 @media (max-width: 767px){
+    .gt-builder-content .title{
+        font-size: 25px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
     .mobile-aside-toggle{
         margin: 15px 0;
     }
@@ -174,5 +184,8 @@
     }
     .tab-content ul + ul {
         margin-left: 0;
+    }
+    .more-product{
+        padding-bottom: 50px;
     }
 }

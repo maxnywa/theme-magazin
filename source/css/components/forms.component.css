@@ -92,6 +92,13 @@
     color: #90a4ae;
     font-size: 20px;
 }
+@media (max-width: 767px){
+    .form-search .title.title-premium{
+        text-align: center;
+        font-size: 18px;
+        line-height: 1.3em;
+    }
+}
 @media (max-width: 576px){
     .form-search .title.title-welcome{
         text-align: center;
