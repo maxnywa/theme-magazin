@@ -31,15 +31,35 @@
 
     <!-- Custom style -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Fix awesome magic with styles -->
+    <style>
+        li.nav-item {
+            width: auto;
+            text-align: left;
+            line-height: normal;
+        }
+
+        ul.breadcrumb {
+            padding: 0;
+        }
+
+        .jq-selectbox__select {
+            width: 100%;
+        }
+
+        .pagination-lg {
+            position: static;
+            padding-top: 0;
+        }
+    </style>
 </head>
 <body style="margin-top: 60px;">
-
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-info">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
@@ -48,11 +68,29 @@
             <li class="nav-item">
                 <a class="nav-link" href="#cards">Cards</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#forms">Forms</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#dropdowns">Dropdowns</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#modal">Modal</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#breadcrumbs">Breadcrumbs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#pagination">Pagination</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#sprites">Sprites</a>
+            </li>
         </ul>
     </div>
 </nav>
-
-<div class="container">
+<div class="container-fluid">
+    <!-- Buttons -->
     <section class="mb-5" id="buttons">
         <div class="row">
             <div class="col">
@@ -61,34 +99,413 @@
         </div>
         <div class="row mb-3">
             <div class="col">
-                <button class="btn-custom">Button</button>
+                <span>Default:</span>
             </div>
         </div>
         <div class="row mb-3">
             <div class="col">
-                <button class="btn-custom btn-red">Button</button>
+                <button class="btn-custom">Regular Button</button>
+                <a href="#" class="btn-custom"><span>Link Button</span></a>
+            </div>
+            <div class="col">
+                <button class="btn-custom btn-large">Large</button>
+                <button class="btn-custom">Default</button>
+                <button class="btn-custom btn-medium">Medium</button>
+                <button class="btn-custom btn-small">Small</button>
+                <button class="btn-custom btn-small btn-rounded">Rounded</button>
             </div>
         </div>
         <div class="row mb-3">
             <div class="col">
-                <button class="btn-custom">Button</button>
+                <button class="btn-custom btn-red">Red</button>
+                <button class="btn-custom btn-green">Green</button>
+                <button class="btn-custom btn-blue">Blue</button>
+                <button class="btn-custom btn-light-blue">Light Blue</button>
+            </div>
+            <div class="col">
+                <a href="#" class="btn-custom btn-blue"><i class="fa fa-search fa-fw"></i></a>
+                <a href="#" class="btn-custom btn-blue"><i class="fa fa-shopping-cart fa-fw"></i></a>
+                <a href="#" class="btn-custom btn-blue"><i class="fa fa-heart-o fa-fw"></i></a>
             </div>
         </div>
-        <div class="row">
+        <div class="row mb-3">
             <div class="col">
-                <button class="btn-custom">Button</button>
+                <span>Social:</span>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col">
+                <a href="#" class="btn-custom btn-social btn-blue-violet"><i class="fa fa-facebook fa-fw"></i></a>
+                <a href="#" class="btn-custom btn-social btn-malibu"><i class="fa fa-twitter fa-fw"></i></a>
+                <a href="#" class="btn-custom btn-social btn-indigo"><i class="fa fa-linkedin fa-fw"></i></a>
+                <a href="#" class="btn-custom btn-social btn-persian-red"><i class="fa fa-pinterest-p fa-fw"></i></a>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col">
+                <span>Examples:</span>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col">
+                <a href="#" class="btn-custom btn-red">Live Preview</a>
+                <a href="#" class="btn-custom btn-blue">Screenshots</a>
+                <a href="#" class="btn-custom btn-green">Documentation</a>
+            </div>
+            <div class="col">
+                <a href="#" class="btn-custom btn-green"><i class="fa fa-search fa-fw"></i><span>Search</span></a>
+                <a href="#" class="btn-custom btn-green"><i
+                        class="fa fa-shopping-cart fa-fw"></i><span>Add To Cart</span></a>
+                <a href="#" class="btn-custom btn-light-blue"><i
+                        class="fa fa-heart-o fa-fw"></i><span>Add To Favourites</span></a>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col">
+                <a href="#" class="btn-custom btn-large">Become A Author</a>
+                <a href="#" class="btn-custom">All New Items</a>
+                <a href="#" class="btn-custom btn-small btn-green btn-rounded">Login</a>
+                <a href="#" class="btn-custom btn-small btn-red btn-rounded">Register</a>
             </div>
         </div>
     </section>
-
-    <section id="cards">
+    <!-- /Buttons -->
+    <!-- Cards -->
+    <section class="mb-5" id="cards">
         <div class="row">
             <div class="col">
                 <h3 class="pb-3 mb-3 border-bottom border-info">Cards</h3>
             </div>
         </div>
+        <div class="row mb-3">
+            <div class="col-3">
+                <div class="card large-card">
+                    <div class="card-img">
+                        <a href="">
+                            <img src="img/card-item-big.jpg" alt="">
+                        </a>
+                    </div>
+                    <!-- /.card-img -->
+                    <div class="card-description">
+                        <div class="card-info d-flex align-items-center">
+                            <div class="d-flex flex-column">
+                                <a href="#" class="card-item-title">Responsive Mobile APP</a>
+                                <a href="#" class="item-category">Site Template</a>
+                            </div>
+                            <span class="card-price ml-auto">$19</span>
+                        </div>
+                        <!-- /.card-info -->
+                        <div class="card-author d-flex align-items-center">
+                            <a href="#" class="card-author-img">
+                                <img src="img/card-author-ava.png" alt="">
+                                <span class="author-name">Radiustheme</span>
+                            </a>
+                            <ul class="card-product-rating list-inline ml-auto">
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            </ul>
+                            <span class="rating-count">05</span>
+                        </div>
+                        <!-- /.card-author -->
+                    </div>
+                    <!-- /.card-description -->
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card large-card">
+                    <div class="card-img">
+                        <a href="">
+                            <img src="img/card-item-big.jpg" alt="">
+                        </a>
+                        <span class="label-trending"><i class="fa fa-bolt" aria-hidden="true"></i></span>
+                    </div>
+                    <!-- /.card-img -->
+                    <div class="card-description">
+                        <div class="card-info d-flex align-items-center">
+                            <div class="d-flex flex-column">
+                                <a href="#" class="card-item-title">The Post Grid Pro</a>
+                                <a href="#" class="item-category">WordPress Plugin</a>
+                            </div>
+                            <span class="card-price ml-auto">$15</span>
+                        </div>
+                        <!-- /.card-info -->
+                        <div class="card-author d-flex align-items-center">
+                            <a href="#" class="card-author-img">
+                                <img src="img/card-author-ava.png" alt="">
+                                <span class="author-name">PsdBosS</span>
+                            </a>
+                            <ul class="card-product-rating list-inline ml-auto">
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            </ul>
+                            <span class="rating-count">05</span>
+                        </div>
+                        <!-- /.card-author -->
+                    </div>
+                    <!-- /.card-description -->
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card row-small-card d-flex flex-row">
+                    <div class="card-img">
+                        <a href="">
+                            <img src="img/card-item-row-small.jpg" alt="">
+                        </a>
+                    </div>
+                    <!-- /.card-img -->
+                    <div class="card-description">
+                        <div class="card-info d-flex">
+                            <div class="d-flex flex-column">
+                                <a href="#" class="card-item-title">Grand Ballet - Dance</a>
+                                <a href="#" class="item-category">Site Template</a>
+                                <span class="card-price">$19</span>
+                            </div>
+                        </div>
+                        <!-- /.card-info -->
+                    </div>
+                    <!-- /.card-description -->
+                </div>
+            </div>
+        </div>
     </section>
+    <!-- /Cards -->
+    <!-- Forms -->
+    <section class="mb-5" id="forms">
+        <div class="row">
+            <div class="col">
+                <h3 class="pb-3 mb-3 border-bottom border-info">Forms</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <form>
+                    <div class="form-group row">
+                        <label for="usr-name" class="col-sm-4 col-form-label">First Name</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="usr-name" value="">
+                        </div>
+                    </div>
+                    <!--form-group-->
+                    <div class="form-group row">
+                        <label for="selectCountry" class="col-sm-4 col-form-label">Country</label>
+                        <div class="col-sm-8">
+                            <select id="selectCountry" name="selectCountry">
+                                <option value="select">Select Your Country</option>
+                                <option value="usa">USA</option>
+                                <option value="canada">Canada</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!--form-group-->
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- /Forms -->
+    <!-- Dropdowns -->
+    <section class="mb-5" id="dropdowns">
+        <div class="row">
+            <div class="col">
+                <h3 class="pb-3 mb-3 border-bottom border-info">Dropdowns</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="dropdown show dropdown-account">
+                    <div class="dropdown-toggle d-flex align-items-center" role="button" id="dropdown-account"
+                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="img/dropdown-profile.jpg" alt="">
+                        <div class="line-toggle">
+                            <span class="user-name">Mike Hussy <i class="fa fa-chevron-down"></i></span>
+                            <span class="total-basket">$178</span>
+                        </div>
+                    </div>
+                    <!--/ dropdown-profile-header-->
+                    <div class="dropdown-menu" aria-labelledby="dropdown-account">
+                        <ul class="list">
+                            <li class="dropdown-item">
+                                <a href="#"><i class="fa fa-chevron-right"></i> profile page</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#"><i class="fa fa-chevron-right"></i> portfolio</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#"><i class="fa fa-chevron-right"></i> account settings</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#"><i class="fa fa-chevron-right"></i> downloads</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#"><i class="fa fa-chevron-right"></i> wishlist</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#"><i class="fa fa-chevron-right"></i> upload item</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#"><i class="fa fa-chevron-right"></i> statment</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#"><i class="fa fa-chevron-right"></i> withdraws</a>
+                            </li>
+                        </ul>
+                        <!--/ list-->
+                    </div>
+                    <!--/ dropdown menu-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Dropdowns -->
+    <!-- Modal -->
+    <section class="mb-5" id="modal">
+        <div class="row">
+            <div class="col">
+                <h3 class="pb-3 mb-3 border-bottom border-info">Modal</h3>
+            </div>
+         </div>
+        <div class="row">
+            <div class="col">
+                <button class="btn-custom btn-light-blue" data-toggle="modal" data-target="#loginModal">Open Modal</button>
+                <!-- Account || login/register btn -->
+                <div class="modal fade" id="loginModal" tabindex="-1" role="dialog"
+                     aria-labelledby="loginModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <!--/close-->
+                                <h4 class="login-title text-center">LOGIN</h4>
+                                <form name="login-form">
+                                    <div class="login-form-group">
+                                        <i class="fa fa-user"></i>
+                                        <input type="text" name="nickName" class="login-form-control"
+                                               placeholder="Name">
+                                    </div>
+                                    <div class="login-form-group">
+                                        <i class="fa fa-lock"></i>
+                                        <input type="password" name="password" class="login-form-control"
+                                               placeholder="Password">
+                                    </div>
+                                    <div class="login-btn-group">
+                                        <button type="submit" class="submit-btn">Submit</button>
+                                        <a href="" class="custom-btn btn-green">
+                                            <i class="fa fa-pencil-square-o"></i>
+                                            Create Account
+                                        </a>
+                                    </div>
+                                    <a href="#" class="lost-password">Lost password?</a>
+                                </form>
+                                <!--/login-form-->
+                            </div>
+                            <!--/modal-body-->
+                        </div>
+                        <!--/modal-content-->
+                    </div>
+                    <!--/modal-dialog-->
+                </div>
+                <!--/modal-->
+            </div>
+        </div>
+    </section>
+    <!-- /Modal -->
+    <!--Breadcrumbs-->
+    <section class="mb-5" id="breadcrumbs">
+        <div class="row">
+            <div class="col">
+                <h3 class="pb-3 mb-3 border-bottom border-info">Breadcrumbs</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <ul class="breadcrumb">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Product Page</a></li>
+                    <li class="active">GT Builder Construction</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- /Breadcrumbs -->
+    <!-- Pagination -->
+    <section class="mb-5" id="pagination">
+        <div class="row">
+            <div class="col">
+                <h3 class="pb-3 mb-3 border-bottom border-info">Pagination</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <nav aria-label="pagination-lg">
+                    <ul class="pagination pagination-lg">
+                        <li class="page-item">
+                            <a class="page-link" href="#" tabindex="-1">1</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <!-- /Pagination -->
+    <!-- Sprites -->
+    <section class="mb-5" id="sprites">
+        <div class="row">
+            <div class="col">
+                <h3 class="pb-3 mb-3 border-bottom border-info">Sprites</h3>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col">
+                <ul class="social-networks">
+                    <li><a href="#"><i class="icon icon-fb"></i></a></li>
+                    <li><a href="#"><i class="icon icon-tw"></i></a></li>
+                    <li><a href="#"><i class="icon icon-youtube"></i></a></li>
+                    <li><a href="#"><i class="icon icon-pinterest"></i></a></li>
+                    <li><a href="#"><i class="icon icon-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <ul class="badge-product-author">
+                    <li><a href="#"><i class="icon icon-badge-yellow"></i></a></li>
+                    <li><a href="#"><i class="icon icon-badge-red"></i></a></li>
+                    <li><a href="#"><i class="icon icon-badge-blue"></i></a></li>
+                    <li><a href="#"><i class="icon icon-badge-green"></i></a></li>
+                    <li><a href="#"><i class="icon icon-badge-grey"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- /Sprites -->
 </div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="js/range.js"></script>
+
+<!-- Slick-nav -->
+<script src="js/jquery.slicknav.min.js"></script>
+
+<!-- Init plugins -->
+<script src="js/init.js"></script>
 
 </body>
 </html>

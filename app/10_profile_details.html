@@ -33,197 +33,217 @@
 </head>
 <body>
 <!--header start-->
-<header>
-    <div class="header-top">
-        <div class="container d-flex align-items-center">
+<header id="header" class="navbar-expand-lg">
+    <div class="header-top bg-white navbar-light">
+        <div class="container d-flex flex-wrap align-items-center">
             <div class="logo mr-auto">
                 <a href="#">
                     <img src="../app/img/logo.png" alt="">
                 </a>
             </div>
-            <div class="need-help">
-                <span><span>Need help? </span>Talk to an expert: +61 3 8376 6284</span>
-            </div>
-            <ul class="header-top-dropdowns">
-                <li class="dropdown">
-                    <a class="dropdown-bell dropdown-toggle toggle-circle text-center " href="#" role="button" id="dropdown-bell" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fa fa-bell-o"></i>
-                        <span class="counter">3</span>
-                    </a>
-                    <div class="dropdown-bell dropdown-menu dropdown-menu-right dropdown-notifaction ">
-                        <div class="dropdown-item  d-flex align-items-center">
-                            <a href="#"><img src="img/dropdown-bell.png" alt=""></a>
-                            <div class="item-content">
-                                <span class="item-category"><a href="#">Need WP Help!</a></span>
-                                <span class="item-data">01 Dec, 2016</span>
-                            </div>
-                            <div class="item-follow ml-auto">
-                                <a href="#">
-                                    <i class="fa fa-bell-o"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <!--/ dropdown-item -->
-                        <div class="dropdown-item  d-flex align-items-center">
-                            <a href="#"><img src="img/dropdown-bell.png" alt=""></a>
-                            <div class="item-content">
-                                <span class="item-category"><a href="#">Need WP Help!</a></span>
-                                <span class="item-data">26 Nov, 2016</span>
-                            </div>
-                            <div class="item-follow ml-auto">
-                                <a href="#">
-                                    <i class="fa fa-bell-o"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <!--/ dropdown-item -->
-                        <div class="dropdown-item  d-flex align-items-center">
-                            <a href="#"><img src="img/dropdown-bell.png" alt=""></a>
-                            <div class="item-content">
-                                <span class="item-category"><a href="#">Psd Template Help!</a></span>
-                                <span class="item-data">26 Nov, 2016</span>
-                            </div>
-                            <div class="item-follow ml-auto">
-                                <a href="#">
-                                    <i class="fa fa-bell-o"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <!--/ dropdown-item -->
-                    </div>
-                    <!--/dropdown-menu -->
-                </li>
-                <li class="dropdown">
-                    <a class="dropdown-mail dropdown-toggle toggle-circle text-center" href="#" role="button" id="dropdown-mail" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fa fa-envelope-o"></i>
-                        <span class="counter">8</span>
-                    </a>
-                    <div class="dropdown-mail dropdown-menu dropdown-menu-right dropdown-notifaction ">
-                        <div class="dropdown-item  d-flex align-items-center">
-                            <a href="#"><img src="img/dropdown-bell.png" alt=""></a>
-                            <div class="item-content">
-                                <span class="item-title-company">Kazi Fahim</span>
-                                <span class="item-category"><a href="#">Need WP Help!</a></span>
-                                <span class="item-data">01 Dec, 2016</span>
-                            </div>
-                            <div class="item-follow ml-auto">
-                                <a href="#">
-                                    <i class="fa fa-envelope-o"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <!--/ dropdown-item -->
-                        <div class="dropdown-item  d-flex align-items-center">
-                            <a href="#"><img src="img/dropdown-bell.png" alt=""></a>
-                            <div class="item-content">
-                                <span class="item-title-company">Richi Lenal</span>
-                                <span class="item-category"><a href="#">Need WP Help!</a></span>
-                                <span class="item-data">26 Nov, 2016</span>
-                            </div>
-                            <div class="item-follow ml-auto">
-                                <a href="#">
-                                    <i class="fa fa-envelope-o"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <!--/ dropdown-item -->
-                        <div class="dropdown-item  d-flex align-items-center">
-                            <a href="#"><img src="img/dropdown-bell.png" alt=""></a>
-                            <div class="item-content">
-                                <span class="item-title-company">PsdBosS</span>
-                                <span class="item-category"><a href="#">Psd Template Help!</a></span>
-                                <span class="item-data">26 Nov, 2016</span>
-                            </div>
-                            <div class="item-follow ml-auto">
-                                <a href="#">
-                                    <i class="fa fa-envelope-o"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <!--/ dropdown-item -->
-                    </div>
-                    <!--/dropdown-menu -->
-                </li>
-                <li class="dropdown">
-                    <a class="dropdown-basket dropdown-toggle toggle-circle text-center " href="#" role="button" id="dropdownBasket" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fa fa-shopping-basket"></i>
-                        <span class="counter">8</span>
-                    </a>
-                    <div class="dropdown-basket dropdown-menu dropdown-menu-right dropdown-notifaction ">
-                        <div class="dropdown-item  d-flex align-items-center">
-                            <a href="#"><img src="img/dropdown-basket.jpg" alt=""></a>
-                            <div class="item-content">
-                                <span class="item-title-product"><a href="#">Grand ball</a></span>
-                                <span class="item-category"><a href="#">WordPress</a></span>
-                                <span class="item-price">$59</span>
-                            </div>
-                        </div>
-                        <div class="dropdown-item d-flex align-items-center">
-                            <a href="#"><img src="img/dropdown-basket.jpg" alt=""></a>
-                            <div class="item-content">
-                                <span class="item-title-product"><a href="#">AppleDevice</a></span>
-                                <span class="item-category"><a href="#">WordPress</a></span>
-                                <span class="item-price">$59</span>
-                            </div>
-                            <!--/ item-content -->
-                        </div>
-                        <!--/ dropdown-item -->
-                        <div class="total d-flex justify-content-between">
-                            <span>Total</span>
-                            <span>$118</span>
-                        </div>
-                        <div class="go-chekout d-flex justify-content-between">
-                            <button type="button" class="btn btn-danger">L o g o u t</button>
-                            <button type="button" class="btn btn-danger">L o g o u t</button>
-                        </div>
-                        <!--/ total-->
-                    </div>
-                    <!--/dropdown-menu -->
-                </li>
-            </ul>
-            <div class="dropdown show dropdown-account">
-                <div class="dropdown-toggle d-flex align-items-center" role="button" id="dropdown-account" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img src="img/dropdown-profile.jpg" alt="">
-                    <div class="line-toggle">
-                        <span class="user-name">Mike Hussy <i class="fa fa-chevron-down"></i></span>
-                        <span class="total-basket">$178</span>
-                    </div>
+            <!--/ logo-->
+            <div class="order-1 header-conrols d-flex align-items-center justify-content-center">
+                <div class="need-help d-none d-md-block mr-auto">
+                    <span><span>Need help? </span>Talk to an expert: +61 3 8376 6284</span>
                 </div>
-                <!--/ dropdown-profile-header-->
-                <ul class="dropdown-menu list" aria-labelledby="dropdown-account">
-                    <li class="dropdown-item">
-                        <a  href="#"><i class="fa fa-chevron-right"></i> profile page</a>
+                <!--/ need-help-->
+                <ul class="header-top-dropdowns d-flex">
+                    <li class="dropdown">
+                        <a class="dropdown-bell dropdown-toggle toggle-circle text-center " href="#" role="button"
+                           id="dropdown-bell" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-bell-o"></i>
+                            <span class="counter">3</span>
+                        </a>
+                        <div class="dropdown-bell dropdown-menu dropdown-menu-right dropdown-notifaction ">
+                            <div class="dropdown-item  d-flex align-items-center">
+                                <a href="#"><img src="img/dropdown-bell.png" alt=""></a>
+                                <div class="item-content">
+                                    <span class="item-category"><a href="#">Need WP Help!</a></span>
+                                    <span class="item-data">01 Dec, 2016</span>
+                                </div>
+                                <div class="item-follow ml-auto">
+                                    <a href="#">
+                                        <i class="fa fa-bell-o"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <!--/ dropdown-item -->
+                            <div class="dropdown-item  d-flex align-items-center">
+                                <a href="#"><img src="img/dropdown-bell.png" alt=""></a>
+                                <div class="item-content">
+                                    <span class="item-category"><a href="#">Need WP Help!</a></span>
+                                    <span class="item-data">26 Nov, 2016</span>
+                                </div>
+                                <div class="item-follow ml-auto">
+                                    <a href="#">
+                                        <i class="fa fa-bell-o"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <!--/ dropdown-item -->
+                            <div class="dropdown-item  d-flex align-items-center">
+                                <a href="#"><img src="img/dropdown-bell.png" alt=""></a>
+                                <div class="item-content">
+                                    <span class="item-category"><a href="#">Psd Template Help!</a></span>
+                                    <span class="item-data">26 Nov, 2016</span>
+                                </div>
+                                <div class="item-follow ml-auto">
+                                    <a href="#">
+                                        <i class="fa fa-bell-o"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <!--/ dropdown-item -->
+                        </div>
+                        <!--/dropdown-menu -->
                     </li>
-                    <li class="dropdown-item">
-                        <a  href="#"><i class="fa fa-chevron-right"></i> portfolio</a>
+                    <li class="dropdown">
+                        <a class="dropdown-mail dropdown-toggle toggle-circle text-center" href="#" role="button"
+                           id="dropdown-mail" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-envelope-o"></i>
+                            <span class="counter">8</span>
+                        </a>
+                        <div class="dropdown-mail dropdown-menu dropdown-menu-right dropdown-notifaction ">
+                            <div class="dropdown-item  d-flex align-items-center">
+                                <a href="#"><img src="img/dropdown-bell.png" alt=""></a>
+                                <div class="item-content">
+                                    <span class="item-title-company">Kazi Fahim</span>
+                                    <span class="item-category"><a href="#">Need WP Help!</a></span>
+                                    <span class="item-data">01 Dec, 2016</span>
+                                </div>
+                                <div class="item-follow ml-auto">
+                                    <a href="#">
+                                        <i class="fa fa-envelope-o"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <!--/ dropdown-item -->
+                            <div class="dropdown-item  d-flex align-items-center">
+                                <a href="#"><img src="img/dropdown-bell.png" alt=""></a>
+                                <div class="item-content">
+                                    <span class="item-title-company">Richi Lenal</span>
+                                    <span class="item-category"><a href="#">Need WP Help!</a></span>
+                                    <span class="item-data">26 Nov, 2016</span>
+                                </div>
+                                <div class="item-follow ml-auto">
+                                    <a href="#">
+                                        <i class="fa fa-envelope-o"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <!--/ dropdown-item -->
+                            <div class="dropdown-item  d-flex align-items-center">
+                                <a href="#"><img src="img/dropdown-bell.png" alt=""></a>
+                                <div class="item-content">
+                                    <span class="item-title-company">PsdBosS</span>
+                                    <span class="item-category"><a href="#">Psd Template Help!</a></span>
+                                    <span class="item-data">26 Nov, 2016</span>
+                                </div>
+                                <div class="item-follow ml-auto">
+                                    <a href="#">
+                                        <i class="fa fa-envelope-o"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <!--/ dropdown-item -->
+                        </div>
+                        <!--/dropdown-menu -->
                     </li>
-                    <li class="dropdown-item">
-                        <a  href="#"><i class="fa fa-chevron-right"></i> account settings</a>
+                    <li class="dropdown">
+                        <a class="dropdown-basket dropdown-toggle toggle-circle text-center " href="#" role="button"
+                           id="dropdownBasket" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-shopping-basket"></i>
+                            <span class="counter">8</span>
+                        </a>
+                        <div class="dropdown-basket dropdown-menu dropdown-menu-right dropdown-notifaction ">
+                            <div class="dropdown-item  d-flex align-items-center">
+                                <a href="#"><img src="img/dropdown-basket.jpg" alt=""></a>
+                                <div class="item-content">
+                                    <span class="item-title-product"><a href="#">Grand ball</a></span>
+                                    <span class="item-category"><a href="#">WordPress</a></span>
+                                    <span class="item-price">$59</span>
+                                </div>
+                            </div>
+                            <div class="dropdown-item d-flex align-items-center">
+                                <a href="#"><img src="img/dropdown-basket.jpg" alt=""></a>
+                                <div class="item-content">
+                                    <span class="item-title-product"><a href="#">AppleDevice</a></span>
+                                    <span class="item-category"><a href="#">WordPress</a></span>
+                                    <span class="item-price">$59</span>
+                                </div>
+                                <!--/ item-content -->
+                            </div>
+                            <!--/ dropdown-item -->
+                            <div class="total d-flex justify-content-between">
+                                <span>Total</span>
+                                <span>$118</span>
+                            </div>
+                            <!--/ total-->
+                            <div class="go-chekout d-flex justify-content-between">
+                                <a href="#" class="btn-custom btn-medium btn-red">Go to card</a>
+                                <a href="#" class="btn-custom btn-medium btn-green">Go to checkout</a>
+                            </div>
+                            <!--/ go-chekout-->
+                        </div>
+                        <!--/dropdown-menu -->
                     </li>
-                    <li class="dropdown-item">
-                        <a  href="#"><i class="fa fa-chevron-right"></i> downloads</a>
+                    <li class="dropdown show dropdown-account">
+                        <div class="dropdown-toggle d-flex align-items-center" role="button" id="dropdown-account"
+                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="img/dropdown-profile.jpg" alt="">
+                            <div class="line-toggle">
+                                <span class="user-name">Mike Hussy</span>
+                                <i class="fa fa-chevron-down"></i>
+                                <span class="total-basket">$178</span>
+                            </div>
+                        </div>
+                        <!--/ dropdown-profile-header-->
+                        <div class="dropdown-menu" aria-labelledby="dropdown-account">
+                            <ul class="list">
+                                <li class="dropdown-item">
+                                    <a href="#"><i class="fa fa-chevron-right"></i> profile page</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#"><i class="fa fa-chevron-right"></i> portfolio</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#"><i class="fa fa-chevron-right"></i> account settings</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#"><i class="fa fa-chevron-right"></i> downloads</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#"><i class="fa fa-chevron-right"></i> wishlist</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#"><i class="fa fa-chevron-right"></i> upload item</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#"><i class="fa fa-chevron-right"></i> statment</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#"><i class="fa fa-chevron-right"></i> withdraws</a>
+                                </li>
+                            </ul>
+                            <!--/ list-->
+                        </div>
+                        <!--/ dropdown menu-->
                     </li>
-                    <li class="dropdown-item">
-                        <a  href="#"><i class="fa fa-chevron-right"></i> wishlist</a>
-                    </li>
-                    <li class="dropdown-item">
-                        <a  href="#"><i class="fa fa-chevron-right"></i> upload item</a>
-                    </li>
-                    <li class="dropdown-item">
-                        <a  href="#"><i class="fa fa-chevron-right"></i> statment</a>
-                    </li>
-                    <li class="dropdown-item">
-                        <a  href="#"><i class="fa fa-chevron-right"></i> withdraws</a>
-                    </li>
+                    <!--/ dropdown-account-->
                 </ul>
+                <!--/ ul-->
+                <button class="btn-custom btn-small btn-red btn-rounded">Logout</button>
             </div>
-            <!--/ dropdown-account-->
-            <button type="button" class="btn btn-danger">L o g o u t</button>
+            <!--/ order-1-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#header-nav"
+                    aria-controls="header-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
         </div>
         <!--/container-->
     </div>
     <!--/header-top-->
-    <div class="header-bottom bg-dark-blue">
+    <div class="header-bottom bg-dark-blue collapse navbar-collapse" id="header-nav">
         <div class="container">
             <nav class="header-bottom-nav">
                 <ul>
@@ -238,8 +258,11 @@
                     <li><a href="#">contact</a></li>
                     <li><a href="#">help</a></li>
                 </ul>
+                <!--/ ul-->
             </nav>
+            <!--/ header-bottom-nav-->
         </div>
+        <!--/ container-->
     </div>
     <!--/header-bottom-->
 </header>
@@ -257,29 +280,48 @@
             <div class="row">
                 <!-- Sidebar -->
                 <div class="col-3">
-                    <!-- About -->
-                    <div class="aside-section mb-5">
-                        <div class="aside-section-title">
-                            <span>Some text</span>
+                    <aside>
+                        <!-- About -->
+                        <div class="product-author aside-section mb-5">
+                            <div class="aside-section-title">
+                                <span>About Author</span>
+                            </div>
+                            <div class="author-card d-flex">
+                                <img src="img/product-author.jpg" alt="">
+                                <div class="name-view d-flex flex-column justify-content-between">
+                                    <span>PsdBoSS</span>
+                                    <a href="#">Online</a>
+                                </div>
+                            </div>
+                            <!--/aside-section-title-->
                         </div>
-                        <div>
-                            #eba
+                        <!-- /About -->
+                        <!-- Buttons -->
+                        <div class="mb5">
+                            <button class="btn-custom btn-block btn-blue">
+                                <i class="fa fa-envelope-o"></i> Send Message
+                            </button>
+                            <button class="btn-custom btn-block btn-green mt-3">Following</button>
                         </div>
-                    </div>
-                    <!-- /About -->
-
-                    <!-- Buttons -->
-                    <button class="btn-custom btn-block btn-blue">
-                        <i class="fa fa-envelope-o"></i> Send Message
-                    </button>
-                    <button class="btn-custom btn-block btn-green mt-3">Following</button>
-                    <!-- /Buttons -->
+                        <!-- /Buttons -->
+                    </aside>
                 </div>
                 <!-- /Sidebar -->
-
                 <!-- Content -->
                 <div class="col-9">
-                    # Content area
+                    <!-- gt-builder-img -->
+                    <div class="gt-builder-img bg-white text-center">
+                        <img src="img/GTBuilder.jpg" alt="">
+                    </div>
+                    <!-- / gt-builder-img-->
+                    <div>
+                        <div class="row bg-white">
+                            <div class="col-3 border border-right-0">1</div>
+                            <div class="col-3 border border-right-0">2</div>
+                            <div class="col-3 border border-right-0">3</div>
+                            <div class="col-3 border">4</div>
+                        </div>
+                    </div>
                 </div>
                 <!-- /Content -->
             </div>
@@ -287,11 +329,11 @@
     </section>
 </main>
 <!--.footer start-->
-<footer class=" bg-dark-blue">
+<footer class="bg-dark-blue">
     <div class="default-section">
         <div class="container">
             <div class="row">
-                <div class="col-3">
+                <div class="footer-col col-12 col-sm-6 col-xl-3">
                     <div class="footer-title">
                         <span>About Company</span>
                     </div>
@@ -299,23 +341,23 @@
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias aliquid corporis dicta dolor dolorem error et facere, iure labore natus non obcaecati officia omnis quam similique totam. Corporis, officia.
                     </div>
                     <div class="footer-item d-flex">
-                        <span class="item-icon">
-                            <i class="fa fa-map-marker"></i>
-                        </span>
+                            <span class="item-icon">
+                                <i class="fa fa-map-marker"></i>
+                            </span>
                         <span class="item-content">
-                            PO Box 16122 Collins Street West Victoria 8007 Australia
-                        </span>
+                                PO Box 16122 Collins Street West Victoria 8007 Australia
+                            </span>
                     </div>
                     <!--/footer-item-->
                     <div class="footer-item d-flex">
-                        <span class="item-icon">
-                            <i class="fa fa-phone"></i>
-                        </span>
+                            <span class="item-icon">
+                                <i class="fa fa-phone"></i>
+                            </span>
                         <span class="item-content">+61 3 8376 6284</span>
                     </div>
                 </div>
-                <!--/ col-3-->
-                <div class="col-3">
+                <!--/ footer-col-->
+                <div class="footer-col col-12 col-sm-6 col-xl-3">
                     <div class="footer-title">
                         <span>Join Our Community </span>
                     </div>
@@ -337,8 +379,8 @@
                         </li>
                     </ul>
                 </div>
-                <!--/ col-3-->
-                <div class="col-3">
+                <!--/ footer-col-->
+                <div class="footer-col col-12 col-sm-6 col-xl-3">
                     <div class="footer-title">
                         <span>Need Help? </span>
                     </div>
@@ -361,13 +403,23 @@
                     </ul>
 
                 </div>
-                <!--/ col-3-->
-                <div class="col-3">
+                <!--/ footer-col-->
+                <div class="footer-col col-12 col-sm-6 col-xl-3">
                     <div class="footer-title">
                         <span>Follow Us On</span>
                     </div>
+                    <div class="newsletter-sign-up">
+                        <span>Newsletter Sign Up</span>
+                        <div class="wrapper-input-sign-up">
+                            <div class="input-sign-up">
+                                <input type="text" class="sign-up"  placeholder="E-mail Address">
+                                <button class="btn-sign-up fa fa-location-arrow" type="button"></button>
+                            </div>
+                        </div>
+                        <!--/ wrapper-input-sign-up-->
+                    </div>
                 </div>
-                <!--/ col-3-->
+                <!--/ footer-col-->
             </div>
             <!--/row-->
         </div>
@@ -377,9 +429,9 @@
 
     <div class="copy-right">
         <div class="container-fluid">
-            <div class="default-text text-center">
-                <span>&copy; 2017 Foxtar market place. Trademarks and brands are the property of their respective owners.</span>
-            </div>
+            <p class="default-text text-center">
+                &copy; 2017 Foxtar market place. Trademarks and brands are the property of their respective owners.
+            </p>
         </div>
         <!--/ container-fluid-->
     </div>
