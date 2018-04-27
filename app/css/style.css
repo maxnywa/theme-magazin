@@ -203,13 +203,7 @@ ul.breadcrumb li.active {
 }
 
 
-.btn-title {
-    text-transform: uppercase;
-    font-weight: 700;
-}
-.btn-section {
-    padding: 40px 0;
-}
+
 .btn-custom {
     display: inline-block;
     background-color: #fff;
@@ -223,9 +217,9 @@ ul.breadcrumb li.active {
 .btn-custom:hover {
     background-color: #f1f1f1;
 }
-/*.btn-custom .fa {*/
-    /*margin-right: 10px;*/
-/*}*/
+.btn-custom .fa {
+    margin-right: 10px;
+}
 .btn-custom.btn-rounded {
     border-radius: 4px;
 }
@@ -274,18 +268,6 @@ ul.breadcrumb li.active {
 }
 .btn-custom.btn-light-blue:hover {
     background-color: #307ab5;
-}
-.btn-custom.btn-blue-violet {
-    background-color: #6370b6;
-}
-.btn-custom.btn-malibu {
-    background-color: #64b5f6;
-}
-.btn-custom.btn-indigo {
-    background-color: #4f71ce;
-}
-.btn-custom.btn-persian-red {
-    background-color: #d32f2f;
 }
 
 /*-----cards start------*/
