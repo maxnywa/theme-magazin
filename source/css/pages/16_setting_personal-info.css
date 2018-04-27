@@ -8,8 +8,8 @@
 }
 .form-personal-information {
     margin-bottom: 152px;
-    margin-left: 15px;
-    margin-right: -15px;
+    /*margin-left: 15px;*/
+    /*margin-right: -15px;*/
 }
 .form-personal-information .personal-information-nav.col-3{
     max-width: 270px;
@@ -80,6 +80,12 @@
     .personal-information-nav li a:hover:before,
     .personal-information-nav li.active a:before{
         left: 10px;
+    }
+}
+@media (max-width: 991px) {
+    .form-personal-information .col-9 {
+    max-width: 100%;
+    flex: 0 0 100%;
     }
 }
 /*------ 16_settings_personal-info end------*/

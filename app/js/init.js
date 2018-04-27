@@ -59,3 +59,4 @@ $('.grid-list').on('click', function () {
     $('.grid-list').addClass('active');
     $('.grid-thumbs').removeClass('active');
   });
+
