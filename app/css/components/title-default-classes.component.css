@@ -33,6 +33,7 @@
     font-weight: 500;
     margin-bottom: 44px;
 }
+
 .footer-title{
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
@@ -49,6 +50,9 @@
 
     .title.section-title {
         font-size: 30px;
+    }
+    .title.form-title {
+        margin-bottom: 10px;
     }
 }
 

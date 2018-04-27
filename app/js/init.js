@@ -1,15 +1,9 @@
 // Select init
 $('select').styler();
 
-//Switch product items view
-$('.grid-thumbs').on('click', function (){
-    //Find cards and remove class row-card
-    $('.medium-card').removeClass('row-card');
-    $('.all-items-container .col-4').removeClass('col-12');
-});
-
 // Select init
 $('select, input[type="file"]').styler();
+$('#upload-file-styler').styler('destroy');
 
 // Slick carousel init
 $('.trending-carousel').slick({
@@ -46,16 +40,20 @@ $('.trending-carousel').slick({
 // Switch product items view
 $('.grid-thumbs').on('click', function(){
     // Find cards and remove class row-card
-    $('.all-items-container .card').removeClass('row-card');
-    $('.all-items-container .col-4').removeClass('col-12');
-    $('.grid-list').removeClass('active');
-    $('.grid-thumbs').addClass('active');
+    $('.all-items-container .medium-card').removeClass('row-card');
+    $('.all-items-container .col-12').removeClass('col-xl-12');
+    $('.all-items-container .col-md-4').removeClass('col-md-12');
+    $('.all-items-container .col-xl-4').removeClass('col-xl-12');
+    $('.grid-list').removeClass('actives');
+    $('.grid-thumbs').addClass('actives');
 });
 
 $('.grid-list').on('click', function () {
     //Find cards and add class row-card
     $('.medium-card').addClass('row-card');
-    $('.all-items-container .col-4').addClass('col-12');
-    $('.grid-list').addClass('active');
-    $('.grid-thumbs').removeClass('active');
+    $('.all-items-container .col-12').addClass('col-xl-12');
+    $('.all-items-container .col-md-4').addClass('col-md-12');
+    $('.all-items-container .col-xl-4').addClass('col-xl-12');
+    $('.grid-list').addClass('actives');
+    $('.grid-thumbs').removeClass('actives');
   });
