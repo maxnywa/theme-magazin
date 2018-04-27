@@ -2312,7 +2312,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
     margin-left: 10px;
     font-size: 16px;
 }
-.active {
+.actives {
     color: #8bc34a;
 }
 .all-products-wrapper {

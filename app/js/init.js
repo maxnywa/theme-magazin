@@ -44,8 +44,8 @@ $('.grid-thumbs').on('click', function(){
     $('.all-items-container .col-12').removeClass('col-xl-12');
     $('.all-items-container .col-md-4').removeClass('col-md-12');
     $('.all-items-container .col-xl-4').removeClass('col-xl-12');
-    $('.grid-list').removeClass('active');
-    $('.grid-thumbs').addClass('active');
+    $('.grid-list').removeClass('actives');
+    $('.grid-thumbs').addClass('actives');
 });
 
 $('.grid-list').on('click', function () {
@@ -54,6 +54,6 @@ $('.grid-list').on('click', function () {
     $('.all-items-container .col-12').addClass('col-xl-12');
     $('.all-items-container .col-md-4').addClass('col-md-12');
     $('.all-items-container .col-xl-4').addClass('col-xl-12');
-    $('.grid-list').addClass('active');
-    $('.grid-thumbs').removeClass('active');
+    $('.grid-list').addClass('actives');
+    $('.grid-thumbs').removeClass('actives');
   });
