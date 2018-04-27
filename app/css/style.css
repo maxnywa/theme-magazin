@@ -62,6 +62,34 @@ blockquote{
 .icon {
     display: inline-block;
 }
+/*-----categories-list start-----*/
+.list-group-item, .list-group-item span {
+    font: 400 15px 'Roboto', sans-serif;
+}
+.list-group-item {
+    padding: 0;
+    margin-bottom: 30px;
+    border: none;
+    color: #263238;
+}
+.list-group-item span {
+    color:#90a4ae;
+}
+.list-group li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+.list-group li:before {
+    content: "\f105";
+    left: 0;
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    color: #8bc34a;
+    font-family: FontAwesome;
+}
+
 
 .sort-controls {
     padding: 20px;
@@ -595,34 +623,6 @@ span.icon-rating{
 }
 /*---row-small-card end---*/
 /*-----cards end------*/
-/*-----categories-list start-----*/
-.list-group-item, .list-group-item span {
-    font: 400 15px 'Roboto', sans-serif;
-}
-.list-group-item {
-    padding: 0;
-    margin-bottom: 30px;
-    border: none;
-    color: #263238;
-}
-.list-group-item span {
-    color:#90a4ae;
-}
-.list-group li {
-    position: relative;
-    padding-left: 20px;
-    margin-bottom: 20px;
-}
-.list-group li:before {
-    content: "\f105";
-    left: 0;
-    position: absolute;
-    top: 0;
-    font-size: 14px;
-    color: #8bc34a;
-    font-family: FontAwesome;
-}
-
 
 /*------ dropdown sort-by start------*/
 .dropdown.sort-by .dropdown-menu {
@@ -761,6 +761,10 @@ footer .copy-right.default-text{
 }
 .input-group {
     margin: 0 auto;
+}
+.form-search .input-group>.custom-select:not(:last-child), .input-group>.form-control:not(:last-child) {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
 }
 .form-search-input {
     max-width: 671px;
@@ -928,7 +932,6 @@ footer .copy-right.default-text{
     border-radius: 0;
     border-color: #dedede;
     height: 40px;
-    width: 540px;
     background-color: #f9f9f9;
 }
 .form-group .form-control:focus{
@@ -1951,32 +1954,39 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .form-personal-information {
     margin-bottom: 152px;
+    margin-left: 15px;
+    margin-right: -15px;
 }
 .form-personal-information .personal-information-nav.col-3{
     max-width: 270px;
     margin-right: 15px;
 }
-.personal-information-nav ul {
+.personal-information-nav {
     margin-left: -15px;
     margin-right: -15px;
     border-left: 1px solid #dedede;
     border-right: 1px solid #dedede;
     background-color: #fff;
 }
-.personal-information-nav ul li {
+
+.personal-information-nav li {
     font-size: 14px;
     color: #707070;
     font-weight: 400;
-    height: 50px;
-    padding-left: 50px;
     position: relative;
-    line-height: 50px;
-    border-bottom: 1px solid #dedede;
 }
-.personal-information-nav ul li:first-child {
+.personal-information-nav li a{
+    display: block;
+    border-bottom: 1px solid #dedede;
+    padding-top: 17.5px;
+    padding-bottom: 17.5px;
+    padding-left: 50px;
+    padding-right: 5px;
+}
+.personal-information-nav li:first-child a{
     border-top: 1px solid #dedede;
 }
-.personal-information-nav ul li:before {
+.personal-information-nav li a:before {
     content: "\f054";
     font: normal normal normal 9px/1 FontAwesome;
     color: #707070;
@@ -1984,12 +1994,14 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
     left: 22px;
     top: 20px;
 }
-.personal-information-nav li:hover{
+.personal-information-nav li a:hover,
+.personal-information-nav li.active a{
     border-bottom: 3px solid #8bc34a;
     color: #37474f;
-    line-height: 48px;
+    padding-bottom: 15.5px;
 }
-.personal-information-nav li:hover:before {
+.personal-information-nav li a:hover:before,
+.personal-information-nav li.active a:before{
     content: "\f054";
     font: normal normal normal 9px/1 FontAwesome;
     color: #8bc34a;
@@ -1999,7 +2011,22 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .form-personal-information .btn-custom {
     padding: 15px 30px;
-    margin-left: 255px;
+}
+.form-personal-information .jq-selectbox__select {
+    width: 100%;
+    padding: 0 40px 0 15px;
+}
+@media (max-width: 524px) {
+    .personal-information-nav li a {
+        padding-left: 20px;
+    }
+    .personal-information-nav li a:before {
+        left: 10px;
+    }
+    .personal-information-nav li a:hover:before,
+    .personal-information-nav li.active a:before{
+        left: 10px;
+    }
 }
 /*------ 16_settings_personal-info end------*/
 /*---UPLOAD-PRODUCTS START---*/
