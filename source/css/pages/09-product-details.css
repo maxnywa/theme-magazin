@@ -143,14 +143,16 @@
     font-weight: 700;
 }
 /*----- Product details end -----*/
+@media (max-width: 991px) {
+    .mobile-aside-toggle {
+        margin: 15px 0;
+    }
+}
 @media (max-width: 767px){
     .gt-builder-content .title{
         font-size: 25px;
         margin-bottom: 20px;
         text-align: center;
-    }
-    .mobile-aside-toggle{
-        margin: 15px 0;
     }
     .gt-builder-btn-social{
         flex-direction: column;
