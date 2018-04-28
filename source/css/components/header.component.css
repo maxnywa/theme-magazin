@@ -203,7 +203,9 @@ header .header-bottom .header-bottom-nav ul li:last-child{
         flex-grow: 1;
         justify-content: space-around;
     }
-
+    header .dropdown-account .line-toggle{
+        min-width: 107px;
+    }
     header .header-bottom .header-bottom-nav ul li{
         display: block;
         text-align: center;
@@ -214,6 +216,9 @@ header .header-bottom .header-bottom-nav ul li:last-child{
     }
 }
 @media (max-width: 576px){
+    header .dropdown-account .line-toggle{
+        min-width: auto;
+    }
     header .dropdown-account .line-toggle span{
         display: none;
     }

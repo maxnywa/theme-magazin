@@ -72,11 +72,11 @@ footer .input-sign-up .sign-up{
     padding: 13px 15px;
 }
 footer .copy-right{
-    padding: 15px 0 25px;
+    padding: 25px 0;
     border-top: 1px solid #424d53;
 }
-footer .copy-right.default-text{
-    line-height: 2.4em;
+footer .copy-right .default-text{
+    margin-bottom: 0;
 }
 @media (max-width: 1199px) {
     footer .footer-col{

@@ -1,4 +1,4 @@
-/ Select init
+// Select init
 $('select').styler();
 
 // Select init

@@ -378,7 +378,7 @@ span.icon-rating{
 /*---row-small-card start---*/
 .card.row-small-card {
     border:none;
-    margin: 15px 0;
+    margin: 10px 0;
     max-height: 92px;
 }
 .card.row-small-card .card-item-title {

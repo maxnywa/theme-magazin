@@ -19,12 +19,11 @@ function onCreateRange(event, ui) {
   firsthandle.append('<span class="min-value">'+ state.values[0] +'$</span>');    
   secondhandle.append('<span class="max-value">'+ state.values[1] +'$</span>');
 }
-  
 range.slider({
-  range: true,
-  min: 0,
-  max: 1000,
-  values: [ 0, 600 ],
-  create: onCreateRange,
-  slide: changeMinMaxVal
+    range: true,
+    min: 0,
+    max: 1000,
+    values: [ 0, 600 ],
+    create: onCreateRange,
+    slide: changeMinMaxVal
 });
