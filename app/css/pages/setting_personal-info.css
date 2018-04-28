@@ -1,0 +1,91 @@
+/*------ 16_settings_personal-info start------*/
+.form-search.form-search-small {
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+.form-search.form-search-small .title {
+    margin-bottom: 25px;
+}
+.form-personal-information {
+    margin-bottom: 152px;
+}
+@media (max-width: 991px) {
+    .form-personal-information .col-9 {
+        max-width: 100%;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
+    }
+}
+.form-personal-information .personal-information-nav.col-3{
+    max-width: 270px;
+    margin-right: 15px;
+}
+.personal-information-nav {
+    margin-left: -15px;
+    margin-right: -15px;
+    border-left: 1px solid #dedede;
+    border-right: 1px solid #dedede;
+    background-color: #fff;
+}
+
+.personal-information-nav li {
+    font-size: 14px;
+    color: #707070;
+    font-weight: 400;
+    position: relative;
+}
+.personal-information-nav li a{
+    display: block;
+    border-bottom: 1px solid #dedede;
+    padding-top: 17.5px;
+    padding-bottom: 17.5px;
+    padding-left: 50px;
+    padding-right: 5px;
+}
+.personal-information-nav li:first-child a{
+    border-top: 1px solid #dedede;
+}
+.personal-information-nav li a:before {
+    content: "\f054";
+    font: normal normal normal 9px/1 FontAwesome;
+    color: #707070;
+    position: absolute;
+    left: 22px;
+    top: 20px;
+}
+.personal-information-nav li a:hover,
+.personal-information-nav li.active a{
+    border-bottom: 3px solid #8bc34a;
+    color: #37474f;
+    padding-bottom: 15.5px;
+}
+.personal-information-nav li a:hover:before,
+.personal-information-nav li.active a:before{
+    content: "\f054";
+    font: normal normal normal 9px/1 FontAwesome;
+    color: #8bc34a;
+    position: absolute;
+    left: 22px;
+    top: 20px;
+}
+.form-personal-information .btn-custom {
+    padding: 15px 30px;
+}
+.form-personal-information .jq-selectbox__select {
+    width: 100%;
+    padding: 0 40px 0 15px;
+}
+@media (max-width: 524px) {
+    .personal-information-nav li a {
+        padding-left: 20px;
+    }
+    .personal-information-nav li a:before {
+        left: 10px;
+    }
+    .personal-information-nav li a:hover:before,
+    .personal-information-nav li.active a:before{
+        left: 10px;
+    }
+}
+/*------ 16_settings_personal-info end------*/
