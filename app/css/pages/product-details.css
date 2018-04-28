@@ -62,9 +62,10 @@
     margin-top: 13px;
 }
 /*--- product price---*/
-.product-price .dropdown-menu.show{
+.product-price .dropdown .dropdown-menu{
     margin-top: 0;
-    width: 90px;
+    top: 0!important;
+    min-width: 82px;
 }
 .product-price .regular.dropdown-toggle{
     border: 1px solid #dedede;
@@ -143,17 +144,45 @@
     font-weight: 700;
 }
 /*----- Product details end -----*/
+@media (max-width: 1200px) {
+    .mobile-aside-toggle {
+        margin: 15px 0;
+    }
+    .product-author .name-view a {
+        padding: 7px 2px;
+    }
+    .btn-custom {
+        padding: 12px 5px;
+    }
+    .btn-custom .fa {
+        margin-right: 2px;
+    }
+}
+@media (max-width: 991px) {
+    .mobile-aside-toggle {
+        margin: 15px 0;
+    }
+    .product-author .name-view a {
+        padding: 8px 15px;
+    }
+    .btn-custom {
+        padding: 17px 25px;
+    }
+    .btn-custom .fa {
+        margin-right: 10px;
+    }
+}
 @media (max-width: 767px){
     .gt-builder-content .title{
         font-size: 25px;
         margin-bottom: 20px;
         text-align: center;
     }
-    .mobile-aside-toggle{
-        margin: 15px 0;
-    }
     .gt-builder-btn-social{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .gt-builder-btn-social .gt-builder-btn a+a{
         margin-left: 0;
@@ -164,23 +193,36 @@
     }
     .gt-builder-btn-social .gt-builder-social{
          margin-top: 20px;
-         align-self: center;
+         -ms-flex-item-align: center;
+             align-self: center;
     }
     .gt-builder-btn-social .gt-builder-social li+li{
         margin-left: 15px;
     }
     .nav.nav-tabs{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        align-items: stretch;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: stretch;
+            -ms-flex-align: stretch;
+                align-items: stretch;
     }
     .product-page .tab-pane ul{
         width: 100%;
     }
     .tab-content .tab-pane.active {
         padding: 25px 35px 55px 35px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .tab-content ul + ul {
         margin-left: 0;
