@@ -242,9 +242,9 @@ ul.breadcrumb li.active {
     color: #fff;
 }
 .btn-custom.btn-red {
-    background-color: #e74c3c;
-    color: #f4f6f5;
-}
+     background-color: #e74c3c;
+     color: #f4f6f5;
+ }
 .btn-custom.btn-red:hover {
     background-color: #c84638;
 }
@@ -2027,9 +2027,10 @@ li.nav-item {
     margin-top: 13px;
 }
 /*--- product price---*/
-.product-price .dropdown-menu.show{
+.product-price .dropdown .dropdown-menu{
     margin-top: 0;
-    width: 90px;
+    top: 0!important;
+    min-width: 82px;
 }
 .product-price .regular.dropdown-toggle{
     border: 1px solid #dedede;
@@ -2108,9 +2109,32 @@ li.nav-item {
     font-weight: 700;
 }
 /*----- Product details end -----*/
+@media (max-width: 1200px) {
+    .mobile-aside-toggle {
+        margin: 15px 0;
+    }
+    .product-author .name-view a {
+        padding: 7px 2px;
+    }
+    .btn-custom {
+        padding: 12px 5px;
+    }
+    .btn-custom .fa {
+        margin-right: 2px;
+    }
+}
 @media (max-width: 991px) {
     .mobile-aside-toggle {
         margin: 15px 0;
+    }
+    .product-author .name-view a {
+        padding: 8px 15px;
+    }
+    .btn-custom {
+        padding: 17px 25px;
+    }
+    .btn-custom .fa {
+        margin-right: 10px;
     }
 }
 @media (max-width: 767px){

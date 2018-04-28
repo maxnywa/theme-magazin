@@ -36,9 +36,9 @@
     color: #fff;
 }
 .btn-custom.btn-red {
-    background-color: #e74c3c;
-    color: #f4f6f5;
-}
+     background-color: #e74c3c;
+     color: #f4f6f5;
+ }
 .btn-custom.btn-red:hover {
     background-color: #c84638;
 }
