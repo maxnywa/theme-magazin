@@ -1,4 +1,4 @@
-/*------ 16_settings_personal-info start------*/
+/*------ settings_personal-info start------*/
 .form-search.form-search-small {
     padding-top: 60px;
     padding-bottom: 70px;
@@ -10,12 +10,14 @@
     margin-bottom: 152px;
 }
 @media (max-width: 991px) {
-    .form-personal-information .col-9 {
+    .form-personal-information  {
         max-width: 100%;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
         flex: 0 0 100%;
     }
 }
-.form-personal-information .personal-information-nav.col-3{
+.form-personal-information .personal-information-nav{
     max-width: 270px;
     margin-right: 15px;
 }
@@ -86,4 +88,4 @@
         left: 10px;
     }
 }
-/*------ 16_settings_personal-info end------*/
+/*------ settings_personal-info end------*/

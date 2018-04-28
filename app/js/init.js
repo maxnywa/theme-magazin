@@ -1,4 +1,4 @@
-// Select init
+/ Select init
 $('select').styler();
 
 // Select init
@@ -56,4 +56,4 @@ $('.grid-list').on('click', function () {
     $('.all-items-container .col-xl-4').addClass('col-xl-12');
     $('.grid-list').addClass('actives');
     $('.grid-thumbs').removeClass('actives');
-  });
+});
