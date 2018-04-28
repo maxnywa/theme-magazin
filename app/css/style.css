@@ -896,7 +896,7 @@ footer .copy-right .default-text{
     }
 }
 .form-search input.form-control {
-    font:  400 14px/1 'Roboto', sans-serif;
+    font:  500 14px/1 'Roboto', sans-serif;
     color: #90a4ae;
 }
 .form-search::-webkit-input-placeholder {color:#90a4ae;}
@@ -2326,11 +2326,8 @@ li.nav-item {
 }
 .form-personal-information .personal-information-nav{
     max-width: 270px;
-    margin-right: 15px;
 }
 .personal-information-nav {
-    margin-left: -15px;
-    margin-right: -15px;
     border-left: 1px solid #dedede;
     border-right: 1px solid #dedede;
     background-color: #fff;

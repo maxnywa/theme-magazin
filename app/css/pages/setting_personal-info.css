@@ -19,11 +19,8 @@
 }
 .form-personal-information .personal-information-nav{
     max-width: 270px;
-    margin-right: 15px;
 }
 .personal-information-nav {
-    margin-left: -15px;
-    margin-right: -15px;
     border-left: 1px solid #dedede;
     border-right: 1px solid #dedede;
     background-color: #fff;
