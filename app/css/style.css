@@ -2417,10 +2417,6 @@ li.nav-item {
     font: 400 15px/1 'Roboto', sans-serif;
     line-height: 40px;
  }
-.upload-products-wrapper .form-search .input-group .form-control {
-    font:  500 14px/1 'Roboto', sans-serif;
-    color: #90a4ae;
-}
 .upload-form .jq-selectbox__select {
     width: 100%;
     padding-left: 20px;
