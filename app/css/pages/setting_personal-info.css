@@ -8,6 +8,10 @@
 }
 .form-personal-information {
     margin-bottom: 152px;
+<<<<<<< HEAD:source/css/pages/16_setting_personal-info.css
+    /*margin-left: 15px;*/
+    /*margin-right: -15px;*/
+=======
 }
 @media (max-width: 991px) {
     .form-personal-information .col-9 {
@@ -16,6 +20,7 @@
             -ms-flex: 0 0 100%;
                 flex: 0 0 100%;
     }
+>>>>>>> b20b7517b07dfe2b810cd7b301764ff37c7595d5:source/css/pages/setting_personal-info.css
 }
 .form-personal-information .personal-information-nav.col-3{
     max-width: 270px;
@@ -86,6 +91,14 @@
     .personal-information-nav li a:hover:before,
     .personal-information-nav li.active a:before{
         left: 10px;
+    }
+}
+@media (max-width: 991px) {
+    .form-personal-information .col-9 {
+    max-width: 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
     }
 }
 /*------ 16_settings_personal-info end------*/
