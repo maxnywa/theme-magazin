@@ -305,33 +305,33 @@
                         </div>
                     </div>
                         <div class="form-group-row">
-                            <label for="selectCountry" class="label-col">Product Name<span>*</span></label>
+                            <label class="label-col">Product Name<span>*</span></label>
                             <div class="form-col">
-                                <input type="text" class="form-control" id="user-name" placeholder="Enter your product name here ...">
+                                <input type="text" class="form-control" id="product-name" placeholder="Enter your product name here ...">
                             </div>
                         </div>
                         <div class="form-group-row">
-                            <label for="selectCountry" class="label-col">Product Description<span>*</span></label>
+                            <label class="label-col">Product Description<span>*</span></label>
                             <div class="form-col">
-                                <textarea name="user-message" id="user-message" class="form-control" placeholder="<h1> Type your text  here </h1/>"></textarea>
+                                <textarea name="user-message" id="user-text" class="form-control" placeholder="<h1> Type your text  here </h1/>"></textarea>
                             </div>
                         </div>
                         <div class="form-group-row">
-                            <label for="selectCountry" class="label-col">Upload Main File<span>*</span></label>
+                            <label class="label-col">Upload Main File<span>*</span></label>
                             <div class="form-col">
                                 <input type="file" name="file" id="file" data-placeholder="No File Choosen" data-browse="Choose File">
                             </div>
                         </div>
                         <div class="form-group-row">
-                            <label for="selectCountry" class="label-col">Upload Screenshots<span>*</span></label>
+                            <label class="label-col">Upload Screenshots<span>*</span></label>
                             <div class="form-col">
-                                <input type="file" name="file" id="file" data-placeholder="No File Choosen" data-browse="Choose File">
+                                <input type="file" name="file" id="myfile" data-placeholder="No File Choosen" data-browse="Choose File">
                             </div>
                         </div>
                         <div class="form-group-row">
                             <label for="selectCountry" class="label-col">File Included<span>*</span></label>
                             <div class="form-col">
-                                <select id="selectCountry" name="selectCountry">
+                                <select id="selectC" name="selectCountry">
                                     <option value="select">Select File Type </option>
                                     <option value="usa">Select File Type </option>
                                     <option value="canada">Select File Type </option>
@@ -339,35 +339,34 @@
                             </div>
                         </div>
                         <div class="form-group-row">
-                            <label for="selectCountry" class="label-col">File Dimensions<span>*</span></label>
+                            <label class="label-col">File Dimensions<span>*</span></label>
                             <div class="form-col">
-                                <input type="text" class="form-control" id="user-name" placeholder="Enter the item  dimentionss here ...">
+                                <input type="text" class="form-control" id="item-name" placeholder="Enter the item  dimentionss here ...">
                             </div>
                         </div>
                         <div class="form-group-row">
-                            <label for="selectCountry" class="label-col">Item Tags<span>*</span></label>
+                            <label class="label-col">Item Tags<span>*</span></label>
                             <div class="form-col">
-                                <input type="text" class="form-control" id="user-name" placeholder="Enter Tag Here">
+                                <input type="text" class="form-control" id="tag-name" placeholder="Enter Tag Here">
                             </div>
                         </div>
                      </section>
                     <div class="title form-title">Set Your Price (US$)</div>
-
                     <section class="upload-form-bottom">
                         <div class="form-group-row">
-                            <label for="selectCountry" class="label-col">Regular License<span>*</span></label>
+                            <label class="label-col">Regular License<span>*</span></label>
+                            <div class="form-col">
+                                <input type="text" class="form-control" id="user-count" placeholder="$00.00">
+                            </div>
+                        </div>
+                        <div class="form-group-row">
+                            <label class="label-col">Extended License<span>*</span></label>
                             <div class="form-col">
                                 <input type="text" class="form-control" id="user-name" placeholder="$00.00">
                             </div>
                         </div>
                         <div class="form-group-row">
-                            <label for="selectCountry" class="label-col">Extended License<span>*</span></label>
-                            <div class="form-col">
-                                <input type="text" class="form-control" id="user-name" placeholder="$00.00">
-                            </div>
-                        </div>
-                        <div class="form-group-row">
-                            <label for="selectCountry" class="label-col"></label>
+                            <label class="label-col"></label>
                             <div class="form-col">
                                 <a href="#" class="btn-custom btn-green form">Submit</a>
                             </div>
@@ -463,6 +462,13 @@
                             <span>Follow Us On</span>
                         </div>
                         <div class="newsletter-sign-up">
+                            <ul class="social-networks">
+                                <li><a href="#"><i class="icon icon-fb"></i></a></li>
+                                <li><a href="#"><i class="icon icon-tw"></i></a></li>
+                                <li><a href="#"><i class="icon icon-youtube"></i></a></li>
+                                <li><a href="#"><i class="icon icon-pinterest"></i></a></li>
+                                <li><a href="#"><i class="icon icon-linkedin"></i></a></li>
+                            </ul>
                             <span>Newsletter Sign Up</span>
                             <div class="wrapper-input-sign-up">
                                 <div class="input-sign-up">
@@ -490,13 +496,11 @@
             <!--/ container-fluid-->
         </div>
     </footer>
-    <!--/ footer-->
     <!--.footer end-->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.min.js"></script>

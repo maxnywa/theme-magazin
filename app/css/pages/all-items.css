@@ -35,13 +35,12 @@
 .sort-controls button {
     background-color: #fff;
 }
-.sort-controls span {
-    margin-left: 10px;
-}
 .sort-controls .fa {
     background-color: #fff;
-    margin-left: 10px;
     font-size: 16px;
+}
+.sort-controls .dropdown-account .line-toggle {
+    margin-left: 0;
 }
 .actives {
     color: #8bc34a;
@@ -86,7 +85,6 @@
     border:none;
 }
 .sort-dropdown .dropdown .dropdown-menu.list {
-    margin-left: 20px;
     line-height: 1.8em;
     padding: 10px 0 0 20px;
     border: none;
