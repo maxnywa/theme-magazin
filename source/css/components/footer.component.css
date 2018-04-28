@@ -34,6 +34,9 @@ footer .list{
     line-height: 2em;
     padding: 0;
 }
+footer .social-networks{
+    margin-bottom: 40px;
+}
 footer .newsletter-sign-up span{
     color: #fff;
     font-size: 20px;
@@ -78,10 +81,6 @@ footer .copy-right.default-text{
 @media (max-width: 1199px) {
     footer .footer-col{
         margin: 20px 0;
-    }
-    footer .default-section{
-        padding-top: 105px;
-        padding-bottom: 90px;
     }
 }
 @media (max-width: 576px){

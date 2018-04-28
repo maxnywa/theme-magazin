@@ -1,78 +1,84 @@
-/*
-Icon classes can be used entirely standalone. They are named after their original file names.
-
-Example usage in HTML:
-
-`display: block` sprite:
-<div class="icon-home"></div>
-
-To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
-
-// CSS
-.icon {
-  display: inline-block;
-}
-
-// HTML
-<i class="icon icon-home"></i>
-*/
 .icon-badge-blue {
   background-image: url(../img/sprite.png);
-  background-position: 0px 0px;
+  background-position: -108px -37px;
   width: 34px;
   height: 37px;
 }
 .icon-badge-green {
   background-image: url(../img/sprite.png);
-  background-position: -34px 0px;
+  background-position: -34px -100px;
   width: 34px;
   height: 37px;
 }
 .icon-badge-grey {
   background-image: url(../img/sprite.png);
-  background-position: -68px 0px;
+  background-position: 0px -100px;
   width: 34px;
   height: 37px;
 }
 .icon-badge-red {
   background-image: url(../img/sprite.png);
-  background-position: 0px -37px;
+  background-position: -68px -100px;
   width: 34px;
   height: 37px;
 }
 .icon-badge-yellow {
   background-image: url(../img/sprite.png);
-  background-position: -34px -37px;
+  background-position: -108px 0px;
   width: 34px;
   height: 37px;
 }
+.icon-fb-b {
+  background-image: url(../img/sprite.png);
+  background-position: -54px 0px;
+  width: 54px;
+  height: 50px;
+}
 .icon-fb {
   background-image: url(../img/sprite.png);
-  background-position: -68px -37px;
+  background-position: -142px -28px;
   width: 28px;
   height: 28px;
+}
+.icon-linkedin-b {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 54px;
+  height: 50px;
 }
 .icon-linkedin {
   background-image: url(../img/sprite.png);
-  background-position: 0px -74px;
+  background-position: -102px -100px;
   width: 28px;
   height: 28px;
+}
+.icon-pinterest-b {
+  background-image: url(../img/sprite.png);
+  background-position: -54px -50px;
+  width: 54px;
+  height: 50px;
 }
 .icon-pinterest {
   background-image: url(../img/sprite.png);
-  background-position: -28px -74px;
+  background-position: -142px 0px;
   width: 28px;
   height: 28px;
 }
+.icon-tw-b {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -50px;
+  width: 54px;
+  height: 50px;
+}
 .icon-tw {
   background-image: url(../img/sprite.png);
-  background-position: -56px -74px;
+  background-position: -142px -56px;
   width: 28px;
   height: 28px;
 }
 .icon-youtube {
   background-image: url(../img/sprite.png);
-  background-position: -102px 0px;
+  background-position: -142px -84px;
   width: 28px;
   height: 28px;
 }

@@ -25,19 +25,16 @@
     <!-- Slick style -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 
-    <!-- jQuery UI Style -->
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-
     <!-- Custom style -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header id="header" class="navbar-expand-lg">
+<header id="header" class="navbar-expand-lg">
     <div class="header-top bg-white navbar-light">
         <div class="container d-flex flex-wrap align-items-center">
             <div class="logo mr-auto">
                 <a href="#">
-                    <img src="../app/img/logo.png" alt="">
+                    <img src="img/logo.png" alt="">
                 </a>
             </div>
             <!--/ logo-->
@@ -260,254 +257,279 @@
     </div>
     <!--/header-bottom-->
 </header>
-    <!--/ header-->
-    <!--Main start-->
-    <main id="main">
-    <section class="upload-products-wrapper">
-        <div class="form-search text-center">
-            <div class="container-fluid">
-                <span class="title section-title title-white title-premium">Premium WordPress Themes, Web Templates and Many More ...</span>
-                <form class="form-search-input">
-                    <div class="input-group">
-                        <input type="text" class="form-control"  placeholder="Search Your Keywords . . .">
-                        <button class="btn btn-default fa fa-searchs" type="submit">
-                        </button>
-                    </div>
-                </form>
-                <!--form-search-input-->
+<!--/ header-->
+<section class="form-search text-center">
+    <div class="container-fluid">
+        <span class="title section-title title-white title-premium">Premium WordPress Themes, Web Templates and Many More ...</span>
+        <form class="form-search-input">
+            <div class="input-group">
+                <input type="text" class="form-control"  placeholder="Search Your Keywords . . .">
+                <button class="btn btn-default fa fa-searchs" type="submit">
+                </button>
             </div>
-            <!--/ container-fluid -->
-        </div>
-        <!--/ form-search-->
-        <div class="breadcrumbs">
-            <div class="container">
-                <ul class="breadcrumb">
-                    <li><a href="#">Home</a></li>
-                    <li class="active">Upload Product</li>
+        </form>
+        <!--form-search-input-->
+    </div>
+    <!--/ container-fluid -->
+</section>
+<!--/ form-search -->
+<div class="container">
+    <section class="breadcrumbs">
+        <ul class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li class="active">Settings</li>
+        </ul>
+    </section>
+    <!-- / breadcrumbs-->
+    <button class="mobile-aside-toggle product d-lg-none mr-auto">
+        <i class="fa fa-bars"></i>
+    </button>
+</div>
+<!--/ container -->
+<div class="container">
+    <section class="form-personal-information">
+        <div class="overlay"></div>
+        <div class="row">
+            <div class="col-10 col-sm-8 col-md-8 col-lg-3 mobile-aside left">
+                <ul class="personal-information-nav">
+                    <li class="active">
+                        <a href="#">Personal Information</a>
+                    </li>
+                    <li>
+                        <a href="#">Profile</a>
+                    </li>
+                    <li>
+                        <a href="#">Badges</a>
+                    </li>
+                    <li>
+                        <a href="#">E-mail Settings</a>
+                    </li>
+                    <li>
+                        <a href="#">Social Network</a>
+                    </li>
                 </ul>
             </div>
-            <!--/ container -->
-        </div>
-        <!-- / breadcrumbs-->
-            <div class="form-wrapper">
-            <div class="title form-title">Upload Your item</div>
-                <form>
-                    <section class="upload-form">
-                        <div class="form-group-row">
-                        <label for="selectCountry" class="label-col">Select Categories<span>*</span></label>
-                        <div class="form-col">
-                            <select id="selectCountry" name="selectCountry">
-                                <option value="select">Select Your Country</option>
-                                <option value="usa">USA</option>
-                                <option value="canada">Canada</option>
-                            </select>
-                        </div>
+            <div class="col-12 col-lg-9">
+                <div class="content-wrapper-bordered">
+                    <div class="content-wrapper-title">
+                        <h6>Personal Information</h6>
                     </div>
-                        <div class="form-group-row">
-                            <label for="selectCountry" class="label-col">Product Name<span>*</span></label>
-                            <div class="form-col">
-                                <input type="text" class="form-control" id="user-name" placeholder="Enter your product name here ...">
+                    <!--/content-wrapper-title-->
+                    <div class="content-wrapper-body">
+                        <form>
+                            <div class="form-group row">
+                                <label for="usr-name" class="col-sm-4 col-form-label">First Name</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="usr-name" value="">
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group-row">
-                            <label for="selectCountry" class="label-col">Product Description<span>*</span></label>
-                            <div class="form-col">
-                                <textarea name="user-message" id="user-message" class="form-control" placeholder="<h1> Type your text  here </h1/>"></textarea>
+                            <!--form-group-->
+                            <div class="form-group row">
+                                <label for="last-name" class="col-sm-4 col-form-label">Last Name</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="last-name" value="">
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group-row">
-                            <label for="selectCountry" class="label-col">Upload Main File<span>*</span></label>
-                            <div class="form-col">
-                                <input type="file" name="file" id="file">
+                            <!--form-group-->
+                            <div class="form-group row">
+                                <label for="company-name" class="col-sm-4 col-form-label">Company Name</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="company-name" value="">
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group-row">
-                            <label for="selectCountry" class="label-col">Upload Screenshots<span>*</span></label>
-                            <div class="form-col">
-                                <input type="file" name="file" id="file">
+                            <!--form-group-->
+                            <div class="form-group row">
+                                <label for="selectCountry" class="col-sm-4 col-form-label">Country</label>
+                                <div class="col-sm-8">
+                                    <select id="selectCountry" name="selectCountry" data-placeholder="Select Your Country">
+                                        <option></option>
+                                        <option value="usa">USA</option>
+                                        <option value="canada">Canada</option>
+                                    </select>
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group-row">
-                            <label for="selectCountry" class="label-col">File Included<span>*</span></label>
-                            <div class="form-col">
-                                <select id="selectCountry" name="selectCountry">
-                                    <option value="select">Select File Type </option>
-                                    <option value="usa">Select File Type </option>
-                                    <option value="canada">Select File Type </option>
-                                </select>
+                            <!--form-group-->
+                            <div class="form-group row">
+                                <label for="address-line-1" class="col-sm-4 col-form-label">Address Line 1</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="address-line-1" value="">
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group-row">
-                            <label for="selectCountry" class="label-col">File Dimensions<span>*</span></label>
-                            <div class="form-col">
-                                <input type="text" class="form-control" id="user-name" placeholder="Enter the item  dimentionss here ...">
+                            <!--form-group-->
+                            <div class="form-group row">
+                                <label for="address-line-2" class="col-sm-4 col-form-label">Address Line 2</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="address-line-2" value="">
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group-row">
-                            <label for="selectCountry" class="label-col">Item Tags<span>*</span></label>
-                            <div class="form-col">
-                                <input type="text" class="form-control" id="user-name" placeholder="Enter Tag Here">
+                            <!--form-group-->
+                            <div class="form-group row">
+                                <label for="city" class="col-sm-4 col-form-label">City</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="city" value="">
+                                </div>
                             </div>
-                        </div>
-                     </section>
-                    <div class="title form-title">Set Your Price (US$)</div>
-
-                    <section class="upload-form-bottom">
-                        <div class="form-group-row">
-                            <label for="selectCountry" class="label-col">Regular License<span>*</span></label>
-                            <div class="form-col">
-                                <input type="text" class="form-control" id="user-name" placeholder="$00.00">
+                            <!--form-group-->
+                            <div class="form-group row">
+                                <label for="region" class="col-sm-4 col-form-label">State / Province / Region</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="region" value="">
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group-row">
-                            <label for="selectCountry" class="label-col">Extended License<span>*</span></label>
-                            <div class="form-col">
-                                <input type="text" class="form-control" id="user-name" placeholder="$00.00">
+                            <!--form-group-->
+                            <div class="form-group row">
+                                <label for="postal" class="col-sm-4 col-form-label">Zip / Postal Code</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="postal" value="">
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group-row">
-                            <label for="selectCountry" class="label-col"></label>
-                            <div class="form-col">
-                                <a href="#" class="btn-custom btn-green form">Submit</a>
+                            <div class="form-group row">
+                                <div class="col-sm-4 col-form-label"></div>
+                                <div class="col-sm-8">
+                                    <button type="submit" class="btn-custom btn-green">Update</button>
+                                </div>
                             </div>
-                        </div>
-                    </section>
-                </form>
+                        </form>
+                    </div>
+                    <!--content-wrapper-body-->
+                </div>
+                <!--/content-wrapper-bordered-->
             </div>
-            <!--.form-wrapper-->
+            <!--/col-->
         </div>
-        <!--.container-->
+        <!--/ form-personal-information-->
     </section>
-    <!--.all-products-wrapper-->
-</main>
-    <!--.main end-->
-    <!--.footer start-->
-    <footer class="bg-dark-blue">
-        <div class="default-section">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-12 col-sm-6 col-xl-3">
-                        <div class="footer-title">
-                            <span>About Company</span>
-                        </div>
-                        <div class="default-text text-justify">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias aliquid corporis dicta dolor dolorem error et facere, iure labore natus non obcaecati officia omnis quam similique totam. Corporis, officia.
-                        </div>
-                        <div class="footer-item d-flex">
+    <!--/ form-personal-information-->
+</div>
+<footer class="bg-dark-blue">
+    <div class="default-section">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col col-12 col-sm-6 col-xl-3">
+                    <div class="footer-title">
+                        <span>About Company</span>
+                    </div>
+                    <div class="default-text text-justify">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias aliquid corporis dicta dolor dolorem error et facere, iure labore natus non obcaecati officia omnis quam similique totam. Corporis, officia.
+                    </div>
+                    <div class="footer-item d-flex">
                         <span class="item-icon">
                             <i class="fa fa-map-marker"></i>
                         </span>
-                            <span class="item-content">
+                        <span class="item-content">
                             PO Box 16122 Collins Street West Victoria 8007 Australia
                         </span>
-                        </div>
-                        <!--/footer-item-->
-                        <div class="footer-item d-flex">
+                    </div>
+                    <!--/footer-item-->
+                    <div class="footer-item d-flex">
                         <span class="item-icon">
                             <i class="fa fa-phone"></i>
                         </span>
-                            <span class="item-content">+61 3 8376 6284</span>
-                        </div>
+                        <span class="item-content">+61 3 8376 6284</span>
                     </div>
-                    <!--/ footer-col-->
-                    <div class="footer-col col-12 col-sm-6 col-xl-3">
-                        <div class="footer-title">
-                            <span>Join Our Community </span>
-                        </div>
-                        <ul class="list">
-                            <li>
-                                <a  href="#"><i class="fa fa-chevron-right"></i> home</a>
-                            </li>
-                            <li>
-                                <a  href="#"><i class="fa fa-chevron-right"></i> forums</a>
-                            </li>
-                            <li>
-                                <a  href="#"><i class="fa fa-chevron-right"></i> Become an Author</a>
-                            </li>
-                            <li>
-                                <a  href="#"><i class="fa fa-chevron-right"></i> Community Meetups</a>
-                            </li>
-                            <li>
-                                <a  href="#"><i class="fa fa-chevron-right"></i> Become an Affiliate</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!--/ footer-col-->
-                    <div class="footer-col col-12 col-sm-6 col-xl-3">
-                        <div class="footer-title">
-                            <span>Need Help? </span>
-                        </div>
-                        <ul class="list">
-                            <li>
-                                <a  href="#"><i class="fa fa-chevron-right"></i> Help Center</a>
-                            </li>
-                            <li>
-                                <a  href="#"><i class="fa fa-chevron-right"></i> Foxtar Market Terms</a>
-                            </li>
-                            <li>
-                                <a  href="#"><i class="fa fa-chevron-right"></i> Author Terms</a>
-                            </li>
-                            <li>
-                                <a  href="#"><i class="fa fa-chevron-right"></i> Foxtar Licenses</a>
-                            </li>
-                            <li>
-                                <a  href="#"><i class="fa fa-chevron-right"></i> Contact Us</a>
-                            </li>
-                        </ul>
-
-                    </div>
-                    <!--/ footer-col-->
-                    <div class="footer-col col-12 col-sm-6 col-xl-3">
-                        <div class="footer-title">
-                            <span>Follow Us On</span>
-                        </div>
-                        <div class="newsletter-sign-up">
-                            <span>Newsletter Sign Up</span>
-                            <div class="wrapper-input-sign-up">
-                                <div class="input-sign-up">
-                                    <input type="text" class="sign-up"  placeholder="E-mail Address">
-                                    <button class="btn-sign-up fa fa-location-arrow" type="button"></button>
-                                </div>
-                            </div>
-                            <!--/ wrapper-input-sign-up-->
-                        </div>
-                    </div>
-                    <!--/ footer-col-->
                 </div>
-                <!--/row-->
+                <!--/ footer-col-->
+                <div class="footer-col col-12 col-sm-6 col-xl-3">
+                    <div class="footer-title">
+                        <span>Join Our Community </span>
+                    </div>
+                    <ul class="list">
+                        <li>
+                            <a  href="#"><i class="fa fa-chevron-right"></i> home</a>
+                        </li>
+                        <li>
+                            <a  href="#"><i class="fa fa-chevron-right"></i> forums</a>
+                        </li>
+                        <li>
+                            <a  href="#"><i class="fa fa-chevron-right"></i> Become an Author</a>
+                        </li>
+                        <li>
+                            <a  href="#"><i class="fa fa-chevron-right"></i> Community Meetups</a>
+                        </li>
+                        <li>
+                            <a  href="#"><i class="fa fa-chevron-right"></i> Become an Affiliate</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--/ footer-col-->
+                <div class="footer-col col-12 col-sm-6 col-xl-3">
+                    <div class="footer-title">
+                        <span>Need Help? </span>
+                    </div>
+                    <ul class="list">
+                        <li>
+                            <a  href="#"><i class="fa fa-chevron-right"></i> Help Center</a>
+                        </li>
+                        <li>
+                            <a  href="#"><i class="fa fa-chevron-right"></i> Foxtar Market Terms</a>
+                        </li>
+                        <li>
+                            <a  href="#"><i class="fa fa-chevron-right"></i> Author Terms</a>
+                        </li>
+                        <li>
+                            <a  href="#"><i class="fa fa-chevron-right"></i> Foxtar Licenses</a>
+                        </li>
+                        <li>
+                            <a  href="#"><i class="fa fa-chevron-right"></i> Contact Us</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!--/ footer-col-->
+                <div class="footer-col col-12 col-sm-6 col-xl-3">
+                    <div class="footer-title">
+                        <span>Follow Us On</span>
+                    </div>
+                    <div class="newsletter-sign-up">
+                        <ul class="social-networks">
+                            <li><a href="#"><i class="icon icon-fb"></i></a></li>
+                            <li><a href="#"><i class="icon icon-tw"></i></a></li>
+                            <li><a href="#"><i class="icon icon-youtube"></i></a></li>
+                            <li><a href="#"><i class="icon icon-pinterest"></i></a></li>
+                            <li><a href="#"><i class="icon icon-linkedin"></i></a></li>
+                        </ul>
+                        <span>Newsletter Sign Up</span>
+                        <div class="wrapper-input-sign-up">
+                            <div class="input-sign-up">
+                                <input type="text" class="sign-up"  placeholder="E-mail Address">
+                                <button class="btn-sign-up fa fa-location-arrow" type="button"></button>
+                            </div>
+                        </div>
+                        <!--/ wrapper-input-sign-up-->
+                    </div>
+                </div>
+                <!--/ footer-col-->
             </div>
-            <!--/ container-->
+            <!--/row-->
         </div>
-        <!--/ default-section-->
+        <!--/ container-->
+    </div>
+    <!--/ default-section-->
 
-        <div class="copy-right">
-            <div class="container-fluid">
-                <p class="default-text text-center">
-                    &copy; 2017 Foxtar market place. Trademarks and brands are the property of their respective owners.
-                </p>
-            </div>
-            <!--/ container-fluid-->
+    <div class="copy-right">
+        <div class="container-fluid">
+            <p class="default-text text-center">
+                &copy; 2017 Foxtar market place. Trademarks and brands are the property of their respective owners.
+            </p>
         </div>
-    </footer>
-    <!--/ footer-->
-    <!--.footer end-->
+        <!--/ container-fluid-->
+    </div>
+</footer>
+<!--/ footer-->
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/range.js"></script>
+<script src="js/aside.js"></script>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-            crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="js/range.js"></script>
+<!-- Slick-nav -->
+<script src="js/jquery.slicknav.min.js"></script>
 
-    <!-- Slick-nav -->
-    <script src="js/jquery.slicknav.min.js"></script>
-
-    <!-- Init plugins -->
-    <script src="js/init.js"></script>
-
+<!-- Init plugins -->
+<script src="js/init.js"></script>
 </body>
 </html>

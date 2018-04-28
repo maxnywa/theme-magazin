@@ -31,34 +31,1352 @@
     <!-- Custom style -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    <header id="header">
-
+    <header id="header" class="navbar-expand-lg">
+        <div class="header-top bg-white navbar-light">
+            <div class="container d-flex flex-wrap align-items-center">
+                <div class="logo mr-auto">
+                    <a href="#">
+                        <img src="../app/img/logo.png" alt="">
+                    </a>
+                </div>
+                <!--/ logo-->
+                <div class="order-1 header-conrols d-flex align-items-center justify-content-center">
+                    <div class="need-help d-none d-sm-block">
+                        <span><span>Need help? </span>Talk to an expert: +61 3 8376 6284</span>
+                    </div>
+                    <!--/ need-help-->
+                    <ul>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle toggle-circle text-center dropdown-basket" href="#" role="button" id="dropdownBasket" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-shopping-basket"></i>
+                                <span class="counter">8</span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-notifaction dropdown-basket">
+                                <div class="dropdown-item  d-flex align-items-center">
+                                    <img src="img/dropdown-basket.jpg" alt="">
+                                    <div class="item-content">
+                                        <span class="item-title">Grand Ballet</span>
+                                        <span class="item-category">WordPress</span>
+                                        <span class="item-price">$59</span>
+                                    </div>
+                                </div>
+                                <div class="dropdown-item d-flex align-items-center">
+                                    <img src="img/dropdown-basket.jpg" alt="">
+                                    <div class="item-content">
+                                        <span class="item-title">Apple Device</span>
+                                        <span class="item-category">WordPress</span>
+                                        <span class="item-price">$59</span>
+                                    </div>
+                                    <!--/ item-content -->
+                                </div>
+                                <!--/ dropdown-item -->
+                                <div class="total d-flex justify-content-between">
+                                    <span>Total</span>
+                                    <span>$118</span>
+                                </div>
+                                <!-- / total-->
+                                <div class="go-chekout d-flex justify-content-between">
+                                    <a href="#" class="btn-custom btn-medium btn-red">Go to card</a>
+                                    <a href="#" class="btn-custom btn-medium btn-green">Go to checkout</a>
+                                </div>
+                                <!--/ go-chekout-->
+                            </div>
+                            <!--/dropdown-menu -->
+                        </li>
+                        <!--/ dropdown-->
+                    </ul>
+                    <!--/ ul-->
+                    <button class="btn-custom btn-small btn-green btn-rounded" data-toggle="modal" data-target="#loginModal">Login</button>
+                    <button class="btn-custom btn-small btn-red btn-rounded">Register</button>
+                </div>
+                <!--/ order-1-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#header-nav" aria-controls="header-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <!--/container-->
+        </div>
+        <!--/header-top-->
+        <div class="header-bottom bg-dark-blue collapse navbar-collapse" id="header-nav" >
+            <div class="container">
+                <nav class="header-bottom-nav">
+                    <ul>
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">wordPress</a></li>
+                        <li><a href="#">joomla</a></li>
+                        <li><a href="#">psd</a></li>
+                        <li><a href="#">plugins</a></li>
+                        <li><a href="#">components</a></li>
+                        <li><a href="#">pages</a></li>
+                        <li><a href="#">contact</a></li>
+                        <li><a href="#">help</a></li>
+                    </ul>
+                    <!--/ ul-->
+                </nav>
+                <!--/ header-bottom-nav-->
+            </div>
+            <!--/ container-->
+        </div>
+        <!--/header-bottom-->
     </header>
     <!--/ header-->
-
     <main id="main">
+        <section class="form-search form-search-main text-center">
+            <div class="container-fluid">
+                <span class="title section-title title-white title-welcome">Welcome To Foxtar Market Place!</span>
+                <span class="title section-title title-white title-premium">Premium WordPress Themes, Web Templates and Many More ...</span>
+                <form class="form-search-input">
+                    <div class="input-group">
+                        <input type="text" class="form-control"  placeholder="Search Your Keywords . . .">
+                        <button class="btn btn-default fa fa-searchs" type="submit">
+                        </button>
+                    </div>
+                </form>
+                <!--form-search-input-->
+            </div>
+            <!--/ container-fluid -->
+        </section>
+        <!--/ form-search-->
+        <section class="newest-product default-section">
+            <div class="container-fluid">
+                <div class="title section-title text-center">
+                    <span>Let’s Check Out Our Newest Release Prodcuts</span>
+                </div>
+                <ul class="tags d-none d-md-flex justify-content-center">
+                    <li class="active"><a href="#">All</a></li>
+                    <li><a href="#">WordPress</a></li>
+                    <li><a href="#">joombla</a></li>
+                    <li><a href="#">Plugins</a></li>
+                    <li><a href="#">Component</a></li>
+                    <li><a href="#">PSD</a></li>
+                </ul>
+                <!--/ tags-->
+                <section class="cards-product">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                            <div class="card large-card">
+                                <div class="card-img">
+                                    <a href="">
+                                        <img src="img/card-item-big.jpg" alt="">
+                                    </a>
+                                </div>
+                                <!-- /.card-img -->
+                                <div class="card-description">
+                                    <div class="card-info d-flex align-items-center">
+                                        <div class="d-flex flex-column">
+                                            <a href="#" class="card-item-title">Responsive Mobile APP</a>
+                                            <a href="#" class="item-category">Site Template</a>
+                                        </div>
+                                        <span class="card-price ml-auto">$19</span>
+                                    </div>
+                                    <!-- /.card-info -->
+                                    <div class="card-author d-flex align-items-center">
+                                        <a href="#" class="card-author-img">
+                                            <img src="img/card-author-ava.png" alt="">
+                                            <span class="author-name">Radiustheme</span>
+                                        </a>
+                                        <ul class="card-product-rating list-inline ml-auto">
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        </ul>
+                                        <span class="rating-count">05</span>
+                                    </div>
+                                    <!-- /.card-author -->
+                                </div>
+                                <!-- /.card-description -->
+                            </div>
+                            <!--.large-card-->
+                        </div>
+                        <!--col-3-->
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                            <div class="card large-card">
+                                <div class="card-img">
+                                    <a href="">
+                                        <img src="img/card-item-big.jpg" alt="">
+                                    </a>
+                                    <span class="label-trending"><i class="fa fa-bolt" aria-hidden="true"></i></span>
+                                </div>
+                                <!-- /.card-img -->
+                                <div class="card-description">
+                                    <div class="card-info d-flex align-items-center">
+                                        <div class="d-flex flex-column">
+                                            <a href="#" class="card-item-title">The Post Grid Pro</a>
+                                            <a href="#" class="item-category">WordPress Plugin</a>
+                                        </div>
+                                        <span class="card-price ml-auto">$15</span>
+                                    </div>
+                                    <!-- /.card-info -->
+                                    <div class="card-author d-flex align-items-center">
+                                        <a href="#" class="card-author-img">
+                                            <img src="img/card-author-ava.png" alt="">
+                                            <span class="author-name">PsdBosS</span>
+                                        </a>
+                                        <ul class="card-product-rating list-inline ml-auto">
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        </ul>
+                                        <span class="rating-count">05</span>
+                                    </div>
+                                    <!-- /.card-author -->
+                                </div>
+                                <!-- /.card-description -->
+                            </div>
+                            <!--.large-card-->
+                        </div>
+                        <!--col-3-->
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                            <div class="card large-card">
+                                <div class="card-img">
+                                    <a href="">
+                                        <img src="img/card-item-big.jpg" alt="">
+                                    </a>
+                                </div>
+                                <!-- /.card-img -->
+                                <div class="card-description">
+                                    <div class="card-info d-flex align-items-center">
+                                        <div class="d-flex flex-column">
+                                            <a href="#" class="card-item-title">Food Menu</a>
+                                            <a href="#" class="item-category">WordPress Plugin</a>
+                                        </div>
+                                        <span class="card-price ml-auto">$20</span>
+                                    </div>
+                                    <!-- /.card-info -->
+                                    <div class="card-author d-flex align-items-center">
+                                        <a href="#" class="card-author-img">
+                                            <img src="img/card-author-ava.png" alt="">
+                                            <span class="author-name">Manilip</span>
+                                        </a>
+                                        <ul class="card-product-rating list-inline ml-auto">
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        </ul>
+                                        <span class="rating-count">05</span>
+                                    </div>
+                                    <!-- /.card-author -->
+                                </div>
+                                <!-- /.card-description -->
+                            </div>
+                            <!--.large-card-->
+                        </div>
+                        <!--col-3-->
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                            <div class="card large-card">
+                                <div class="card-img">
+                                    <a href="">
+                                        <img src="img/card-item-big.jpg" alt="">
+                                    </a>
+                                </div>
+                                <!-- /.card-img -->
+                                <div class="card-description">
+                                    <div class="card-info d-flex align-items-center">
+                                        <div class="d-flex flex-column">
+                                            <a href="#" class="card-item-title">Imac Mockup</a>
+                                            <a href="#" class="item-category">Psd Template</a>
+                                        </div>
+                                        <span class="card-price ml-auto">$12</span>
+                                    </div>
+                                    <!-- /.card-info -->
+                                    <div class="card-author d-flex align-items-center">
+                                        <a href="#" class="card-author-img">
+                                            <img src="img/card-author-ava.png" alt="">
+                                            <span class="author-name">Lolypop</span>
+                                        </a>
+                                        <ul class="card-product-rating list-inline ml-auto">
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        </ul>
+                                        <span class="rating-count">05</span>
+                                    </div>
+                                    <!-- /.card-author -->
+                                </div>
+                                <!-- /.card-description -->
+                            </div>
+                            <!--.large-card-->
+                        </div>
+                        <!--col-3-->
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                            <div class="card large-card">
+                                <div class="card-img">
+                                    <a href="">
+                                        <img src="img/card-item-big.jpg" alt="">
+                                    </a>
+                                </div>
+                                <!-- /.card-img -->
+                                <div class="card-description">
+                                    <div class="card-info d-flex align-items-center">
+                                        <div class="d-flex flex-column">
+                                            <a href="#" class="card-item-title">Gymedge</a>
+                                            <a href="#" class="item-category">Joomla Template</a>
+                                        </div>
+                                        <span class="card-price ml-auto">$45</span>
+                                    </div>
+                                    <!-- /.card-info -->
+                                    <div class="card-author d-flex align-items-center">
+                                        <a href="#" class="card-author-img">
+                                            <img src="img/card-author-ava.png" alt="">
+                                            <span class="author-name">Micrsof</span>
+                                        </a>
+                                        <ul class="card-product-rating list-inline ml-auto">
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        </ul>
+                                        <span class="rating-count">05</span>
+                                    </div>
+                                    <!-- /.card-author -->
+                                </div>
+                                <!-- /.card-description -->
+                            </div>
+                            <!--.large-card-->
+                        </div>
+                        <!--col-3-->
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                            <div class="card large-card">
+                                <div class="card-img">
+                                    <a href="">
+                                        <img src="img/card-item-big.jpg" alt="">
+                                    </a>
+                                </div>
+                                <!-- /.card-img -->
+                                <div class="card-description">
+                                    <div class="card-info d-flex align-items-center">
+                                        <div class="d-flex flex-column">
+                                            <a href="#" class="card-item-title">The Post Grid Pro</a>
+                                            <a href="#" class="item-category">WordPress Plugin</a>
+                                        </div>
+                                        <span class="card-price ml-auto">$19</span>
+                                    </div>
+                                    <!-- /.card-info -->
+                                    <div class="card-author d-flex align-items-center">
+                                        <a href="#" class="card-autor-img">
+                                            <img src="img/card-author-ava.png" alt="">
+                                            <span class="author-name">Raklouse</span>
+                                        </a>
+                                        <ul class="card-product-rating list-inline ml-auto">
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        </ul>
+                                        <span class="rating-count">05</span>
+                                    </div>
+                                    <!-- /.card-author -->
+                                </div>
+                                <!-- /.card-description -->
+                            </div>
+                            <!--.large-card-->
+                        </div>
+                        <!--col-3-->
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                            <div class="card large-card">
+                                <div class="card-img">
+                                    <a href="">
+                                        <img src="img/card-item-big.jpg" alt="">
+                                    </a>
+                                    <span class="label-trending"><i class="fa fa-bolt" aria-hidden="true"></i></span>
+                                </div>
+                                <!-- /.card-img -->
+                                <div class="card-description">
+                                    <div class="card-info d-flex align-items-center">
+                                        <div class="d-flex flex-column">
+                                            <a href="#" class="card-item-title">Doll Face</a>
+                                            <a href="#" class="item-category">Illustration</a>
+                                        </div>
+                                        <span class="card-price ml-auto">$10</span>
+                                    </div>
+                                    <!-- /.card-info -->
+                                    <div class="card-author d-flex align-items-center">
+                                        <a href="#" class="card-author-img">
+                                            <img src="img/card-author-ava.png" alt="">
+                                            <span class="author-name">Miks Art</span>
+                                        </a>
+                                        <ul class="card-product-rating list-inline ml-auto">
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        </ul>
+                                        <span class="rating-count">05</span>
+                                    </div>
+                                    <!-- /.card-author -->
+                                </div>
+                                <!-- /.card-description -->
+                            </div>
+                            <!--.large-card-->
+                        </div>
+                        <!--col-3-->
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                            <div class="card large-card">
+                                <div class="card-img">
+                                    <a href="">
+                                        <img src="img/card-item-big.jpg" alt="">
+                                    </a>
+                                </div>
+                                <!-- /.card-img -->
+                                <div class="card-description">
+                                    <div class="card-info d-flex align-items-center">
+                                        <div class="d-flex flex-column">
+                                            <a href="#" class="card-item-title">Designer Mockup</a>
+                                            <a href="#" class="item-category">PsdTemplate</a>
+                                        </div>
+                                        <span class="card-price ml-auto">$10</span>
+                                    </div>
+                                    <!-- /.card-info -->
+                                    <div class="card-author d-flex align-items-center">
+                                        <a href="#" class="card-author-img">
+                                            <img src="img/card-author-ava.png" alt="">
+                                            <span class="author-name">ThemeLol</span>
+                                        </a>
+                                        <ul class="card-product-rating list-inline ml-auto">
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        </ul>
+                                        <span class="rating-count">05</span>
+                                    </div>
+                                    <!-- /.card-author -->
+                                </div>
+                                <!-- /.card-description -->
+                            </div>
+                            <!--.large-card-->
+                        </div>
+                        <!--col-3-->
+                        </div>
+                    <!--/ row-->
+                </section>
+                <div class="button-items d-flex justify-content-center">
+                    <a href="#" class="btn-custom">All New Items</a>
+                    <a href="#" class="btn-custom">Popular items</a>
+                </div>
+                <!--/ cards-example-->
+            </div>
+            <!--/ container-->
+        </section>
+        <!--/ newest-product -->
+        <section class="carousel default-section bg-white">
+            <div class="container-fluid">
+                <div class="title section-title text-center">
+                <span>
+                    This Week Trending Products
+                </span>
+                </div>
+                <div class="trending-carousel">
+                    <div>
+                        <div class="card large-card">
+                            <div class="card-img">
+                                <a href="">
+                                    <img src="img/card-item-big.jpg" alt="">
+                                </a>
+                            </div>
+                            <!-- /.card-img -->
+                            <div class="card-description">
+                                <div class="card-info d-flex align-items-center">
+                                    <div class="d-flex flex-column">
+                                        <a href="#" class="card-item-title">Responsive Mobile APP</a>
+                                        <a href="#" class="item-category">Site Template</a>
+                                    </div>
+                                    <span class="card-price ml-auto">$19</span>
+                                </div>
+                                <!-- /.card-info -->
+                                <div class="card-author d-flex align-items-center">
+                                    <a href="#" class="card-author-img">
+                                        <img src="img/card-author-ava.png" alt="">
+                                        <span class="author-name">Radiustheme</span>
+                                    </a>
+                                    <ul class="card-product-rating list-inline ml-auto">
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                    </ul>
+                                    <span class="rating-count">05</span>
+                                </div>
+                                <!-- /.card-author -->
+                            </div>
+                            <!-- /.card-description -->
+                        </div>
+                        <!--.large-card-->
+                    </div>
+                    <div>
+                        <div class="card large-card">
+                            <div class="card-img">
+                                <a href="">
+                                    <img src="img/card-item-big.jpg" alt="">
+                                </a>
+                                <span class="label-trending"><i class="fa fa-bolt" aria-hidden="true"></i></span>
+                            </div>
+                            <!-- /.card-img -->
+                            <div class="card-description">
+                                <div class="card-info d-flex align-items-center">
+                                    <div class="d-flex flex-column">
+                                        <a href="#" class="card-item-title">The Post Grid Pro</a>
+                                        <a href="#" class="item-category">WordPress Plugin</a>
+                                    </div>
+                                    <span class="card-price ml-auto">$15</span>
+                                </div>
+                                <!-- /.card-info -->
+                                <div class="card-author d-flex align-items-center">
+                                    <a href="#" class="card-author-img">
+                                        <img src="img/card-author-ava.png" alt="">
+                                        <span class="author-name">PsdBosS</span>
+                                    </a>
+                                    <ul class="card-product-rating list-inline ml-auto">
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                    </ul>
+                                    <span class="rating-count">05</span>
+                                </div>
+                                <!-- /.card-author -->
+                            </div>
+                            <!-- /.card-description -->
+                        </div>
+                        <!--.large-card-->
+                    </div>
+                    <div>
+                        <div class="card large-card">
+                            <div class="card-img">
+                                <a href="">
+                                    <img src="img/card-item-big.jpg" alt="">
+                                </a>
+                            </div>
+                            <!-- /.card-img -->
+                            <div class="card-description">
+                                <div class="card-info d-flex align-items-center">
+                                    <div class="d-flex flex-column">
+                                        <a href="#" class="card-item-title">Responsive Mobile APP</a>
+                                        <a href="#" class="item-category">Site Template</a>
+                                    </div>
+                                    <span class="card-price ml-auto">$19</span>
+                                </div>
+                                <!-- /.card-info -->
+                                <div class="card-author d-flex align-items-center">
+                                    <a href="#" class="card-author-img">
+                                        <img src="img/card-author-ava.png" alt="">
+                                        <span class="author-name">Radiustheme</span>
+                                    </a>
+                                    <ul class="card-product-rating list-inline ml-auto">
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                    </ul>
+                                    <span class="rating-count">05</span>
+                                </div>
+                                <!-- /.card-author -->
+                            </div>
+                            <!-- /.card-description -->
+                        </div>
+                        <!--.large-card-->
+                    </div>
+                    <div>
+                        <div class="card large-card">
+                            <div class="card-img">
+                                <a href="">
+                                    <img src="img/card-item-big.jpg" alt="">
+                                </a>
+                                <span class="label-trending"><i class="fa fa-bolt" aria-hidden="true"></i></span>
+                            </div>
+                            <!-- /.card-img -->
+                            <div class="card-description">
+                                <div class="card-info d-flex align-items-center">
+                                    <div class="d-flex flex-column">
+                                        <a href="#" class="card-item-title">The Post Grid Pro</a>
+                                        <a href="#" class="item-category">WordPress Plugin</a>
+                                    </div>
+                                    <span class="card-price ml-auto">$15</span>
+                                </div>
+                                <!-- /.card-info -->
+                                <div class="card-author d-flex align-items-center">
+                                    <a href="#" class="card-author-img">
+                                        <img src="img/card-author-ava.png" alt="">
+                                        <span class="author-name">PsdBosS</span>
+                                    </a>
+                                    <ul class="card-product-rating list-inline ml-auto">
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                    </ul>
+                                    <span class="rating-count">05</span>
+                                </div>
+                                <!-- /.card-author -->
+                            </div>
+                            <!-- /.card-description -->
+                        </div>
+                        <!--.large-card-->
+                    </div>
+                    <div>
+                        <div class="card large-card">
+                            <div class="card-img">
+                                <a href="">
+                                    <img src="img/card-item-big.jpg" alt="">
+                                </a>
+                            </div>
+                            <!-- /.card-img -->
+                            <div class="card-description">
+                                <div class="card-info d-flex align-items-center">
+                                    <div class="d-flex flex-column">
+                                        <a href="#" class="card-item-title">Responsive Mobile APP</a>
+                                        <a href="#" class="item-category">Site Template</a>
+                                    </div>
+                                    <span class="card-price ml-auto">$19</span>
+                                </div>
+                                <!-- /.card-info -->
+                                <div class="card-author d-flex align-items-center">
+                                    <a href="#" class="card-author-img">
+                                        <img src="img/card-author-ava.png" alt="">
+                                        <span class="author-name">Radiustheme</span>
+                                    </a>
+                                    <ul class="card-product-rating list-inline ml-auto">
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                    </ul>
+                                    <span class="rating-count">05</span>
+                                </div>
+                                <!-- /.card-author -->
+                            </div>
+                            <!-- /.card-description -->
+                        </div>
+                        <!--.large-card-->
+                    </div>
+                    <div>
+                        <div class="card large-card">
+                            <div class="card-img">
+                                <a href="">
+                                    <img src="img/card-item-big.jpg" alt="">
+                                </a>
+                                <span class="label-trending"><i class="fa fa-bolt" aria-hidden="true"></i></span>
+                            </div>
+                            <!-- /.card-img -->
+                            <div class="card-description">
+                                <div class="card-info d-flex align-items-center">
+                                    <div class="d-flex flex-column">
+                                        <a href="#" class="card-item-title">The Post Grid Pro</a>
+                                        <a href="#" class="item-category">WordPress Plugin</a>
+                                    </div>
+                                    <span class="card-price ml-auto">$15</span>
+                                </div>
+                                <!-- /.card-info -->
+                                <div class="card-author d-flex align-items-center">
+                                    <a href="#" class="card-author-img">
+                                        <img src="img/card-author-ava.png" alt="">
+                                        <span class="author-name">PsdBosS</span>
+                                    </a>
+                                    <ul class="card-product-rating list-inline ml-auto">
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                    </ul>
+                                    <span class="rating-count">05</span>
+                                </div>
+                                <!-- /.card-author -->
+                            </div>
+                            <!-- /.card-description -->
+                        </div>
+                        <!--.large-card-->
+                    </div>
+                    <div>
+                        <div class="card large-card">
+                            <div class="card-img">
+                                <a href="">
+                                    <img src="img/card-item-big.jpg" alt="">
+                                </a>
+                            </div>
+                            <!-- /.card-img -->
+                            <div class="card-description">
+                                <div class="card-info d-flex align-items-center">
+                                    <div class="d-flex flex-column">
+                                        <a href="#" class="card-item-title">Responsive Mobile APP</a>
+                                        <a href="#" class="item-category">Site Template</a>
+                                    </div>
+                                    <span class="card-price ml-auto">$19</span>
+                                </div>
+                                <!-- /.card-info -->
+                                <div class="card-author d-flex align-items-center">
+                                    <a href="#" class="card-author-img">
+                                        <img src="img/card-author-ava.png" alt="">
+                                        <span class="author-name">Radiustheme</span>
+                                    </a>
+                                    <ul class="card-product-rating list-inline ml-auto">
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                    </ul>
+                                    <span class="rating-count">05</span>
+                                </div>
+                                <!-- /.card-author -->
+                            </div>
+                            <!-- /.card-description -->
+                        </div>
+                        <!--.large-card-->
+                    </div>
+                    <div>
+                        <div class="card large-card">
+                            <div class="card-img">
+                                <a href="">
+                                    <img src="img/card-item-big.jpg" alt="">
+                                </a>
+                                <span class="label-trending"><i class="fa fa-bolt" aria-hidden="true"></i></span>
+                            </div>
+                            <!-- /.card-img -->
+                            <div class="card-description">
+                                <div class="card-info d-flex align-items-center">
+                                    <div class="d-flex flex-column">
+                                        <a href="#" class="card-item-title">The Post Grid Pro</a>
+                                        <a href="#" class="item-category">WordPress Plugin</a>
+                                    </div>
+                                    <span class="card-price ml-auto">$15</span>
+                                </div>
+                                <!-- /.card-info -->
+                                <div class="card-author d-flex align-items-center">
+                                    <a href="#" class="card-author-img">
+                                        <img src="img/card-author-ava.png" alt="">
+                                        <span class="author-name">PsdBosS</span>
+                                    </a>
+                                    <ul class="card-product-rating list-inline ml-auto">
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                    </ul>
+                                    <span class="rating-count">05</span>
+                                </div>
+                                <!-- /.card-author -->
+                            </div>
+                            <!-- /.card-description -->
+                        </div>
+                        <!--.large-card-->
+                    </div>
+                    <div>
+                        <div class="card large-card">
+                            <div class="card-img">
+                                <a href="">
+                                    <img src="img/card-item-big.jpg" alt="">
+                                </a>
+                            </div>
+                            <!-- /.card-img -->
+                            <div class="card-description">
+                                <div class="card-info d-flex align-items-center">
+                                    <div class="d-flex flex-column">
+                                        <a href="#" class="card-item-title">Responsive Mobile APP</a>
+                                        <a href="#" class="item-category">Site Template</a>
+                                    </div>
+                                    <span class="card-price ml-auto">$19</span>
+                                </div>
+                                <!-- /.card-info -->
+                                <div class="card-author d-flex align-items-center">
+                                    <a href="#" class="card-author-img">
+                                        <img src="img/card-author-ava.png" alt="">
+                                        <span class="author-name">Radiustheme</span>
+                                    </a>
+                                    <ul class="card-product-rating list-inline ml-auto">
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                    </ul>
+                                    <span class="rating-count">05</span>
+                                </div>
+                                <!-- /.card-author -->
+                            </div>
+                            <!-- /.card-description -->
+                        </div>
+                        <!--.large-card-->
+                    </div>
+                    <div>
+                        <div class="card large-card">
+                            <div class="card-img">
+                                <a href="">
+                                    <img src="img/card-item-big.jpg" alt="">
+                                </a>
+                                <span class="label-trending"><i class="fa fa-bolt" aria-hidden="true"></i></span>
+                            </div>
+                            <!-- /.card-img -->
+                            <div class="card-description">
+                                <div class="card-info d-flex align-items-center">
+                                    <div class="d-flex flex-column">
+                                        <a href="#" class="card-item-title">The Post Grid Pro</a>
+                                        <a href="#" class="item-category">WordPress Plugin</a>
+                                    </div>
+                                    <span class="card-price ml-auto">$15</span>
+                                </div>
+                                <!-- /.card-info -->
+                                <div class="card-author d-flex align-items-center">
+                                    <a href="#" class="card-author-img">
+                                        <img src="img/card-author-ava.png" alt="">
+                                        <span class="author-name">PsdBosS</span>
+                                    </a>
+                                    <ul class="card-product-rating list-inline ml-auto">
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                    </ul>
+                                    <span class="rating-count">05</span>
+                                </div>
+                                <!-- /.card-author -->
+                            </div>
+                            <!-- /.card-description -->
+                        </div>
+                        <!--.large-card-->
+                    </div>
+                    <div>
+                        <div class="card large-card">
+                            <div class="card-img">
+                                <a href="">
+                                    <img src="img/card-item-big.jpg" alt="">
+                                </a>
+                            </div>
+                            <!-- /.card-img -->
+                            <div class="card-description">
+                                <div class="card-info d-flex align-items-center">
+                                    <div class="d-flex flex-column">
+                                        <a href="#" class="card-item-title">Responsive Mobile APP</a>
+                                        <a href="#" class="item-category">Site Template</a>
+                                    </div>
+                                    <span class="card-price ml-auto">$19</span>
+                                </div>
+                                <!-- /.card-info -->
+                                <div class="card-author d-flex align-items-center">
+                                    <a href="#" class="card-author-img">
+                                        <img src="img/card-author-ava.png" alt="">
+                                        <span class="author-name">Radiustheme</span>
+                                    </a>
+                                    <ul class="card-product-rating list-inline ml-auto">
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                    </ul>
+                                    <span class="rating-count">05</span>
+                                </div>
+                                <!-- /.card-author -->
+                            </div>
+                            <!-- /.card-description -->
+                        </div>
+                        <!--.large-card-->
+                    </div>
+                    <div>
+                        <div class="card large-card">
+                            <div class="card-img">
+                                <a href="">
+                                    <img src="img/card-item-big.jpg" alt="">
+                                </a>
+                                <span class="label-trending"><i class="fa fa-bolt" aria-hidden="true"></i></span>
+                            </div>
+                            <!-- /.card-img -->
+                            <div class="card-description">
+                                <div class="card-info d-flex align-items-center">
+                                    <div class="d-flex flex-column">
+                                        <a href="#" class="card-item-title">The Post Grid Pro</a>
+                                        <a href="#" class="item-category">WordPress Plugin</a>
+                                    </div>
+                                    <span class="card-price ml-auto">$15</span>
+                                </div>
+                                <!-- /.card-info -->
+                                <div class="card-author d-flex align-items-center">
+                                    <a href="#" class="card-author-img">
+                                        <img src="img/card-author-ava.png" alt="">
+                                        <span class="author-name">PsdBosS</span>
+                                    </a>
+                                    <ul class="card-product-rating list-inline ml-auto">
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                    </ul>
+                                    <span class="rating-count">05</span>
+                                </div>
+                                <!-- /.card-author -->
+                            </div>
+                            <!-- /.card-description -->
+                        </div>
+                        <!--.large-card-->
+                    </div>
+                    <div>
+                        <div class="card large-card">
+                            <div class="card-img">
+                                <a href="">
+                                    <img src="img/card-item-big.jpg" alt="">
+                                </a>
+                            </div>
+                            <!-- /.card-img -->
+                            <div class="card-description">
+                                <div class="card-info d-flex align-items-center">
+                                    <div class="d-flex flex-column">
+                                        <a href="#" class="card-item-title">Responsive Mobile APP</a>
+                                        <a href="#" class="item-category">Site Template</a>
+                                    </div>
+                                    <span class="card-price ml-auto">$19</span>
+                                </div>
+                                <!-- /.card-info -->
+                                <div class="card-author d-flex align-items-center">
+                                    <a href="#" class="card-author-img">
+                                        <img src="img/card-author-ava.png" alt="">
+                                        <span class="author-name">Radiustheme</span>
+                                    </a>
+                                    <ul class="card-product-rating list-inline ml-auto">
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                    </ul>
+                                    <span class="rating-count">05</span>
+                                </div>
+                                <!-- /.card-author -->
+                            </div>
+                            <!-- /.card-description -->
+                        </div>
+                        <!--.large-card-->
+                    </div>
+                    <div>
+                        <div class="card large-card">
+                            <div class="card-img">
+                                <a href="">
+                                    <img src="img/card-item-big.jpg" alt="">
+                                </a>
+                                <span class="label-trending"><i class="fa fa-bolt" aria-hidden="true"></i></span>
+                            </div>
+                            <!-- /.card-img -->
+                            <div class="card-description">
+                                <div class="card-info d-flex align-items-center">
+                                    <div class="d-flex flex-column">
+                                        <a href="#" class="card-item-title">The Post Grid Pro</a>
+                                        <a href="#" class="item-category">WordPress Plugin</a>
+                                    </div>
+                                    <span class="card-price ml-auto">$15</span>
+                                </div>
+                                <!-- /.card-info -->
+                                <div class="card-author d-flex align-items-center">
+                                    <a href="#" class="card-author-img">
+                                        <img src="img/card-author-ava.png" alt="">
+                                        <span class="author-name">PsdBosS</span>
+                                    </a>
+                                    <ul class="card-product-rating list-inline ml-auto">
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                    </ul>
+                                    <span class="rating-count">05</span>
+                                </div>
+                                <!-- /.card-author -->
+                            </div>
+                            <!-- /.card-description -->
+                        </div>
+                        <!--.large-card-->
+                    </div>
+                    <div>
+                        <div class="card large-card">
+                            <div class="card-img">
+                                <a href="">
+                                    <img src="img/card-item-big.jpg" alt="">
+                                </a>
+                            </div>
+                            <!-- /.card-img -->
+                            <div class="card-description">
+                                <div class="card-info d-flex align-items-center">
+                                    <div class="d-flex flex-column">
+                                        <a href="#" class="card-item-title">Responsive Mobile APP</a>
+                                        <a href="#" class="item-category">Site Template</a>
+                                    </div>
+                                    <span class="card-price ml-auto">$19</span>
+                                </div>
+                                <!-- /.card-info -->
+                                <div class="card-author d-flex align-items-center">
+                                    <a href="#" class="card-author-img">
+                                        <img src="img/card-author-ava.png" alt="">
+                                        <span class="author-name">Radiustheme</span>
+                                    </a>
+                                    <ul class="card-product-rating list-inline ml-auto">
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                    </ul>
+                                    <span class="rating-count">05</span>
+                                </div>
+                                <!-- /.card-author -->
+                            </div>
+                            <!-- /.card-description -->
+                        </div>
+                        <!--.large-card-->
+                    </div>
+                    <div>
+                        <div class="card large-card">
+                            <div class="card-img">
+                                <a href="">
+                                    <img src="img/card-item-big.jpg" alt="">
+                                </a>
+                                <span class="label-trending"><i class="fa fa-bolt" aria-hidden="true"></i></span>
+                            </div>
+                            <!-- /.card-img -->
+                            <div class="card-description">
+                                <div class="card-info d-flex align-items-center">
+                                    <div class="d-flex flex-column">
+                                        <a href="#" class="card-item-title">The Post Grid Pro</a>
+                                        <a href="#" class="item-category">WordPress Plugin</a>
+                                    </div>
+                                    <span class="card-price ml-auto">$15</span>
+                                </div>
+                                <!-- /.card-info -->
+                                <div class="card-author d-flex align-items-center">
+                                    <a href="#" class="card-author-img">
+                                        <img src="img/card-author-ava.png" alt="">
+                                        <span class="author-name">PsdBosS</span>
+                                    </a>
+                                    <ul class="card-product-rating list-inline ml-auto">
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                    </ul>
+                                    <span class="rating-count">05</span>
+                                </div>
+                                <!-- /.card-author -->
+                            </div>
+                            <!-- /.card-description -->
+                        </div>
+                        <!--.large-card-->
+                    </div>
+                </div>
+                <!--/ trending-carousel-->
+            </div>
+            <!--/ container-fluid-->
+        </section>
+        <!--/ carousel-->
+        <section class="why-choose-foxtar default-section bg-dark-blue">
+            <div class="container">
+                <div class="title section-title title-white text-center">
+                    <span>Why You Choose Foxtar Market Place?</span>
+                </div>
+                <div class="row">
+                    <div class="why-choose-items col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center">
+                        <div class="img-wrapper">
+                            <img src="img/Why-choose-FMP.png" alt="">
+                        </div>
+                        <a href="#">Easily Buy & Sell </a>
+                        <p class="default-text text-center">
+                            Adipisci atque consectetur debitis delectus esse et expedita facere impedit ipsum iste natus nostrum obcaecati odit quis quos, sapiente tenetur voluptate voluptatibus.
+                        </p>
+                    </div>
+                    <div class="why-choose-items col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center">
+                        <div class="img-wrapper">
+                            <img src="img/Why-choose-FMP.png" alt="">
+                        </div>
+                        <a href="#">Quality Products </a>
+                        <p class="default-text text-center">
+                            Ab accusamus aliquam amet aspernatur atque cum cumque deserunt est impedit in incidunt inventore iste iure odio, pariatur repudiandae, saepe soluta vero.
+                        </p>
+                    </div>
+                    <div class="why-choose-items col-12 col-lg-4 d-flex flex-column align-items-center">
+                        <div class="img-wrapper">
+                            <img src="img/Why-choose-FMP.png" alt="">
+                        </div>
+                        <a href="#">100% Secure Payment </a>
+                        <p class="default-text text-center">
+                             Adipisci atque consectetur debitis delectus esse et expedita facere impedit ipsum iste natus nostrum obcaecati odit quis quos, sapiente tenetur voluptate voluptatibus.
+                        </p>
+                    </div>
+                </div>
+                <!--/ row-->
+            </div>
+            <!--/ container-->
+        </section>
+        <!--/ Why-choose-foxtar-->
+        <section class="become-an-author default-section">
+            <div class="container">
+                <div class="img-wrapper m-auto">
+                    <img src="img/become-an-author.jpg" alt="">
+                    <div class="img-wrapper-content d-flex justify-content-center align-items-center">
+                        <div class="img-content ">
+                            <span>Over <span>20,000</span> Author Are Involved Here!</span>
+                            <a href="#" class="btn-custom btn-large">Become A Author</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/ container-->
+        </section>
+        <!--/ become-an-author-->
+        <section class="tutorials default-section bg-white">
+            <div class="container">
+                <div class="title section-title text-center">
+                    <span>Free Monthly Tutorials To Help You With Your Project</span>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-4">
+                        <div class="card main-card">
+                            <div class="card-img">
+                                <a href="">
+                                    <img src="img/card-item-main.jpg" alt="">
+                                </a>
+                            </div>
+                            <!-- /.card-img -->
+                            <div class="card-description">
+                                <div class="card-info d-flex flex-column align-items-center">
+                                    <span class="card-item-title"> Web Design Tutorials</span>
+                                </div>
+                                <!-- /.card-info -->
+                            </div>
+                            <!-- /.card-description -->
+                        </div>
+                        <!--.main-card-->
+                    </div>
+                    <!--.col-4-->
+                    <div class="col-12 col-lg-4">
+                        <div class="card main-card">
+                            <div class="card-img">
+                                <a href="">
+                                    <img src="img/card-item-main.jpg" alt="">
+                                </a>
+                            </div>
+                            <!-- /.card-img -->
+                            <div class="card-description">
+                                <div class="card-info d-flex flex-column align-items-center">
+                                    <span class="card-item-title"> WordPress Tutorials</span>
+                                </div>
+                                <!-- /.card-info -->
+                            </div>
+                            <!-- /.card-description -->
+                        </div>
+                        <!--.main-card-->
+                    </div>
+                    <!--.col-4-->
+                    <div class="col-12 col-lg-4">
+                        <div class="card main-card">
+                            <div class="card-img">
+                                <a href="">
+                                    <img src="img/card-item-main.jpg" alt="">
+                                </a>
+                            </div>
+                            <!-- /.card-img -->
+                            <div class="card-description">
+                                <div class="card-info d-flex flex-column align-items-center">
+                                    <span class="card-item-title"> HTML & CSS Tutorials</span>
+                                </div>
+                                <!-- /.card-info -->
+                            </div>
+                            <!-- /.card-description -->
+                        </div>
+                        <!--.main-card-->
+                    </div>
+                    <!--.col-4-->
+                </div>
+                <!--.row-->
 
+            </div>
+            <!--/ container-->
+        </section>
+        <!--/ tutorials-->
     </main>
-    <!--/ main-->
+    <!--/ main -->
+    <footer class="bg-dark-blue">
+        <div class="default-section">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-12 col-sm-6 col-xl-3">
+                        <div class="footer-title">
+                            <span>About Company</span>
+                        </div>
+                        <div class="default-text text-justify">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias aliquid corporis dicta dolor dolorem error et facere, iure labore natus non obcaecati officia omnis quam similique totam. Corporis, officia.
+                        </div>
+                        <div class="footer-item d-flex">
+                        <span class="item-icon">
+                            <i class="fa fa-map-marker"></i>
+                        </span>
+                            <span class="item-content">
+                            PO Box 16122 Collins Street West Victoria 8007 Australia
+                        </span>
+                        </div>
+                        <!--/footer-item-->
+                        <div class="footer-item d-flex">
+                        <span class="item-icon">
+                            <i class="fa fa-phone"></i>
+                        </span>
+                            <span class="item-content">+61 3 8376 6284</span>
+                        </div>
+                    </div>
+                    <!--/ footer-col-->
+                    <div class="footer-col col-12 col-sm-6 col-xl-3">
+                        <div class="footer-title">
+                            <span>Join Our Community </span>
+                        </div>
+                        <ul class="list">
+                            <li>
+                                <a  href="#"><i class="fa fa-chevron-right"></i> home</a>
+                            </li>
+                            <li>
+                                <a  href="#"><i class="fa fa-chevron-right"></i> forums</a>
+                            </li>
+                            <li>
+                                <a  href="#"><i class="fa fa-chevron-right"></i> Become an Author</a>
+                            </li>
+                            <li>
+                                <a  href="#"><i class="fa fa-chevron-right"></i> Community Meetups</a>
+                            </li>
+                            <li>
+                                <a  href="#"><i class="fa fa-chevron-right"></i> Become an Affiliate</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/ footer-col-->
+                    <div class="footer-col col-12 col-sm-6 col-xl-3">
+                        <div class="footer-title">
+                            <span>Need Help? </span>
+                        </div>
+                        <ul class="list">
+                            <li>
+                                <a  href="#"><i class="fa fa-chevron-right"></i> Help Center</a>
+                            </li>
+                            <li>
+                                <a  href="#"><i class="fa fa-chevron-right"></i> Foxtar Market Terms</a>
+                            </li>
+                            <li>
+                                <a  href="#"><i class="fa fa-chevron-right"></i> Author Terms</a>
+                            </li>
+                            <li>
+                                <a  href="#"><i class="fa fa-chevron-right"></i> Foxtar Licenses</a>
+                            </li>
+                            <li>
+                                <a  href="#"><i class="fa fa-chevron-right"></i> Contact Us</a>
+                            </li>
+                        </ul>
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src="js/range.js"></script>
+                    </div>
+                    <!--/ footer-col-->
+                    <div class="footer-col col-12 col-sm-6 col-xl-3">
+                        <div class="footer-title">
+                            <span>Follow Us On</span>
+                        </div>
+                        <div class="newsletter-sign-up">
+                            <span>Newsletter Sign Up</span>
+                            <div class="wrapper-input-sign-up">
+                                <div class="input-sign-up">
+                                    <input type="text" class="sign-up"  placeholder="E-mail Address">
+                                    <button class="btn-sign-up fa fa-location-arrow" type="button"></button>
+                                </div>
+                            </div>
+                            <!--/ wrapper-input-sign-up-->
+                        </div>
+                    </div>
+                    <!--/ footer-col-->
+                </div>
+                <!--/row-->
+            </div>
+            <!--/ container-->
+        </div>
+        <!--/ default-section-->
 
-<!-- Slick-nav -->
-<script src="js/jquery.slicknav.min.js"></script>
+        <div class="copy-right">
+            <div class="container-fluid">
+                <p class="default-text text-center">
+                    &copy; 2017 Foxtar market place. Trademarks and brands are the property of their respective owners.
+                </p>
+            </div>
+            <!--/ container-fluid-->
+        </div>
+    </footer>
+    <!--/ footer-->
 
-<!-- Init plugins -->
-<script src="js/init.js"></script>
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <!--/close-->
+                    <h4 class="login-title text-center">LOGIN</h4>
+                    <form name="login-form">
+                        <div class="login-form-group">
+                            <i class="fa fa-user"></i>
+                            <input type="text" name="nickName" class="login-form-control" placeholder="Name">
+                        </div>
+                        <div class="login-form-group">
+                            <i class="fa fa-lock"></i>
+                            <input type="password" name="password" class="login-form-control" placeholder="Password">
+                        </div>
+                        <div class="login-btn-group">
+                            <button type="submit" class="submit-btn">Submit</button>
+                            <a href="" class="custom-btn btn-green">
+                                <i class="fa fa-pencil-square-o"></i>
+                                Create Account
+                            </a>
+                        </div>
+                        <a href="#" class="lost-password">Lost password?</a>
+                    </form>
+                    <!--/login-form-->
+                </div>
+                <!--/modal-body-->
+            </div>
+            <!--/modal-content-->
+        </div>
+        <!--/modal-dialog-->
+    </div>
+    <!--/modal-->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/range.js"></script>
+    <script src="js/tags.js"></script>
+
+    <!-- Slick-nav -->
+    <script src="js/jquery.slicknav.min.js"></script>
+
+    <!-- Init plugins -->
+    <script src="js/init.js"></script>
 
 </body>
 </html>

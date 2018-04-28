@@ -231,20 +231,15 @@ ul.breadcrumb li.active {
 }
 
 
-.btn-title {
-    text-transform: uppercase;
-    font-weight: 700;
-}
-.btn-section {
-    padding: 40px 0;
-}
+
 .btn-custom {
     display: inline-block;
     background-color: #fff;
     color: #263238;
-    padding: 20px 28px;
+    padding: 17px 25px;
     font:  400 16px/1 'Roboto', sans-serif;
-    /*box-shadow: 0 2px 2px rgb(232,236,238), 0 0 2px rgb(232,236,238);*/
+    -webkit-box-shadow: 0 2px 2px rgb(232,236,238), 0 0 2px rgb(232,236,238);
+            box-shadow: 0 2px 2px rgb(232,236,238), 0 0 2px rgb(232,236,238);
     text-align:center;
 }
 .btn-custom:hover {
@@ -267,6 +262,12 @@ ul.breadcrumb li.active {
 .btn-custom.btn-large {
     padding: 26px 43px;
     font-size: 18px;
+}
+.btn-custom.btn-social {
+    margin-right: 0;
+    padding: 16px;
+    font-size: 18px;
+    color: #fff;
 }
 .btn-custom.btn-red {
     background-color: #e74c3c;
@@ -318,6 +319,7 @@ ul.breadcrumb li.active {
 /*---large card start---*/
 .card .card-img img {
     width: 100%;
+    height: 100%;
 }
 .card.large-card .card-img {
     position: relative;
@@ -388,6 +390,7 @@ ul.breadcrumb li.active {
     color: #ffa726;
     font-size: 12px;
 }
+
 .card .rating-count, .card .count   {
     padding-left: 10px;
     font: 500 12px 'Roboto', sans-serif;
@@ -402,9 +405,17 @@ ul.breadcrumb li.active {
 .card span.rating-count::after, .card span.count::after{
     content:")";
     color: #b0bec5;
-
-/*---large card end---*/
 }
+@media (max-width:1200px){
+    .card .card-author .author-name {
+        padding-left: 7px;
+    }
+    .card .rating-count, .card .count {
+        padding-left: 7px;
+    }
+}
+/*---large card end---*/
+
 /*---medium-card start*/
 .card.medium-card .card-item-title {
     font-size: 16px;
@@ -415,6 +426,35 @@ ul.breadcrumb li.active {
 }
 .card.medium-card .card-author {
     padding: 15px 20px;
+}
+@media (max-width:1200px) {
+    .card.medium-card .card-author {
+        padding: 15px 15px;
+    }
+    .card.medium-card .card-item-title {
+        font-size: 15px;
+    }
+    .row .col-md-4.col-xl-4.col-xl-12.col-md-12.col-12:nth-child(3) .card.medium-card {
+        margin-bottom: 0;
+    }
+}
+@media (max-width: 991px) {
+    .row .col-12.col-md-4.col-xl-4.col-xl-12.col-md-12:nth-child(3) .card.medium-card {
+        margin-bottom: 0;
+    }
+}
+@media (max-width:767px) {
+    .card.medium-card {
+        margin-bottom: 30px;
+    }
+    .row .col-12.col-md-4.col-xl-4.col-xl-12.col-md-12:nth-child(3) .card.medium-card {
+        margin-bottom: 0;
+    }
+}
+@media (max-width:576px) {
+    .row .col-12.col-md-4.col-xl-4.col-xl-12.col-md-12:nth-child(3) .card.medium-card {
+        margin-bottom: 0;
+    }
 }
 .card .medium-card.card-author .rating-count {
     padding-left: 10px;
@@ -494,8 +534,32 @@ ul.breadcrumb li.active {
         -ms-flex-direction: row;
             flex-direction: row;
 }
-.row .col-12:last-child .row-card {
+.row .col-4.col-12:last-child .card.row-card {
     margin-bottom: 0;
+}
+@media (max-width:991px) {
+    .row .col-4.col-12:last-child .card.row-card {
+        margin-bottom: 0;
+    }
+}
+@media (max-width:767px) {
+    .card.row-card {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .row .col-12.col-md-4.col-xl-4:last-child .card.medium-card {
+         margin-bottom: 0;
+     }
+}
+@media (max-width:576px) {
+    .card.row-card {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
 }
 .card.row-card .card-img {
     -webkit-box-flex: 3;
@@ -569,6 +633,28 @@ ul.breadcrumb li.active {
 span.icon-rating{
     padding-right: 10px;
 }
+@media (max-width:576px) {
+    .card.row-card .icon-rating:nth-last-of-type(2) {
+    display: none;
+    }
+    .card.row-card .count:last-of-type {
+    display: none;
+    }
+}
+@media (max-width:480px) {
+    .card.row-card .count {
+        display: none;
+    }
+    .card.row-card .icon-rating, .card .sale {
+        display: none;
+    }
+    .card.row-card .card-text-info {
+        display:none;
+    }
+    .card.row-card .card-info {
+        padding-bottom:15px;
+    }
+}
 /*---row-card end---*/
 /*---main-card start---*/
 .card.main-card .card-description {
@@ -591,6 +677,8 @@ span.icon-rating{
 /*---row-small-card start---*/
 .card.row-small-card {
     border:none;
+    margin: 15px 0;
+    max-height: 92px;
 }
 .card.row-small-card .card-item-title {
     font-size: 14px;
@@ -601,6 +689,7 @@ span.icon-rating{
     -webkit-box-flex: 5;
         -ms-flex: 5;
             flex: 5;
+    max-width: 103px;
 }
 .card.row-small-card .card-description {
     -webkit-box-orient: vertical;
@@ -675,6 +764,9 @@ footer .list{
     line-height: 2em;
     padding: 0;
 }
+footer .social-networks{
+    margin-bottom: 40px;
+}
 footer .newsletter-sign-up span{
     color: #fff;
     font-size: 20px;
@@ -720,10 +812,6 @@ footer .copy-right.default-text{
 @media (max-width: 1199px) {
     footer .footer-col{
         margin: 20px 0;
-    }
-    footer .default-section{
-        padding-top: 105px;
-        padding-bottom: 90px;
     }
 }
 @media (max-width: 576px){
@@ -797,9 +885,15 @@ footer .copy-right.default-text{
      -webkit-box-shadow: 0 0 10px rgba(100, 100, 100, .75);
      box-shadow: 0 0 10px rgba(100, 100, 100, .75);
  }
-.form-search-input{
-    max-width: 671px;
-    width: 100%;
+@media (max-width: 767px){
+    .form-search-input{
+        max-width: 500px;
+    }
+}
+@media (max-width: 576px){
+    .form-search-input{
+        max-width: 310px;
+    }
 }
 .form-search input.form-control {
     font:  400 14px/1 'Roboto', sans-serif;
@@ -837,6 +931,13 @@ footer .copy-right.default-text{
     content: "\f002";
     color: #90a4ae;
     font-size: 20px;
+}
+@media (max-width: 767px){
+    .form-search .title.title-premium{
+        text-align: center;
+        font-size: 18px;
+        line-height: 1.3em;
+    }
 }
 @media (max-width: 576px){
     .form-search .title.title-welcome{
@@ -1084,7 +1185,7 @@ footer .copy-right.default-text{
     display: block;
 }
 .dropdown .dropdown-menu .list{
-    padding: 15px 20px;
+    padding: 15px 30px 15px 15px;
     border-radius: 0;
 }
 .dropdown .dropdown-menu .list .dropdown-item{
@@ -1113,6 +1214,9 @@ header .header-top .header-top-dropdowns{
 }
 header .header-top .header-top-dropdowns li{
     margin-right: 15px;
+}
+header .header-top .header-top-dropdowns .list li{
+    margin-right: 0;
 }
 header .header-top .header-top-dropdowns li:last-child{
     margin-right: 0;
@@ -1145,9 +1249,18 @@ header .header-bottom .header-bottom-nav ul li:last-child{
     header .header-top .need-help{
         margin-right: auto;
     }
-    header .header-top .header-top-dropdowns{
-        margin-left: 0;
+    header .header-conrols{
+        width: 100%;
+        margin-top: 20px;
     }
+    header .header-top .header-top-dropdowns{
+        -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    }
+
     header .header-bottom .header-bottom-nav ul li{
         display: block;
         text-align: center;
@@ -1156,34 +1269,36 @@ header .header-bottom .header-bottom-nav ul li:last-child{
     header .header-bottom .header-bottom-nav ul li+li{
         margin-top: 10px;
     }
-    header .header-conrols{
-        width: 100%;
-        margin-top: 20px;
-    }
 }
 @media (max-width: 576px){
-    .dropdown-account .line-toggle span{
+    header .dropdown-account .line-toggle span{
         display: none;
     }
-    header .header-top button{
-        margin-left: 10px;
+    header .header-top .header-top-dropdowns{
+        margin-left:0;
     }
     header .header-top .header-top-dropdowns li {
         margin-right: 10px;
     }
-    header .header-conrols{
-       -ms-flex-pack: distribute;
-           justify-content: space-around;
+    header .dropdown .dropdown-menu .dropdown-item {
+        padding: 15px;
     }
-    header .header-top-dropdowns{
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
+    header .dropdown .dropdown-menu .total{
+        padding: 8px 20px;
+    }
+    header .header-top button{
+        margin-left: 10px;
     }
     .dropdown-account .line-toggle{
         margin-left: 0;
     }
     .dropdown-account .line-toggle i{
         margin-left: 7px;
+    }
+    .dropdown .dropdown-menu .list{
+        padding: 15px 10px;
+        border-radius: 0;
+        line-height: 1em;
     }
 }
 /*---loginModal start---*/
@@ -1294,9 +1409,20 @@ header .header-bottom .header-bottom-nav ul li:last-child{
 }
 
 #loginModal .lost-password:hover,
-#loginModal .custom-btn.btn-green
-{
+#loginModal .custom-btn.btn-green {
  text-decoration: none;
+}
+@media (max-width: 576px) {
+    #loginModal .modal-content {
+        padding: 30px 20px 40px;
+    }
+    #loginModal .custom-btn.btn-green,
+    #loginModal .login-btn-group .submit-btn {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+
 }
 /*---loginModal end---*/
 /*-----pagination start------*/
@@ -1365,81 +1491,87 @@ ul.badge-product-author li + li {
 
 
 
-/*
-Icon classes can be used entirely standalone. They are named after their original file names.
-
-Example usage in HTML:
-
-`display: block` sprite:
-<div class="icon-home"></div>
-
-To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
-
-// CSS
-.icon {
-  display: inline-block;
-}
-
-// HTML
-<i class="icon icon-home"></i>
-*/
 .icon-badge-blue {
   background-image: url(../img/sprite.png);
-  background-position: 0px 0px;
+  background-position: -108px -37px;
   width: 34px;
   height: 37px;
 }
 .icon-badge-green {
   background-image: url(../img/sprite.png);
-  background-position: -34px 0px;
+  background-position: -34px -100px;
   width: 34px;
   height: 37px;
 }
 .icon-badge-grey {
   background-image: url(../img/sprite.png);
-  background-position: -68px 0px;
+  background-position: 0px -100px;
   width: 34px;
   height: 37px;
 }
 .icon-badge-red {
   background-image: url(../img/sprite.png);
-  background-position: 0px -37px;
+  background-position: -68px -100px;
   width: 34px;
   height: 37px;
 }
 .icon-badge-yellow {
   background-image: url(../img/sprite.png);
-  background-position: -34px -37px;
+  background-position: -108px 0px;
   width: 34px;
   height: 37px;
 }
+.icon-fb-b {
+  background-image: url(../img/sprite.png);
+  background-position: -54px 0px;
+  width: 54px;
+  height: 50px;
+}
 .icon-fb {
   background-image: url(../img/sprite.png);
-  background-position: -68px -37px;
+  background-position: -142px -28px;
   width: 28px;
   height: 28px;
+}
+.icon-linkedin-b {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 54px;
+  height: 50px;
 }
 .icon-linkedin {
   background-image: url(../img/sprite.png);
-  background-position: 0px -74px;
+  background-position: -102px -100px;
   width: 28px;
   height: 28px;
+}
+.icon-pinterest-b {
+  background-image: url(../img/sprite.png);
+  background-position: -54px -50px;
+  width: 54px;
+  height: 50px;
 }
 .icon-pinterest {
   background-image: url(../img/sprite.png);
-  background-position: -28px -74px;
+  background-position: -142px 0px;
   width: 28px;
   height: 28px;
 }
+.icon-tw-b {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -50px;
+  width: 54px;
+  height: 50px;
+}
 .icon-tw {
   background-image: url(../img/sprite.png);
-  background-position: -56px -74px;
+  background-position: -142px -56px;
   width: 28px;
   height: 28px;
 }
 .icon-youtube {
   background-image: url(../img/sprite.png);
-  background-position: -102px 0px;
+  background-position: -142px -84px;
   width: 28px;
   height: 28px;
 }
@@ -1461,6 +1593,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+
 }
 .nav-tabs {
     border-bottom: 0;
@@ -1484,9 +1617,11 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
     left: 0;
     top: 12px;
 }
- li.nav-item {
+li.nav-item {
     line-height: 58px;
-    width: 25%;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
     text-align: center;
 }
 .nav-tabs .nav-link.nav-li-item {
@@ -1540,6 +1675,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
     font-weight: 500;
     margin-bottom: 44px;
 }
+
 .footer-title{
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
@@ -1556,6 +1692,9 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 
     .title.section-title {
         font-size: 30px;
+    }
+    .title.form-title {
+        margin-bottom: 10px;
     }
 }
 
@@ -1824,12 +1963,24 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 
 /*----- Main page end -----*/
 
-/*----- Product details start -----*/
+/*----- Product details page start -----*/
+.mobile-aside-toggle.product{
+    border: 1px solid #919191;
+    border-radius: 3px;
+    height: 30px;
+    width: 30px;
+    color: #919191;
+    background-color: inherit;
+    font-size: 20px;
+    margin-right: 15px;
+}
 .gt-builder-img {
     padding: 18px;
     border: 1px solid #dedede;
-    max-width: 830px;
     margin-bottom: 40px;
+}
+.gt-builder-img img{
+    width: 100%;
 }
 .gt-builder-content{
     margin-bottom: 50px;
@@ -1848,12 +1999,17 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 .gt-builder-btn-social{
     margin-bottom: 55px;
 }
-.gt-builder-btn a+a{
-    margin-left: 17px;
+.gt-builder-btn-social .gt-builder-btn a+a{
+    margin-left: 15px;
 }
+.gt-builder-btn-social .gt-builder-social li+li{
+    margin-left: 3px;
+}
+
 /*--- more-product---*/
 .more-product{
-    padding-bottom: 120px;
+    margin-top: 50px;
+    padding-bottom: 100px;
 }
 .more-product .title{
     font-size: 18px;
@@ -1862,8 +2018,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
     border: 1px solid #dedede;
     padding: 22px 25px;
 }
+.more-product .card-item-title{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
 .more-product .row{
-    margin-top: 28px;
+    margin-top: 13px;
 }
 /*--- product price---*/
 .product-price .dropdown-menu.show{
@@ -1888,7 +2049,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
     font-size: 22px;
     color: #e74c3c;
 }
-.product-author author-card{
+.product-price .price-regular{
+    margin-bottom: 25px;
+}
+.product-price .product-price-btn-group a+a{
+    margin-top: 10px;
+}
+.product-author .author-card{
     padding: 25px 0;
     text-transform: capitalize;
 }
@@ -1908,7 +2075,6 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
     font-size: 13px;
     border: 1px solid #dedede;
     padding: 8px 15px;
-
 }
 .aside-section.sales{
     padding-top: 22px;
@@ -1933,17 +2099,77 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
     font-size: 14px;
     text-transform: capitalize;
     line-height: 2.57em;
-    font-weight: 700;
-}
-.product-info .info-table td{
-    color: #263238;
-}
-.product-info .info-table td+td{
     color: #70838d;
     font-weight: 400;
-    vertical-align: baseline;
+
+}
+.product-info .info-table span{
+    color: #263238;
+    font-weight: 700;
 }
 /*----- Product details end -----*/
+@media (max-width: 767px){
+    .gt-builder-content .title{
+        font-size: 25px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .mobile-aside-toggle{
+        margin: 15px 0;
+    }
+    .gt-builder-btn-social{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .gt-builder-btn-social .gt-builder-btn a+a{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .gt-builder-btn-social .gt-builder-btn a{
+        width: 100%;
+    }
+    .gt-builder-btn-social .gt-builder-social{
+         margin-top: 20px;
+         -ms-flex-item-align: center;
+             align-self: center;
+    }
+    .gt-builder-btn-social .gt-builder-social li+li{
+        margin-left: 15px;
+    }
+    .nav.nav-tabs{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: stretch;
+            -ms-flex-align: stretch;
+                align-items: stretch;
+    }
+    .product-page .tab-pane ul{
+        width: 100%;
+    }
+    .tab-content .tab-pane.active {
+        padding: 25px 35px 55px 35px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .tab-content ul + ul {
+        margin-left: 0;
+    }
+    .more-product{
+        padding-bottom: 50px;
+    }
+}
 /*------ 16_settings_personal-info start------*/
 .form-search.form-search-small {
     padding-top: 60px;
@@ -1956,12 +2182,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
     margin-bottom: 152px;
     /*margin-left: 15px;*/
     /*margin-right: -15px;*/
-    /*overflow: hidden;*/
 }
-/*.form-personal-information .col-9 {*/
-    /*max-width: 100%;*/
-    /*flex: 0 0 100%;*/
-/*}*/
 .form-personal-information .personal-information-nav.col-3{
     max-width: 270px;
     margin-right: 15px;
@@ -2161,12 +2382,6 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
     color: #707070;
     line-height: 40px;
 }
-/*.upload-form input#file {*/
-    /*border: 1px solid #dcdcdc;*/
-    /*background: #f9f9f9;*/
-    /*color: #707070;*/
-    /*padding-left: 9px;*/
-/*}*/
 .upload-form .form-col .form-control:focus, .upload-form-bottom .form-col .form-control:focus {
     border: 1px solid #2d2d2d;
 }
@@ -2180,8 +2395,43 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
     color: #f4f6f5;
     padding: 17px 35px;
     margin-top: 22px;
-
 }
+@media (max-width:991px) {
+    .form-group-row .label-col {
+        -webkit-box-flex: 4;
+            -ms-flex: 4;
+                flex: 4;
+    }
+    .form-group-row .form-col {
+        -webkit-box-flex: 8;
+            -ms-flex: 8;
+                flex: 8;
+    }
+    .upload-products-wrapper {
+        padding-bottom: 90px;
+    }
+}
+@media (max-width:767px) {
+    .form-group-row  {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    .form-wrapper .upload-form, .upload-form-bottom{
+        padding:10px;
+    }
+    .btn-custom.btn-green.form {
+        width: 100%;
+    }
+    .upload-products-wrapper {
+        padding-bottom: 70px;
+    }
+}
+
 /*---UPLOAD-PRODUCTS END---*/
 
 
@@ -2212,9 +2462,6 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
     border: 3px solid #8bc34a;
     background-color: #fff;
 }
-.price-range span {
-    padding-left: 10px;
-}
 .sort-controls {
     padding: 20px;
     background-color: #fff;
@@ -2232,7 +2479,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
     margin-left: 10px;
     font-size: 16px;
 }
-.active {
+.actives {
     color: #8bc34a;
 }
 .all-products-wrapper {
@@ -2241,6 +2488,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .all-products-wrapper .form-search {
     padding: 60px 0 70px 0;
+    background-color: #f4f6f5;
 }
 .all-products-wrapper .list-group li span {
     position: absolute;
@@ -2248,6 +2496,9 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
     top: 0;
     text-align: right;
     color: #90a4ae;
+}
+.all-items-container {
+    margin-bottom: 65px;
 }
 .all-products-wrapper .list-group a:hover {
     color:#90a4ae;
@@ -2267,13 +2518,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
             box-shadow: 0 1px 3px rgba(0,0,0, 0.2);
 }
 .sort-dropdown ul.dropdown-menu.list {
-    margin-top: 20px;
+    margin-top: -5px;
     border:none;
 }
 .sort-dropdown .dropdown .dropdown-menu.list {
     margin-left: 20px;
-    line-height: 2.2em;
-    padding: 10px 0 10px 20px;
+    line-height: 1.8em;
+    padding: 10px 0 0 20px;
     border: none;
 }
 .sort-dropdown .dropdown .dropdown-menu .dropdown-item {
@@ -2288,3 +2539,175 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 .profile-details-page {
     margin-bottom: 80px;
 }
+
+/*---UPLOAD-PRODUCTS START---*/
+.upload-products-wrapper {
+    padding-bottom: 110px;
+}
+.upload-products-wrapper .form-search {
+    padding: 60px 0 70px 0;
+    background-color: #f4f6f5;
+}
+.form-wrapper {
+    background-color: #fff;
+    border: 1px solid #d7d7d7;
+    position: relative;
+}
+.form-wrapper .upload-form, .upload-form-bottom{
+    padding:0px 50px 50px 45px;
+}
+.form-group-row .label-col {
+    -webkit-box-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
+    color: #444;
+    font: 400 15px/1 'Roboto', sans-serif;
+    line-height: 40px;
+ }
+.upload-products-wrapper .form-search .input-group .form-control {
+    font:  500 14px/1 'Roboto', sans-serif;
+    color: #90a4ae;
+}
+.upload-form .jq-selectbox__select {
+    width: 100%;
+    padding-left: 20px;
+    font:  400 15px/1 'Roboto', sans-serif;
+    color:#707070;
+    line-height: 40px;
+}
+.upload-form .jq-selectbox.focused .jq-selectbox__select {
+    border: 1px solid #2d2d2d;
+}
+.form-group-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 20px;
+}
+.upload-form .form-group-row:last-child, .upload-form-bottom .form-group-row:last-child {
+    margin-bottom: 0;
+}
+.upload-form label, .upload-form-bottom label {
+    margin-bottom: 0;
+    position: relative;
+}
+.upload-form label span, .upload-form-bottom label span {
+    margin-bottom: 0;
+    color: #8bc34a;
+    position: absolute;
+    font-size: 20px;
+    top: -10px;
+}
+.form-group-row .form-col {
+    -webkit-box-flex: 14;
+        -ms-flex: 14;
+            flex: 14;
+}
+.upload-form .form-col .form-control, .upload-form-bottom .form-col .form-control  {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-radius: 0;
+    font:  400 15px/1 'Roboto', sans-serif;
+    height: 40px;
+    color:#707070;
+    background-color:#f9f9f9;
+    padding-left: 20px;
+    border: 1px solid #dfdfdf;
+}
+.jq-file:hover .jq-file__browse {
+    background: none;
+}
+.jq-file:active .jq-file__browse {
+    background: none;
+    border: 1px solid #dfdfdf;
+}
+.jq-file.focused .jq-file__name {
+    border: 1px solid #dfdfdf;
+}
+.jq-file__browse {
+    position: absolute;
+    top: 7px;
+    left:10px;
+    font: 500 12px/1 'Roboto', sans-serif;
+    color: #707070;;
+    text-shadow: none;
+    width: 90px;
+    line-height: 24px;
+    background-color: #fff;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: 1px solid #dedede;
+}
+.jq-file {
+    width: 100%;
+    border-radius:0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background-color:#f9f9f9;
+}
+.jq-file__name {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    padding: 0 80px 0 120px;
+    border: 1px solid #dcdcdc;
+    border-radius: 0;
+    background-color: #f9f9f9;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    font: 500 12px/1 'Roboto', sans-serif;
+    color: #707070;
+    line-height: 40px;
+}
+.upload-form .form-col .form-control:focus, .upload-form-bottom .form-col .form-control:focus {
+    border: 1px solid #2d2d2d;
+}
+.upload-form textarea {
+    min-height: 150px;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+.btn-custom.btn-green.form {
+    background-color: #8bc34a;
+    color: #f4f6f5;
+    padding: 17px 35px;
+    margin-top: 22px;
+}
+@media (max-width:991px) {
+    .form-group-row .label-col {
+        -webkit-box-flex: 4;
+            -ms-flex: 4;
+                flex: 4;
+    }
+    .form-group-row .form-col {
+        -webkit-box-flex: 8;
+            -ms-flex: 8;
+                flex: 8;
+    }
+    .upload-products-wrapper {
+        padding-bottom: 90px;
+    }
+}
+@media (max-width:767px) {
+    .form-group-row  {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    .form-wrapper .upload-form, .upload-form-bottom{
+        padding:10px;
+    }
+    .btn-custom.btn-green.form {
+        width: 100%;
+    }
+    .upload-products-wrapper {
+        padding-bottom: 70px;
+    }
+}
+
+/*---UPLOAD-PRODUCTS END---*/
