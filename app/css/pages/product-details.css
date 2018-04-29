@@ -145,9 +145,6 @@
 }
 /*----- Product details end -----*/
 @media (max-width: 1200px) {
-    .mobile-aside-toggle {
-        margin: 15px 0;
-    }
     .product-author .name-view a {
         padding: 7px 2px;
     }

@@ -8,7 +8,8 @@
     margin-bottom: 55px;
 }
 .form-search.form-search-main .form-control{
-    box-shadow: 1px 0 10px rgba(124, 178, 64, .75);
+    -webkit-box-shadow: 1px 0 10px rgba(124, 178, 64, .75);
+            box-shadow: 1px 0 10px rgba(124, 178, 64, .75);
 }
 .newest-product .tags {
     margin-bottom: 45px;
@@ -30,7 +31,8 @@
 .newest-product .tags li:hover,.tags li.active {
     background-color: #e74c3c;
     color: #fff;
-    box-shadow: 0 2px 5px rgba(202, 215, 228,0.75);
+    -webkit-box-shadow: 0 2px 5px rgba(202, 215, 228,0.75);
+            box-shadow: 0 2px 5px rgba(202, 215, 228,0.75);
 }
 .mobile-list-wrap{
     display: none;
@@ -44,8 +46,12 @@
 .mobile-list .current{
     padding: 15px 30px;
     background-color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .newest-product .button-items{
     margin-top: 65px;
@@ -91,8 +97,12 @@
 .become-an-author .img-wrapper-content .img-content{
     padding: 80px 65px;
     background-color: #8bc34a;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .become-an-author .img-wrapper-content .img-content>span{
     max-width: 270px;
@@ -116,6 +126,9 @@
     .why-choose-foxtar .why-choose-items{
         margin: 20px 0;
     }
+    .tutorials .card.main-card{
+        margin-bottom: 20px;
+    }
 }
 @media (max-width: 767px){
     .form-search.form-search-main{
@@ -134,13 +147,18 @@
         width: 100%;
     }
     .become-an-author .img-wrapper-content .img-content{
-        padding: 40px 35px;
-        flex-direction: column;
+        padding: 30px 30px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .tags{
         display: none;
     }
     .mobile-list-wrap{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         margin-bottom: 50px;
     }
@@ -168,5 +186,28 @@
         display: none;
     }
 }
+@media (max-width: 576px){
+    .become-an-author .img-wrapper-content .img-content{
+        padding: 20px 15px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .newest-product .button-items{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .newest-product .button-items a{
+        width: 100%;
+    }
+    .newest-product .button-items a+a{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
 
 /*----- Main page end -----*/

@@ -56,6 +56,10 @@
     margin-bottom: 12px;
     font-weight: 500;
     text-transform: capitalize;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 270px;
 }
 .card .item-category {
     font:  500 14px 'Roboto', sans-serif;
@@ -70,7 +74,7 @@
     padding: 25px 30px 18px;
 }
 .card.large-card .card-author {
-    padding: 20px 30px;
+    padding: 20px 20px;
 }
 .list-inline-item:not(:last-child) {
     margin-right: 0;
@@ -78,10 +82,18 @@
 .card .card-author {
     border-top: 1px solid #d9e0e3;
 }
+.card .card-author .card-author-img{
+    display: flex;
+    align-items: center;
+}
 .card .card-author .author-name {
     font: 500 14px 'Roboto', sans-serif;
     color: #546e7a;
     padding-left: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 80px;
 }
 .card .card-author .card-product-rating {
     color: #ffa726;
@@ -111,6 +123,26 @@
         padding-left: 7px;
     }
 }
+@media (max-width:991px){
+    .card .card-item-title{
+        max-width: 100%;
+    }
+    .card .card-author .author-name {
+        max-width: 100%;
+    }
+}
+@media (max-width:576px){
+    .card .card-item-title{
+        max-width: 150px;
+    }
+    .card.main-card .card-item-title{
+        max-width: 100%;
+    }
+    .card .card-author .author-name {
+        max-width: 70px;
+    }
+}
+
 /*---large card end---*/
 
 /*---medium-card start*/

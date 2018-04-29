@@ -10,7 +10,7 @@
         flex: 0 0 100%;
     }
 }
-@media (max-width: 1210px) {
+@media (max-width: 1200px) {
     .form-personal-information .form-group .col-sm-8{
         max-width: 100%;
     }
