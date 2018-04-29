@@ -2322,6 +2322,11 @@ li.nav-item {
         max-width: 100%;
     }
 }
+@media (max-width: 576px) {
+    .form-personal-information .content-wrapper-body{
+        padding: 20px;
+    }
+}
 .form-personal-information .personal-information-nav{
     max-width: 270px;
 }
@@ -2375,6 +2380,7 @@ li.nav-item {
     padding: 15px 30px;
 }
 .form-personal-information .jq-selectbox__select {
+    color: #707070;
     width: 100%;
     padding: 0 40px 0 15px;
 }
