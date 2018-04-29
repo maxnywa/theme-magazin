@@ -62,6 +62,34 @@ blockquote{
 .icon {
     display: inline-block;
 }
+/*-----categories-list start-----*/
+.list-group-item, .list-group-item span {
+    font: 400 15px 'Roboto', sans-serif;
+}
+.list-group-item {
+    padding: 0;
+    margin-bottom: 30px;
+    border: none;
+    color: #263238;
+}
+.list-group-item span {
+    color:#90a4ae;
+}
+.list-group li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+.list-group li:before {
+    content: "\f105";
+    left: 0;
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    color: #8bc34a;
+    font-family: FontAwesome;
+}
+
 
 .sort-controls {
     padding: 20px;
@@ -684,34 +712,6 @@ span.icon-rating{
 }
 /*---row-small-card end---*/
 /*-----cards end------*/
-/*-----categories-list start-----*/
-.list-group-item, .list-group-item span {
-    font: 400 15px 'Roboto', sans-serif;
-}
-.list-group-item {
-    padding: 0;
-    margin-bottom: 30px;
-    border: none;
-    color: #263238;
-}
-.list-group-item span {
-    color:#90a4ae;
-}
-.list-group li {
-    position: relative;
-    padding-left: 20px;
-    margin-bottom: 20px;
-}
-.list-group li:before {
-    content: "\f105";
-    left: 0;
-    position: absolute;
-    top: 0;
-    font-size: 14px;
-    color: #8bc34a;
-    font-family: FontAwesome;
-}
-
 
 /*------ dropdown sort-by start------*/
 .dropdown.sort-by .dropdown-menu {
@@ -2306,13 +2306,6 @@ li.nav-item {
 }
 
 /*------ settings_personal-info start------*/
-.form-search.form-search-small {
-    padding-top: 60px;
-    padding-bottom: 70px;
-}
-.form-search.form-search-small .title {
-    margin-bottom: 25px;
-}
 .form-personal-information {
     margin-bottom: 152px;
 }
@@ -2322,6 +2315,11 @@ li.nav-item {
         -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
+    }
+}
+@media (max-width: 1210px) {
+    .form-personal-information .form-group .col-sm-8{
+        max-width: 100%;
     }
 }
 .form-personal-information .personal-information-nav{

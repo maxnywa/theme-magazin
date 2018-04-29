@@ -1,11 +1,4 @@
 /*------ settings_personal-info start------*/
-.form-search.form-search-small {
-    padding-top: 60px;
-    padding-bottom: 70px;
-}
-.form-search.form-search-small .title {
-    margin-bottom: 25px;
-}
 .form-personal-information {
     margin-bottom: 152px;
 }
@@ -15,6 +8,11 @@
         -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
+    }
+}
+@media (max-width: 1210px) {
+    .form-personal-information .form-group .col-sm-8{
+        max-width: 100%;
     }
 }
 .form-personal-information .personal-information-nav{
