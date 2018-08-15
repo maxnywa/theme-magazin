@@ -1,7 +1,7 @@
 /*------ carousel start ------*/
 
 .carousel .trending-carousel .slick-slide{
-    padding: 0 15px;
+    padding: 0 15px 20px;
 }
 .carousel .trending-carousel .slick-slide img{
     display: inline;
